@@ -24,7 +24,7 @@ namespace QuesitonsApp
 
         private void LnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormSignIn f1=new FormSignIn();
+            FormStudentLogin f1=new FormStudentLogin();
             f1.Show();
             this.Hide();
         }

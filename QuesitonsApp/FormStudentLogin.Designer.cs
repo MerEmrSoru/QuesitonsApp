@@ -1,6 +1,6 @@
 ﻿namespace QuesitonsApp
 {
-    partial class FormSignIn
+    partial class FormStudentLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSignIn));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStudentLogin));
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.TxtMail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -77,7 +77,7 @@
             this.label4.Location = new System.Drawing.Point(373, 320);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 46);
+            this.label4.Size = new System.Drawing.Size(137, 45);
             this.label4.TabIndex = 6;
             this.label4.Text = "E-Mail :";
             // 
@@ -91,7 +91,7 @@
             this.label5.Location = new System.Drawing.Point(373, 402);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(190, 46);
+            this.label5.Size = new System.Drawing.Size(185, 45);
             this.label5.TabIndex = 8;
             this.label5.Text = "Password :";
             // 
@@ -102,12 +102,12 @@
             this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(424, 146);
+            this.label1.Location = new System.Drawing.Point(305, 160);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(359, 45);
+            this.label1.Size = new System.Drawing.Size(612, 45);
             this.label1.TabIndex = 44;
-            this.label1.Text = "LOGIN PANEL";
+            this.label1.Text = "STUDENT LOGIN PANEL";
             // 
             // BtnBack
             // 

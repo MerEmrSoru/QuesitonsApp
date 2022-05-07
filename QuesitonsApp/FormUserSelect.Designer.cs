@@ -64,6 +64,7 @@
             this.BtnAdmin.Size = new System.Drawing.Size(51, 46);
             this.BtnAdmin.TabIndex = 1;
             this.BtnAdmin.UseVisualStyleBackColor = false;
+            this.BtnAdmin.Click += new System.EventHandler(this.BtnAdmin_Click);
             // 
             // BtnTeacher
             // 
@@ -80,6 +81,7 @@
             this.BtnTeacher.Size = new System.Drawing.Size(140, 134);
             this.BtnTeacher.TabIndex = 2;
             this.BtnTeacher.UseVisualStyleBackColor = false;
+            this.BtnTeacher.Click += new System.EventHandler(this.BtnTeacher_Click);
             // 
             // BtnStudent
             // 
@@ -96,6 +98,7 @@
             this.BtnStudent.Size = new System.Drawing.Size(110, 134);
             this.BtnStudent.TabIndex = 3;
             this.BtnStudent.UseVisualStyleBackColor = false;
+            this.BtnStudent.Click += new System.EventHandler(this.BtnStudent_Click);
             // 
             // label2
             // 
@@ -121,7 +124,7 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "TEACHER";
             // 
-            // Form1
+            // FormUserSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +138,7 @@
             this.Controls.Add(this.BtnAdmin);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "Form1";
+            this.Name = "FormUserSelect";
             this.Text = "UserType";
             this.ResumeLayout(false);
             this.PerformLayout();

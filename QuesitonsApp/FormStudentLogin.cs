@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuesitonsApp
 {
-    public partial class FormSignIn : Form
+    public partial class FormStudentLogin : Form
     {
-        public FormSignIn()
+        public FormStudentLogin()
         {
             InitializeComponent();
         }
