@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace QuesitonsApp
 {
-    public partial class FormSignIn : Form
+    public partial class FormSendPassword : Form
     {
-        public FormSignIn()
+        public FormSendPassword()
         {
             InitializeComponent();
-        }
-
-        private void LnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-           FormUserSelect f1=new FormUserSelect();
-            f1.Show();
-            this.Hide();
         }
     }
 }

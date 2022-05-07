@@ -38,16 +38,18 @@
             this.rdbRTeach = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtRname = new System.Windows.Forms.TextBox();
+            this.TxtRname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnRegis = new System.Windows.Forms.Button();
             this.LnkRegister = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtSurname = new System.Windows.Forms.TextBox();
             this.TxtMail = new System.Windows.Forms.TextBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
-            this.BackButton = new System.Windows.Forms.Button();
+            this.BtnBack = new System.Windows.Forms.Button();
+            this.btnRegis = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -112,57 +114,59 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Georgia", 19.8F);
-            this.label7.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(352, 468);
+            this.label7.Location = new System.Drawing.Point(356, 491);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(188, 39);
+            this.label7.Size = new System.Drawing.Size(195, 46);
             this.label7.TabIndex = 18;
             this.label7.Text = "User Type :";
             // 
             // rdbRStud
             // 
             this.rdbRStud.AutoSize = true;
-            this.rdbRStud.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbRStud.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.rdbRStud.BackColor = System.Drawing.Color.Transparent;
+            this.rdbRStud.Font = new System.Drawing.Font("Georgia", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbRStud.ForeColor = System.Drawing.SystemColors.Desktop;
             this.rdbRStud.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.rdbRStud.Location = new System.Drawing.Point(656, 498);
+            this.rdbRStud.Location = new System.Drawing.Point(645, 521);
             this.rdbRStud.Margin = new System.Windows.Forms.Padding(2);
             this.rdbRStud.Name = "rdbRStud";
-            this.rdbRStud.Size = new System.Drawing.Size(135, 36);
+            this.rdbRStud.Size = new System.Drawing.Size(150, 36);
             this.rdbRStud.TabIndex = 6;
             this.rdbRStud.TabStop = true;
             this.rdbRStud.Text = "Student";
-            this.rdbRStud.UseVisualStyleBackColor = true;
+            this.rdbRStud.UseVisualStyleBackColor = false;
             // 
             // rdbRTeach
             // 
             this.rdbRTeach.AutoSize = true;
-            this.rdbRTeach.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbRTeach.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.rdbRTeach.BackColor = System.Drawing.Color.Transparent;
+            this.rdbRTeach.Font = new System.Drawing.Font("Georgia", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbRTeach.ForeColor = System.Drawing.SystemColors.Desktop;
             this.rdbRTeach.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.rdbRTeach.Location = new System.Drawing.Point(656, 463);
+            this.rdbRTeach.Location = new System.Drawing.Point(645, 481);
             this.rdbRTeach.Margin = new System.Windows.Forms.Padding(2);
             this.rdbRTeach.Name = "rdbRTeach";
-            this.rdbRTeach.Size = new System.Drawing.Size(135, 36);
+            this.rdbRTeach.Size = new System.Drawing.Size(153, 36);
             this.rdbRTeach.TabIndex = 5;
             this.rdbRTeach.TabStop = true;
             this.rdbRTeach.Text = "Teacher";
-            this.rdbRTeach.UseVisualStyleBackColor = true;
+            this.rdbRTeach.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Georgia", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(352, 200);
+            this.label2.Location = new System.Drawing.Point(356, 223);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 39);
+            this.label2.Size = new System.Drawing.Size(134, 46);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name :";
             // 
@@ -170,40 +174,41 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Georgia", 19.8F);
-            this.label3.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(352, 262);
+            this.label3.Location = new System.Drawing.Point(356, 285);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 39);
+            this.label3.Size = new System.Drawing.Size(179, 46);
             this.label3.TabIndex = 2;
             this.label3.Text = "Surname :";
             // 
-            // txtRname
+            // TxtRname
             // 
-            this.txtRname.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtRname.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.txtRname.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtRname.Location = new System.Drawing.Point(537, 200);
-            this.txtRname.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRname.MaxLength = 50;
-            this.txtRname.Multiline = true;
-            this.txtRname.Name = "txtRname";
-            this.txtRname.Size = new System.Drawing.Size(254, 39);
-            this.txtRname.TabIndex = 1;
+            this.TxtRname.BackColor = System.Drawing.Color.Linen;
+            this.TxtRname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtRname.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.TxtRname.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtRname.Location = new System.Drawing.Point(550, 230);
+            this.TxtRname.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtRname.MaxLength = 50;
+            this.TxtRname.Multiline = true;
+            this.TxtRname.Name = "TxtRname";
+            this.TxtRname.Size = new System.Drawing.Size(254, 39);
+            this.TxtRname.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Georgia", 19.8F);
-            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(352, 329);
+            this.label4.Location = new System.Drawing.Point(356, 352);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 39);
+            this.label4.Size = new System.Drawing.Size(142, 46);
             this.label4.TabIndex = 3;
             this.label4.Text = "E-Mail :";
             // 
@@ -211,68 +216,51 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Georgia", 19.8F);
-            this.label5.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(352, 401);
+            this.label5.Location = new System.Drawing.Point(356, 424);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 39);
+            this.label5.Size = new System.Drawing.Size(190, 46);
             this.label5.TabIndex = 4;
             this.label5.Text = "Password :";
-            // 
-            // btnRegis
-            // 
-            this.btnRegis.BackColor = System.Drawing.Color.Black;
-            this.btnRegis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegis.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnRegis.FlatAppearance.BorderSize = 3;
-            this.btnRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegis.Font = new System.Drawing.Font("Headline R", 15.9F);
-            this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegis.Location = new System.Drawing.Point(470, 569);
-            this.btnRegis.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRegis.Name = "btnRegis";
-            this.btnRegis.Size = new System.Drawing.Size(209, 105);
-            this.btnRegis.TabIndex = 7;
-            this.btnRegis.Text = "REGISTER";
-            this.btnRegis.UseVisualStyleBackColor = false;
             // 
             // LnkRegister
             // 
             this.LnkRegister.AutoSize = true;
-            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnkRegister.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LnkRegister.Location = new System.Drawing.Point(457, 682);
+            this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
+            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
+            this.LnkRegister.Location = new System.Drawing.Point(950, 706);
             this.LnkRegister.Name = "LnkRegister";
             this.LnkRegister.Size = new System.Drawing.Size(235, 20);
             this.LnkRegister.TabIndex = 8;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Did you have any account?";
+            this.LnkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkRegister_LinkClicked);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(351, 89);
+            this.label1.Location = new System.Drawing.Point(355, 112);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(453, 46);
+            this.label1.Size = new System.Drawing.Size(446, 45);
             this.label1.TabIndex = 43;
             this.label1.Text = "REGISTER PANEL";
             // 
             // TxtSurname
             // 
-            this.TxtSurname.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TxtSurname.BackColor = System.Drawing.Color.Linen;
+            this.TxtSurname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtSurname.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtSurname.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.TxtSurname.Location = new System.Drawing.Point(537, 269);
+            this.TxtSurname.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtSurname.Location = new System.Drawing.Point(550, 299);
             this.TxtSurname.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSurname.MaxLength = 50;
             this.TxtSurname.Multiline = true;
@@ -282,10 +270,11 @@
             // 
             // TxtMail
             // 
-            this.TxtMail.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TxtMail.BackColor = System.Drawing.Color.Linen;
+            this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.TxtMail.Location = new System.Drawing.Point(537, 336);
+            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtMail.Location = new System.Drawing.Point(550, 366);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
             this.TxtMail.Multiline = true;
@@ -295,10 +284,11 @@
             // 
             // TxtPassword
             // 
-            this.TxtPassword.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.TxtPassword.BackColor = System.Drawing.Color.Linen;
+            this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.TxtPassword.Location = new System.Drawing.Point(537, 401);
+            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtPassword.Location = new System.Drawing.Point(550, 431);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
             this.TxtPassword.Multiline = true;
@@ -306,33 +296,67 @@
             this.TxtPassword.Size = new System.Drawing.Size(254, 39);
             this.TxtPassword.TabIndex = 4;
             // 
-            // BackButton
+            // BtnBack
             // 
-            this.BackButton.BackColor = System.Drawing.Color.Transparent;
-            this.BackButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BackButton.BackgroundImage")));
-            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BackButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.BackButton.FlatAppearance.BorderSize = 0;
-            this.BackButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.BackButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BackButton.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BackButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BackButton.Location = new System.Drawing.Point(11, 698);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(46, 37);
-            this.BackButton.TabIndex = 9;
-            this.BackButton.UseVisualStyleBackColor = false;
+            this.BtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.BtnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBack.BackgroundImage")));
+            this.BtnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnBack.FlatAppearance.BorderSize = 0;
+            this.BtnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBack.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BtnBack.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BtnBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnBack.Location = new System.Drawing.Point(11, 698);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(46, 37);
+            this.BtnBack.TabIndex = 9;
+            this.BtnBack.UseVisualStyleBackColor = false;
+            // 
+            // btnRegis
+            // 
+            this.btnRegis.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegis.BackgroundImage")));
+            this.btnRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegis.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnRegis.FlatAppearance.BorderSize = 0;
+            this.btnRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegis.Font = new System.Drawing.Font("Headline R", 15.9F);
+            this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnRegis.Location = new System.Drawing.Point(513, 579);
+            this.btnRegis.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegis.Name = "btnRegis";
+            this.btnRegis.Size = new System.Drawing.Size(123, 91);
+            this.btnRegis.TabIndex = 7;
+            this.btnRegis.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(874, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(289, 252);
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
             // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1197, 742);
-            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.TxtSurname);
@@ -342,7 +366,7 @@
             this.Controls.Add(this.btnRexit);
             this.Controls.Add(this.rdbRStud);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtRname);
+            this.Controls.Add(this.TxtRname);
             this.Controls.Add(this.rdbRTeach);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.lbltime);
@@ -352,7 +376,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "FormRegister";
-            this.Text = "FormRegister";
+            this.Text = "Register";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,15 +393,16 @@
         private System.Windows.Forms.RadioButton rdbRTeach;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtRname;
+        private System.Windows.Forms.TextBox TxtRname;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnRegis;
         private System.Windows.Forms.LinkLabel LnkRegister;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtSurname;
         private System.Windows.Forms.TextBox TxtMail;
         private System.Windows.Forms.TextBox TxtPassword;
-        private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button BtnBack;
+        private System.Windows.Forms.Button btnRegis;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

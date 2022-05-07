@@ -21,5 +21,12 @@ namespace QuesitonsApp
         {
 
         }
+
+        private void LnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormSignIn f1=new FormSignIn();
+            f1.Show();
+            this.Hide();
+        }
     }
 }
