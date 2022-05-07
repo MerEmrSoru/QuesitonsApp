@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuesitonsApp
 {
-    public partial class FormSendPassword : Form
+    public partial class FormAddQuestions : Form
     {
-        public FormSendPassword()
+        public FormAddQuestions()
         {
             InitializeComponent();
-        }
-
-        private void FormSendPassword_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

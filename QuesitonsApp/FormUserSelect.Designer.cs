@@ -139,7 +139,7 @@
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "FormUserSelect";
-            this.Text = "UserType";
+            this.Text = "USER TYPE";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -178,7 +178,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "FormAdminLogin";
-            this.Text = "FormAdminLogin";
+            this.Text = "ADMIN LOGIN";
             this.ResumeLayout(false);
             this.PerformLayout();
 

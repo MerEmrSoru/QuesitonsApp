@@ -165,7 +165,7 @@
             this.LnkRegister.Text = "Did You Have Any Account?";
             this.LnkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkRegister_LinkClicked);
             // 
-            // FormSignIn
+            // FormStudentLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,8 +178,8 @@
             this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Name = "FormSignIn";
-            this.Text = "Student Login";
+            this.Name = "FormStudentLogin";
+            this.Text = "STUDENT LOGIN";
             this.ResumeLayout(false);
             this.PerformLayout();
 

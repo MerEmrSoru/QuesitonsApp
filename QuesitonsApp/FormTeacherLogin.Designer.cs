@@ -66,7 +66,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(523, 500);
+            this.btnLogin.Location = new System.Drawing.Point(627, 469);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -178,7 +178,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "FormTeacherLogin";
-            this.Text = "FormTeacherLogin";
+            this.Text = "TEACHER LOGIN";
             this.ResumeLayout(false);
             this.PerformLayout();
 
