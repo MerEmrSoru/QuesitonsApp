@@ -33,7 +33,7 @@ namespace QuesitonsApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-           FormStartExam f1=new FormStartExam();
+           FormStudentPanel f1=new FormStudentPanel();
             f1.Show();
             this.Hide();
         }

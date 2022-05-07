@@ -43,11 +43,12 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(669, 276);
+            this.button2.Location = new System.Drawing.Point(686, 248);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(245, 140);
+            this.button2.Size = new System.Drawing.Size(245, 177);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -56,9 +57,9 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(267, 276);
+            this.button1.Location = new System.Drawing.Point(284, 248);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 140);
+            this.button1.Size = new System.Drawing.Size(210, 177);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -68,7 +69,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Headline R", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(310, 441);
+            this.label2.Location = new System.Drawing.Point(337, 450);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 21);
             this.label2.TabIndex = 5;
@@ -80,7 +81,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Headline R", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(745, 441);
+            this.label1.Location = new System.Drawing.Point(762, 450);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 21);
             this.label1.TabIndex = 6;
@@ -100,10 +101,10 @@
             this.BtnBack.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BtnBack.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnBack.Location = new System.Drawing.Point(11, 686);
+            this.BtnBack.Location = new System.Drawing.Point(11, 676);
             this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(46, 37);
+            this.BtnBack.Size = new System.Drawing.Size(46, 47);
             this.BtnBack.TabIndex = 95;
             this.BtnBack.UseVisualStyleBackColor = false;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
@@ -112,6 +113,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 734);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.label1);

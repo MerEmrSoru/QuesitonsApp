@@ -23,5 +23,12 @@ namespace QuesitonsApp
             f1.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormStartExam f1=new FormStartExam();
+            f1.Show();
+            this.Hide();
+        }
     }
 }

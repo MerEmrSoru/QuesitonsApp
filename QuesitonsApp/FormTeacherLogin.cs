@@ -16,5 +16,13 @@ namespace QuesitonsApp
         {
             InitializeComponent();
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            FormUserSelect f1=new FormUserSelect();
+            f1.Show();
+            this.Hide();
+
+        }
     }
 }

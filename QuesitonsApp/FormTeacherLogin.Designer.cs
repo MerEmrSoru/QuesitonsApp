@@ -60,8 +60,8 @@
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
@@ -93,6 +93,7 @@
             this.BtnBack.Size = new System.Drawing.Size(46, 37);
             this.BtnBack.TabIndex = 53;
             this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // label1
             // 
