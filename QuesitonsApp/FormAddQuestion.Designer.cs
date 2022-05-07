@@ -183,7 +183,7 @@
             // 
             // dataQuest
             // 
-            this.dataQuest.BackgroundColor = System.Drawing.Color.SandyBrown;
+            this.dataQuest.BackgroundColor = System.Drawing.Color.White;
             this.dataQuest.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataQuest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataQuest.Location = new System.Drawing.Point(463, 465);
@@ -255,7 +255,7 @@
             // 
             // txtImage
             // 
-            this.txtImage.BackColor = System.Drawing.Color.SandyBrown;
+            this.txtImage.BackColor = System.Drawing.Color.White;
             this.txtImage.Font = new System.Drawing.Font("Headline R", 14.1F);
             this.txtImage.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtImage.Location = new System.Drawing.Point(101, 399);

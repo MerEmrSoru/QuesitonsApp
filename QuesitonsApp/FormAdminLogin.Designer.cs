@@ -66,7 +66,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(527, 519);
+            this.btnLogin.Location = new System.Drawing.Point(494, 519);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -101,7 +101,7 @@
             this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(345, 155);
+            this.label1.Location = new System.Drawing.Point(312, 155);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(548, 45);
@@ -114,7 +114,7 @@
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
             this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtPassword.Location = new System.Drawing.Point(567, 402);
+            this.TxtPassword.Location = new System.Drawing.Point(534, 402);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
             this.TxtPassword.Multiline = true;
@@ -128,7 +128,7 @@
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
             this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtMail.Location = new System.Drawing.Point(567, 320);
+            this.TxtMail.Location = new System.Drawing.Point(534, 320);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
             this.TxtMail.Multiline = true;
@@ -143,7 +143,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(373, 320);
+            this.label4.Location = new System.Drawing.Point(340, 320);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 45);
@@ -157,7 +157,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(373, 402);
+            this.label5.Location = new System.Drawing.Point(340, 402);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(185, 45);
@@ -168,6 +168,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
             this.Controls.Add(this.LnkRegister);
             this.Controls.Add(this.btnLogin);

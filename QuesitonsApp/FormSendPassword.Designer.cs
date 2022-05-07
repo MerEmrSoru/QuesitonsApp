@@ -52,7 +52,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(601, 584);
+            this.btnLogin.Location = new System.Drawing.Point(595, 572);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -69,7 +69,7 @@
             this.label1.Location = new System.Drawing.Point(4, 66);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(726, 46);
+            this.label1.Size = new System.Drawing.Size(714, 45);
             this.label1.TabIndex = 51;
             this.label1.Text = "FORGOT YOUR PASSWORD?";
             // 
@@ -138,6 +138,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnBack);

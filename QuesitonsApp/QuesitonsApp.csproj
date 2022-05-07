@@ -67,6 +67,18 @@
     <Compile Include="FormQuestion.Designer.cs">
       <DependentUpon>FormQuestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStartExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStartExam.Designer.cs">
+      <DependentUpon>FormStartExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStudentPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStudentPanel.Designer.cs">
+      <DependentUpon>FormStudentPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTeacherLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddQuestion.resx">
       <DependentUpon>FormAddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuestion.resx">
+      <DependentUpon>FormQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStartExam.resx">
+      <DependentUpon>FormStartExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStudentPanel.resx">
+      <DependentUpon>FormStudentPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTeacherLogin.resx">
       <DependentUpon>FormTeacherLogin.cs</DependentUpon>

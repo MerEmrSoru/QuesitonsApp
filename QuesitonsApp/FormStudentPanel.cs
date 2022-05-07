@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace QuesitonsApp
 {
-    public partial class FormQuestion : Form
+    public partial class FormStudentPanel : Form
     {
-        public FormQuestion()
+        public FormStudentPanel()
         {
             InitializeComponent();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void BtnBack_Click(object sender, EventArgs e)
         {
-
+            FormUserSelect f1=new FormUserSelect();
+            f1.Show();
+            this.Hide();
         }
     }
 }

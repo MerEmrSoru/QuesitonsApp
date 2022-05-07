@@ -329,7 +329,7 @@
             this.btnRegis.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegis.Location = new System.Drawing.Point(630, 571);
+            this.btnRegis.Location = new System.Drawing.Point(600, 571);
             this.btnRegis.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegis.Name = "btnRegis";
             this.btnRegis.Size = new System.Drawing.Size(123, 91);
@@ -341,6 +341,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.TxtPassword);
