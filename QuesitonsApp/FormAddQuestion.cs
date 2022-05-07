@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QuesitonsApp
 {
-    public partial class FormAddQuestions : Form
+    public partial class FormAddQuestion : Form
     {
-        public FormAddQuestions()
+        public FormAddQuestion()
         {
             InitializeComponent();
+        }
+
+        private void dataQuest_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

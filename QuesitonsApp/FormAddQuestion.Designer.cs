@@ -1,6 +1,6 @@
 ﻿namespace QuesitonsApp
 {
-    partial class FormAddQuestions
+    partial class FormAddQuestion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddQuestions));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddQuestion));
             this.txtSchoolObj = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@
             // 
             // cmbObjects
             // 
-            this.cmbObjects.BackColor = System.Drawing.Color.Linen;
+            this.cmbObjects.BackColor = System.Drawing.Color.PowderBlue;
             this.cmbObjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbObjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbObjects.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -183,7 +183,7 @@
             // 
             // dataQuest
             // 
-            this.dataQuest.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataQuest.BackgroundColor = System.Drawing.Color.SandyBrown;
             this.dataQuest.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataQuest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataQuest.Location = new System.Drawing.Point(463, 465);
@@ -193,6 +193,7 @@
             this.dataQuest.RowTemplate.Height = 40;
             this.dataQuest.Size = new System.Drawing.Size(722, 266);
             this.dataQuest.TabIndex = 80;
+            this.dataQuest.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataQuest_CellContentClick);
             // 
             // label10
             // 
@@ -210,6 +211,7 @@
             // 
             // pctImage
             // 
+            this.pctImage.BackColor = System.Drawing.Color.Transparent;
             this.pctImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pctImage.Location = new System.Drawing.Point(641, 89);
             this.pctImage.Margin = new System.Windows.Forms.Padding(2);
@@ -253,7 +255,7 @@
             // 
             // txtImage
             // 
-            this.txtImage.BackColor = System.Drawing.Color.Linen;
+            this.txtImage.BackColor = System.Drawing.Color.SandyBrown;
             this.txtImage.Font = new System.Drawing.Font("Headline R", 14.1F);
             this.txtImage.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtImage.Location = new System.Drawing.Point(101, 399);
@@ -322,7 +324,7 @@
             // 
             // cmbSubject
             // 
-            this.cmbSubject.BackColor = System.Drawing.Color.Linen;
+            this.cmbSubject.BackColor = System.Drawing.Color.PowderBlue;
             this.cmbSubject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbSubject.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -360,7 +362,7 @@
             // 
             // cmbUnıtID
             // 
-            this.cmbUnıtID.BackColor = System.Drawing.Color.Linen;
+            this.cmbUnıtID.BackColor = System.Drawing.Color.PowderBlue;
             this.cmbUnıtID.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbUnıtID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbUnıtID.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -510,7 +512,7 @@
             this.btnRegis.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegis.Location = new System.Drawing.Point(248, 479);
+            this.btnRegis.Location = new System.Drawing.Point(248, 513);
             this.btnRegis.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegis.Name = "btnRegis";
             this.btnRegis.Size = new System.Drawing.Size(123, 91);
@@ -531,7 +533,7 @@
             this.button1.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(60, 479);
+            this.button1.Location = new System.Drawing.Point(60, 513);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 91);
@@ -545,7 +547,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(34, 584);
+            this.label13.Location = new System.Drawing.Point(34, 618);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(142, 23);
@@ -559,7 +561,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(254, 584);
+            this.label14.Location = new System.Drawing.Point(254, 618);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(117, 23);
@@ -601,10 +603,11 @@
             this.label15.TabIndex = 95;
             this.label15.Text = "Quesitons";
             // 
-            // FormAddQuestions
+            // FormAddQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1197, 734);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.BtnBack);
@@ -641,8 +644,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Name = "FormAddQuestions";
-            this.Text = "ADD QUESTIONS";
+            this.Name = "FormAddQuestion";
+            this.Text = "ADD QUESTION";
             ((System.ComponentModel.ISupportInitialize)(this.dataQuest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctImage)).EndInit();
             this.ResumeLayout(false);

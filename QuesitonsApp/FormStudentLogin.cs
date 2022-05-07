@@ -19,7 +19,14 @@ namespace QuesitonsApp
 
         private void LnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           FormUserSelect f1=new FormUserSelect();
+           FormRegister f1=new FormRegister();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            FormUserSelect f1 = new FormUserSelect();
             f1.Show();
             this.Hide();
         }

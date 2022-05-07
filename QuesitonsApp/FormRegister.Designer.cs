@@ -48,8 +48,6 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.BtnBack = new System.Windows.Forms.Button();
             this.btnRegis = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -331,23 +329,12 @@
             this.btnRegis.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegis.Location = new System.Drawing.Point(612, 575);
+            this.btnRegis.Location = new System.Drawing.Point(630, 571);
             this.btnRegis.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegis.Name = "btnRegis";
             this.btnRegis.Size = new System.Drawing.Size(123, 91);
             this.btnRegis.TabIndex = 7;
             this.btnRegis.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(874, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(289, 252);
-            this.pictureBox1.TabIndex = 44;
-            this.pictureBox1.TabStop = false;
             // 
             // FormRegister
             // 
@@ -355,7 +342,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1197, 742);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtMail);
@@ -377,7 +363,6 @@
             this.Controls.Add(this.label5);
             this.Name = "FormRegister";
             this.Text = "REGISTER";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,6 +388,5 @@
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Button btnRegis;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -34,6 +34,8 @@
             this.TxtMail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.BtnBack = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -44,13 +46,13 @@
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SandyBrown;
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SandyBrown;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(610, 391);
+            this.btnLogin.Location = new System.Drawing.Point(601, 584);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -61,13 +63,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Headline R", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(287, 129);
+            this.label1.Location = new System.Drawing.Point(4, 66);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(613, 39);
+            this.label1.Size = new System.Drawing.Size(726, 46);
             this.label1.TabIndex = 51;
             this.label1.Text = "FORGOT YOUR PASSWORD?";
             // 
@@ -77,7 +79,7 @@
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
             this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtMail.Location = new System.Drawing.Point(543, 308);
+            this.TxtMail.Location = new System.Drawing.Point(534, 463);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
             this.TxtMail.Multiline = true;
@@ -89,13 +91,13 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(350, 301);
+            this.label4.Location = new System.Drawing.Point(380, 464);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 45);
+            this.label4.Size = new System.Drawing.Size(118, 38);
             this.label4.TabIndex = 48;
             this.label4.Text = "E-Mail :";
             // 
@@ -120,11 +122,24 @@
             this.BtnBack.TabIndex = 54;
             this.BtnBack.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(429, 165);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(341, 251);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormSendPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1197, 742);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label1);
@@ -133,6 +148,7 @@
             this.Name = "FormSendPassword";
             this.Text = "SEND PASSWORD";
             this.Load += new System.EventHandler(this.FormSendPassword_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,5 +161,6 @@
         private System.Windows.Forms.TextBox TxtMail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnBack;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

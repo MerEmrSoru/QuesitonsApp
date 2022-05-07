@@ -43,7 +43,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Headline R", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(386, 124);
+            this.label1.Location = new System.Drawing.Point(388, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(410, 63);
             this.label1.TabIndex = 0;
@@ -76,9 +76,9 @@
             this.BtnTeacher.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
             this.BtnTeacher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Khaki;
             this.BtnTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnTeacher.Location = new System.Drawing.Point(666, 299);
+            this.BtnTeacher.Location = new System.Drawing.Point(599, 266);
             this.BtnTeacher.Name = "BtnTeacher";
-            this.BtnTeacher.Size = new System.Drawing.Size(140, 134);
+            this.BtnTeacher.Size = new System.Drawing.Size(313, 218);
             this.BtnTeacher.TabIndex = 2;
             this.BtnTeacher.UseVisualStyleBackColor = false;
             this.BtnTeacher.Click += new System.EventHandler(this.BtnTeacher_Click);
@@ -93,9 +93,9 @@
             this.BtnStudent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Khaki;
             this.BtnStudent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Khaki;
             this.BtnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnStudent.Location = new System.Drawing.Point(397, 299);
+            this.BtnStudent.Location = new System.Drawing.Point(322, 289);
             this.BtnStudent.Name = "BtnStudent";
-            this.BtnStudent.Size = new System.Drawing.Size(110, 134);
+            this.BtnStudent.Size = new System.Drawing.Size(111, 195);
             this.BtnStudent.TabIndex = 3;
             this.BtnStudent.UseVisualStyleBackColor = false;
             this.BtnStudent.Click += new System.EventHandler(this.BtnStudent_Click);
@@ -104,11 +104,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Font = new System.Drawing.Font("Headline R", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(394, 454);
+            this.label2.Location = new System.Drawing.Point(318, 523);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 18);
+            this.label2.Size = new System.Drawing.Size(124, 21);
             this.label2.TabIndex = 4;
             this.label2.Text = "STUDENT";
             // 
@@ -116,11 +116,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Font = new System.Drawing.Font("Headline R", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(663, 454);
+            this.label3.Location = new System.Drawing.Point(702, 523);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 18);
+            this.label3.Size = new System.Drawing.Size(125, 21);
             this.label3.TabIndex = 5;
             this.label3.Text = "TEACHER";
             // 
