@@ -70,7 +70,7 @@
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
-            this.btnLogin.TabIndex = 54;
+            this.btnLogin.TabIndex = 4;
             this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // BtnBack
@@ -91,7 +91,7 @@
             this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(46, 37);
-            this.BtnBack.TabIndex = 53;
+            this.BtnBack.TabIndex = 5;
             this.BtnBack.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -120,7 +120,7 @@
             this.TxtPassword.Multiline = true;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(254, 39);
-            this.TxtPassword.TabIndex = 50;
+            this.TxtPassword.TabIndex = 3;
             // 
             // TxtMail
             // 
@@ -134,7 +134,7 @@
             this.TxtMail.Multiline = true;
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(254, 39);
-            this.TxtMail.TabIndex = 48;
+            this.TxtMail.TabIndex = 2;
             // 
             // label4
             // 
