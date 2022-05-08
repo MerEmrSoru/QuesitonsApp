@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseS.cs" />
     <Compile Include="FormAdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +116,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuesitonAppDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuesitonAppDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuesitonAppDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAdminLogin.resx">
       <DependentUpon>FormAdminLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +180,17 @@
     </None>
     <None Include="QuesitonAppDataSet.xss">
       <DependentUpon>QuesitonAppDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet1.xsc">
+      <DependentUpon>QuesitonAppDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuesitonAppDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuesitonAppDataSet1.xss">
+      <DependentUpon>QuesitonAppDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

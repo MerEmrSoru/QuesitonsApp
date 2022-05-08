@@ -48,6 +48,9 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.BtnBack = new System.Windows.Forms.Button();
             this.btnRegis = new System.Windows.Forms.Button();
+            this.TxtUserType = new System.Windows.Forms.TextBox();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label8
@@ -161,7 +164,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(356, 223);
+            this.label2.Location = new System.Drawing.Point(356, 238);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 45);
@@ -175,7 +178,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(356, 285);
+            this.label3.Location = new System.Drawing.Point(356, 301);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 45);
@@ -186,14 +189,13 @@
             // 
             this.TxtRname.BackColor = System.Drawing.Color.Linen;
             this.TxtRname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtRname.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtRname.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtRname.Location = new System.Drawing.Point(550, 230);
+            this.TxtRname.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRname.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtRname.Location = new System.Drawing.Point(550, 253);
             this.TxtRname.Margin = new System.Windows.Forms.Padding(2);
             this.TxtRname.MaxLength = 50;
-            this.TxtRname.Multiline = true;
             this.TxtRname.Name = "TxtRname";
-            this.TxtRname.Size = new System.Drawing.Size(254, 39);
+            this.TxtRname.Size = new System.Drawing.Size(254, 29);
             this.TxtRname.TabIndex = 1;
             // 
             // label4
@@ -203,7 +205,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(356, 352);
+            this.label4.Location = new System.Drawing.Point(356, 368);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 45);
@@ -217,7 +219,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(356, 424);
+            this.label5.Location = new System.Drawing.Point(356, 431);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(185, 45);
@@ -245,7 +247,7 @@
             this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(355, 112);
+            this.label1.Location = new System.Drawing.Point(356, 64);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(446, 45);
@@ -256,42 +258,39 @@
             // 
             this.TxtSurname.BackColor = System.Drawing.Color.Linen;
             this.TxtSurname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtSurname.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtSurname.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtSurname.Location = new System.Drawing.Point(550, 299);
+            this.TxtSurname.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSurname.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtSurname.Location = new System.Drawing.Point(550, 316);
             this.TxtSurname.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSurname.MaxLength = 50;
-            this.TxtSurname.Multiline = true;
             this.TxtSurname.Name = "TxtSurname";
-            this.TxtSurname.Size = new System.Drawing.Size(254, 39);
+            this.TxtSurname.Size = new System.Drawing.Size(254, 29);
             this.TxtSurname.TabIndex = 2;
             // 
             // TxtMail
             // 
             this.TxtMail.BackColor = System.Drawing.Color.Linen;
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtMail.Location = new System.Drawing.Point(550, 366);
+            this.TxtMail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMail.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtMail.Location = new System.Drawing.Point(550, 383);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
-            this.TxtMail.Multiline = true;
             this.TxtMail.Name = "TxtMail";
-            this.TxtMail.Size = new System.Drawing.Size(254, 39);
+            this.TxtMail.Size = new System.Drawing.Size(254, 29);
             this.TxtMail.TabIndex = 3;
             // 
             // TxtPassword
             // 
             this.TxtPassword.BackColor = System.Drawing.Color.Linen;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtPassword.Location = new System.Drawing.Point(550, 431);
+            this.TxtPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPassword.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtPassword.Location = new System.Drawing.Point(548, 446);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
-            this.TxtPassword.Multiline = true;
             this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(254, 39);
+            this.TxtPassword.Size = new System.Drawing.Size(254, 29);
             this.TxtPassword.TabIndex = 4;
             // 
             // BtnBack
@@ -335,6 +334,49 @@
             this.btnRegis.Size = new System.Drawing.Size(123, 91);
             this.btnRegis.TabIndex = 7;
             this.btnRegis.UseVisualStyleBackColor = false;
+            this.btnRegis.Click += new System.EventHandler(this.btnRegis_Click);
+            // 
+            // TxtUserType
+            // 
+            this.TxtUserType.BackColor = System.Drawing.Color.Linen;
+            this.TxtUserType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtUserType.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.TxtUserType.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtUserType.Location = new System.Drawing.Point(11, 675);
+            this.TxtUserType.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtUserType.MaxLength = 50;
+            this.TxtUserType.Multiline = true;
+            this.TxtUserType.Name = "TxtUserType";
+            this.TxtUserType.Size = new System.Drawing.Size(10, 10);
+            this.TxtUserType.TabIndex = 44;
+            this.TxtUserType.Visible = false;
+            // 
+            // TxtUsername
+            // 
+            this.TxtUsername.BackColor = System.Drawing.Color.Linen;
+            this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtUsername.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsername.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtUsername.Location = new System.Drawing.Point(550, 193);
+            this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtUsername.MaxLength = 50;
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.Size = new System.Drawing.Size(254, 29);
+            this.TxtUsername.TabIndex = 45;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label6.Location = new System.Drawing.Point(356, 179);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(193, 45);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "Username :";
             // 
             // FormRegister
             // 
@@ -343,6 +385,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.TxtUsername);
+            this.Controls.Add(this.TxtUserType);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtMail);
@@ -389,5 +434,8 @@
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Button btnRegis;
+        private System.Windows.Forms.TextBox TxtUserType;
+        private System.Windows.Forms.TextBox TxtUsername;
+        private System.Windows.Forms.Label label6;
     }
 }
