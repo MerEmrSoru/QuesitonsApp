@@ -37,6 +37,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.LnkRegister = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -53,7 +55,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(627, 469);
+            this.btnLogin.Location = new System.Drawing.Point(623, 549);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -90,7 +92,7 @@
             this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(309, 153);
+            this.label1.Location = new System.Drawing.Point(11, 65);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(613, 45);
@@ -103,7 +105,7 @@
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
             this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtPassword.Location = new System.Drawing.Point(567, 387);
+            this.TxtPassword.Location = new System.Drawing.Point(563, 467);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
             this.TxtPassword.Multiline = true;
@@ -117,7 +119,7 @@
             this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUsername.Font = new System.Drawing.Font("Headline R", 14.1F);
             this.TxtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtUsername.Location = new System.Drawing.Point(567, 305);
+            this.TxtUsername.Location = new System.Drawing.Point(563, 385);
             this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUsername.MaxLength = 50;
             this.TxtUsername.Multiline = true;
@@ -132,7 +134,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(373, 305);
+            this.label4.Location = new System.Drawing.Point(369, 385);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(184, 45);
@@ -146,7 +148,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(373, 387);
+            this.label5.Location = new System.Drawing.Point(369, 467);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(185, 45);
@@ -159,13 +161,24 @@
             this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
             this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
-            this.LnkRegister.Location = new System.Drawing.Point(378, 544);
+            this.LnkRegister.Location = new System.Drawing.Point(374, 624);
             this.LnkRegister.Name = "LnkRegister";
             this.LnkRegister.Size = new System.Drawing.Size(146, 16);
             this.LnkRegister.TabIndex = 55;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Create New Account";
             this.LnkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkRegister_LinkClicked_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(472, 156);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(274, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 56;
+            this.pictureBox1.TabStop = false;
             // 
             // FormTeacherLogin
             // 
@@ -174,6 +187,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LnkRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.BtnBack);
@@ -184,6 +198,7 @@
             this.Controls.Add(this.label5);
             this.Name = "FormTeacherLogin";
             this.Text = "TEACHER LOGIN";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,5 +213,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel LnkRegister;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
