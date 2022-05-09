@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStudentLogin));
             this.TxtPassword = new System.Windows.Forms.TextBox();
-            this.TxtMail = new System.Windows.Forms.TextBox();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,19 +55,19 @@
             this.TxtPassword.Size = new System.Drawing.Size(254, 39);
             this.TxtPassword.TabIndex = 7;
             // 
-            // TxtMail
+            // TxtUsername
             // 
-            this.TxtMail.BackColor = System.Drawing.Color.Linen;
-            this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtMail.Location = new System.Drawing.Point(566, 410);
-            this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
-            this.TxtMail.MaxLength = 50;
-            this.TxtMail.Multiline = true;
-            this.TxtMail.Name = "TxtMail";
-            this.TxtMail.Size = new System.Drawing.Size(254, 39);
-            this.TxtMail.TabIndex = 5;
+            this.TxtUsername.BackColor = System.Drawing.Color.Linen;
+            this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtUsername.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.TxtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtUsername.Location = new System.Drawing.Point(566, 410);
+            this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtUsername.MaxLength = 50;
+            this.TxtUsername.Multiline = true;
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.Size = new System.Drawing.Size(254, 39);
+            this.TxtUsername.TabIndex = 5;
             // 
             // label4
             // 
@@ -79,9 +79,9 @@
             this.label4.Location = new System.Drawing.Point(372, 410);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 38);
+            this.label4.Size = new System.Drawing.Size(150, 38);
             this.label4.TabIndex = 6;
-            this.label4.Text = "E-Mail :";
+            this.label4.Text = "Username";
             // 
             // label5
             // 
@@ -193,7 +193,7 @@
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtPassword);
-            this.Controls.Add(this.TxtMail);
+            this.Controls.Add(this.TxtUsername);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "FormStudentLogin";
@@ -207,7 +207,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox TxtPassword;
-        private System.Windows.Forms.TextBox TxtMail;
+        private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;

@@ -29,28 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTeacherLogin));
-            this.LnkRegister = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtPassword = new System.Windows.Forms.TextBox();
-            this.TxtMail = new System.Windows.Forms.TextBox();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.LnkRegister = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
-            // 
-            // LnkRegister
-            // 
-            this.LnkRegister.AutoSize = true;
-            this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
-            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
-            this.LnkRegister.Location = new System.Drawing.Point(940, 711);
-            this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(245, 20);
-            this.LnkRegister.TabIndex = 55;
-            this.LnkRegister.TabStop = true;
-            this.LnkRegister.Text = "Did You Have Any Account?";
             // 
             // btnLogin
             // 
@@ -72,6 +59,7 @@
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
             this.btnLogin.TabIndex = 54;
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // BtnBack
             // 
@@ -123,19 +111,19 @@
             this.TxtPassword.Size = new System.Drawing.Size(254, 39);
             this.TxtPassword.TabIndex = 50;
             // 
-            // TxtMail
+            // TxtUsername
             // 
-            this.TxtMail.BackColor = System.Drawing.Color.Linen;
-            this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtMail.Location = new System.Drawing.Point(567, 305);
-            this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
-            this.TxtMail.MaxLength = 50;
-            this.TxtMail.Multiline = true;
-            this.TxtMail.Name = "TxtMail";
-            this.TxtMail.Size = new System.Drawing.Size(254, 39);
-            this.TxtMail.TabIndex = 48;
+            this.TxtUsername.BackColor = System.Drawing.Color.Linen;
+            this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtUsername.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.TxtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtUsername.Location = new System.Drawing.Point(567, 305);
+            this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtUsername.MaxLength = 50;
+            this.TxtUsername.Multiline = true;
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.Size = new System.Drawing.Size(254, 39);
+            this.TxtUsername.TabIndex = 48;
             // 
             // label4
             // 
@@ -147,9 +135,9 @@
             this.label4.Location = new System.Drawing.Point(373, 305);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 45);
+            this.label4.Size = new System.Drawing.Size(184, 45);
             this.label4.TabIndex = 49;
-            this.label4.Text = "E-Mail :";
+            this.label4.Text = "Username:";
             // 
             // label5
             // 
@@ -165,6 +153,20 @@
             this.label5.TabIndex = 51;
             this.label5.Text = "Password :";
             // 
+            // LnkRegister
+            // 
+            this.LnkRegister.AutoSize = true;
+            this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
+            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
+            this.LnkRegister.Location = new System.Drawing.Point(378, 544);
+            this.LnkRegister.Name = "LnkRegister";
+            this.LnkRegister.Size = new System.Drawing.Size(146, 16);
+            this.LnkRegister.TabIndex = 55;
+            this.LnkRegister.TabStop = true;
+            this.LnkRegister.Text = "Create New Account";
+            this.LnkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkRegister_LinkClicked_1);
+            // 
             // FormTeacherLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -177,7 +179,7 @@
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtPassword);
-            this.Controls.Add(this.TxtMail);
+            this.Controls.Add(this.TxtUsername);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "FormTeacherLogin";
@@ -188,14 +190,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.LinkLabel LnkRegister;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtPassword;
-        private System.Windows.Forms.TextBox TxtMail;
+        private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel LnkRegister;
     }
 }
