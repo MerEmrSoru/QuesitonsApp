@@ -45,8 +45,8 @@
             // 
             this.TxtPassword.BackColor = System.Drawing.Color.Linen;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtPassword.Location = new System.Drawing.Point(566, 492);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
@@ -59,8 +59,8 @@
             // 
             this.TxtUsername.BackColor = System.Drawing.Color.Linen;
             this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtUsername.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtUsername.Location = new System.Drawing.Point(566, 410);
             this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUsername.MaxLength = 50;
@@ -147,7 +147,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(519, 583);
+            this.btnLogin.Location = new System.Drawing.Point(622, 583);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -159,11 +159,11 @@
             // 
             this.LnkRegister.AutoSize = true;
             this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
-            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
-            this.LnkRegister.Location = new System.Drawing.Point(1004, 711);
+            this.LnkRegister.Location = new System.Drawing.Point(416, 643);
             this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(181, 20);
+            this.LnkRegister.Size = new System.Drawing.Size(146, 16);
             this.LnkRegister.TabIndex = 47;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Create New Account";

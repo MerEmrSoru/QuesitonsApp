@@ -41,7 +41,6 @@
             this.TxtRname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.LnkRegister = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtSurname = new System.Windows.Forms.TextBox();
             this.TxtMail = new System.Windows.Forms.TextBox();
@@ -190,7 +189,7 @@
             this.TxtRname.BackColor = System.Drawing.Color.Linen;
             this.TxtRname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtRname.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtRname.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtRname.ForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtRname.Location = new System.Drawing.Point(550, 253);
             this.TxtRname.Margin = new System.Windows.Forms.Padding(2);
             this.TxtRname.MaxLength = 50;
@@ -226,20 +225,6 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Password :";
             // 
-            // LnkRegister
-            // 
-            this.LnkRegister.AutoSize = true;
-            this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
-            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
-            this.LnkRegister.Location = new System.Drawing.Point(950, 706);
-            this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(235, 20);
-            this.LnkRegister.TabIndex = 8;
-            this.LnkRegister.TabStop = true;
-            this.LnkRegister.Text = "Did you have any account?";
-            this.LnkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkRegister_LinkClicked);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -259,7 +244,7 @@
             this.TxtSurname.BackColor = System.Drawing.Color.Linen;
             this.TxtSurname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtSurname.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSurname.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtSurname.ForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtSurname.Location = new System.Drawing.Point(550, 316);
             this.TxtSurname.Margin = new System.Windows.Forms.Padding(2);
             this.TxtSurname.MaxLength = 50;
@@ -272,7 +257,7 @@
             this.TxtMail.BackColor = System.Drawing.Color.Linen;
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtMail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtMail.Location = new System.Drawing.Point(550, 383);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
@@ -285,7 +270,7 @@
             this.TxtPassword.BackColor = System.Drawing.Color.Linen;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPassword.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtPassword.Location = new System.Drawing.Point(548, 446);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
@@ -356,7 +341,7 @@
             this.TxtUsername.BackColor = System.Drawing.Color.Linen;
             this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUsername.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsername.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.TxtUsername.ForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtUsername.Location = new System.Drawing.Point(550, 193);
             this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUsername.MaxLength = 50;
@@ -393,7 +378,6 @@
             this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.TxtSurname);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.LnkRegister);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnRexit);
             this.Controls.Add(this.rdbRStud);
@@ -427,7 +411,6 @@
         private System.Windows.Forms.TextBox TxtRname;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.LinkLabel LnkRegister;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtSurname;
         private System.Windows.Forms.TextBox TxtMail;

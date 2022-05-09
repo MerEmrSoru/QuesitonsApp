@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdminLogin));
-            this.LnkRegister = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,19 +37,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // LnkRegister
-            // 
-            this.LnkRegister.AutoSize = true;
-            this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
-            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
-            this.LnkRegister.Location = new System.Drawing.Point(940, 711);
-            this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(245, 20);
-            this.LnkRegister.TabIndex = 55;
-            this.LnkRegister.TabStop = true;
-            this.LnkRegister.Text = "Did You Have Any Account?";
             // 
             // btnLogin
             // 
@@ -66,7 +52,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(494, 519);
+            this.btnLogin.Location = new System.Drawing.Point(583, 488);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -171,7 +157,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
-            this.Controls.Add(this.LnkRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.label1);
@@ -187,8 +172,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.LinkLabel LnkRegister;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Label label1;

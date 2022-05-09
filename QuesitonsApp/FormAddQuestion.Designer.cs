@@ -47,7 +47,7 @@
             this.txtQuestion = new System.Windows.Forms.TextBox();
             this.lbldate = new System.Windows.Forms.Label();
             this.lbltime = new System.Windows.Forms.Label();
-            this.cmbSubject = new System.Windows.Forms.ComboBox();
+            this.cmbSubjectID = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbUnıtID = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -78,6 +78,7 @@
             this.txtSchoolObj.MaxLength = 25;
             this.txtSchoolObj.Multiline = true;
             this.txtSchoolObj.Name = "txtSchoolObj";
+            this.txtSchoolObj.ReadOnly = true;
             this.txtSchoolObj.Size = new System.Drawing.Size(190, 32);
             this.txtSchoolObj.TabIndex = 89;
             this.txtSchoolObj.Text = " ";
@@ -135,6 +136,7 @@
             this.txtUnitName.MaxLength = 25;
             this.txtUnitName.Multiline = true;
             this.txtUnitName.Name = "txtUnitName";
+            this.txtUnitName.ReadOnly = true;
             this.txtUnitName.Size = new System.Drawing.Size(190, 32);
             this.txtUnitName.TabIndex = 64;
             this.txtUnitName.Text = " ";
@@ -163,6 +165,7 @@
             this.txtSubjectName.MaxLength = 25;
             this.txtSubjectName.Multiline = true;
             this.txtSubjectName.Name = "txtSubjectName";
+            this.txtSubjectName.ReadOnly = true;
             this.txtSubjectName.Size = new System.Drawing.Size(188, 33);
             this.txtSubjectName.TabIndex = 65;
             this.txtSubjectName.Text = " ";
@@ -322,29 +325,25 @@
             this.lbltime.Size = new System.Drawing.Size(0, 17);
             this.lbltime.TabIndex = 74;
             // 
-            // cmbSubject
+            // cmbSubjectID
             // 
-            this.cmbSubject.BackColor = System.Drawing.Color.PowderBlue;
-            this.cmbSubject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbSubject.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.cmbSubject.FormattingEnabled = true;
-            this.cmbSubject.Items.AddRange(new object[] {
+            this.cmbSubjectID.BackColor = System.Drawing.Color.PowderBlue;
+            this.cmbSubjectID.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbSubjectID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbSubjectID.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbSubjectID.FormattingEnabled = true;
+            this.cmbSubjectID.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbSubject.Location = new System.Drawing.Point(639, 20);
-            this.cmbSubject.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbSubject.Name = "cmbSubject";
-            this.cmbSubject.Size = new System.Drawing.Size(50, 26);
-            this.cmbSubject.TabIndex = 63;
+            "6"});
+            this.cmbSubjectID.Location = new System.Drawing.Point(639, 20);
+            this.cmbSubjectID.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSubjectID.Name = "cmbSubjectID";
+            this.cmbSubjectID.Size = new System.Drawing.Size(50, 26);
+            this.cmbSubjectID.TabIndex = 63;
             // 
             // label4
             // 
@@ -374,10 +373,7 @@
             "4",
             "5",
             "6",
-            "7",
-            "8",
-            "9",
-            "10"});
+            "7"});
             this.cmbUnıtID.Location = new System.Drawing.Point(463, 17);
             this.cmbUnıtID.Margin = new System.Windows.Forms.Padding(2);
             this.cmbUnıtID.Name = "cmbUnıtID";
@@ -518,6 +514,7 @@
             this.btnRegis.Size = new System.Drawing.Size(123, 91);
             this.btnRegis.TabIndex = 90;
             this.btnRegis.UseVisualStyleBackColor = false;
+            this.btnRegis.Click += new System.EventHandler(this.btnRegis_Click);
             // 
             // button1
             // 
@@ -636,7 +633,7 @@
             this.Controls.Add(this.txtQuestion);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.lbltime);
-            this.Controls.Add(this.cmbSubject);
+            this.Controls.Add(this.cmbSubjectID);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbUnıtID);
@@ -673,7 +670,7 @@
         private System.Windows.Forms.TextBox txtQuestion;
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Label lbltime;
-        private System.Windows.Forms.ComboBox cmbSubject;
+        private System.Windows.Forms.ComboBox cmbSubjectID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbUnıtID;
         private System.Windows.Forms.Label label9;

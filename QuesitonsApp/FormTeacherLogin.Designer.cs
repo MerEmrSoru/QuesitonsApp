@@ -103,8 +103,8 @@
             // 
             this.TxtPassword.BackColor = System.Drawing.Color.Linen;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtPassword.Location = new System.Drawing.Point(563, 467);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
@@ -117,8 +117,8 @@
             // 
             this.TxtUsername.BackColor = System.Drawing.Color.Linen;
             this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtUsername.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.TxtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtUsername.Location = new System.Drawing.Point(563, 385);
             this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUsername.MaxLength = 50;
