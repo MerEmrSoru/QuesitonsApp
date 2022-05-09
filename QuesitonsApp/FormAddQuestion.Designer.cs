@@ -71,7 +71,7 @@
             // txtSchoolObj
             // 
             this.txtSchoolObj.BackColor = System.Drawing.Color.Linen;
-            this.txtSchoolObj.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtSchoolObj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtSchoolObj.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtSchoolObj.Location = new System.Drawing.Point(3, 90);
             this.txtSchoolObj.Margin = new System.Windows.Forms.Padding(2);
@@ -115,20 +115,20 @@
             this.cmbObjects.BackColor = System.Drawing.Color.PowderBlue;
             this.cmbObjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbObjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbObjects.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbObjects.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cmbObjects.FormattingEnabled = true;
             this.cmbObjects.Items.AddRange(new object[] {
             "FEN BILIMLERI"});
             this.cmbObjects.Location = new System.Drawing.Point(138, 17);
             this.cmbObjects.Margin = new System.Windows.Forms.Padding(2);
             this.cmbObjects.Name = "cmbObjects";
-            this.cmbObjects.Size = new System.Drawing.Size(202, 26);
+            this.cmbObjects.Size = new System.Drawing.Size(202, 28);
             this.cmbObjects.TabIndex = 86;
             // 
             // txtUnitName
             // 
             this.txtUnitName.BackColor = System.Drawing.Color.Linen;
-            this.txtUnitName.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtUnitName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtUnitName.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtUnitName.Location = new System.Drawing.Point(223, 90);
             this.txtUnitName.Margin = new System.Windows.Forms.Padding(2);
@@ -156,7 +156,7 @@
             // txtSubjectName
             // 
             this.txtSubjectName.BackColor = System.Drawing.Color.Linen;
-            this.txtSubjectName.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtSubjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtSubjectName.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtSubjectName.Location = new System.Drawing.Point(445, 89);
             this.txtSubjectName.Margin = new System.Windows.Forms.Padding(2);
@@ -207,7 +207,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(134, 23);
             this.label10.TabIndex = 79;
-            this.label10.Text = "Quesiton Image";
+            this.label10.Text = "Question Image";
             // 
             // pctImage
             // 
@@ -229,7 +229,7 @@
             this.btnAddImage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnAddImage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnAddImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddImage.Font = new System.Drawing.Font("Headline R", 15.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAddImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnAddImage.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnAddImage.Location = new System.Drawing.Point(309, 399);
             this.btnAddImage.Margin = new System.Windows.Forms.Padding(2);
@@ -256,7 +256,7 @@
             // txtImage
             // 
             this.txtImage.BackColor = System.Drawing.Color.White;
-            this.txtImage.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.txtImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F);
             this.txtImage.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtImage.Location = new System.Drawing.Point(101, 399);
             this.txtImage.Margin = new System.Windows.Forms.Padding(2);
@@ -272,7 +272,7 @@
             this.cmbRansw.BackColor = System.Drawing.Color.Linen;
             this.cmbRansw.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbRansw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbRansw.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbRansw.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cmbRansw.FormattingEnabled = true;
             this.cmbRansw.Items.AddRange(new object[] {
             "A",
@@ -282,7 +282,7 @@
             this.cmbRansw.Location = new System.Drawing.Point(155, 342);
             this.cmbRansw.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRansw.Name = "cmbRansw";
-            this.cmbRansw.Size = new System.Drawing.Size(52, 26);
+            this.cmbRansw.Size = new System.Drawing.Size(52, 28);
             this.cmbRansw.TabIndex = 67;
             // 
             // txtQuestion
@@ -327,7 +327,7 @@
             this.cmbSubject.BackColor = System.Drawing.Color.PowderBlue;
             this.cmbSubject.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbSubject.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cmbSubject.FormattingEnabled = true;
             this.cmbSubject.Items.AddRange(new object[] {
             "1",
@@ -343,7 +343,7 @@
             this.cmbSubject.Location = new System.Drawing.Point(639, 20);
             this.cmbSubject.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSubject.Name = "cmbSubject";
-            this.cmbSubject.Size = new System.Drawing.Size(50, 26);
+            this.cmbSubject.Size = new System.Drawing.Size(50, 28);
             this.cmbSubject.TabIndex = 63;
             // 
             // label4
@@ -365,7 +365,7 @@
             this.cmbUnıtID.BackColor = System.Drawing.Color.PowderBlue;
             this.cmbUnıtID.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbUnıtID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbUnıtID.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbUnıtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cmbUnıtID.FormattingEnabled = true;
             this.cmbUnıtID.Items.AddRange(new object[] {
             "1",
@@ -381,20 +381,20 @@
             this.cmbUnıtID.Location = new System.Drawing.Point(463, 17);
             this.cmbUnıtID.Margin = new System.Windows.Forms.Padding(2);
             this.cmbUnıtID.Name = "cmbUnıtID";
-            this.cmbUnıtID.Size = new System.Drawing.Size(52, 26);
+            this.cmbUnıtID.Size = new System.Drawing.Size(52, 28);
             this.cmbUnıtID.TabIndex = 61;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Headline R", 20.1F);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.1F);
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label9.Location = new System.Drawing.Point(-54, 547);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 35);
+            this.label9.Size = new System.Drawing.Size(0, 39);
             this.label9.TabIndex = 71;
             // 
             // label1
@@ -457,7 +457,7 @@
             // 
             this.txtWans.BackColor = System.Drawing.Color.Linen;
             this.txtWans.Enabled = false;
-            this.txtWans.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.txtWans.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F);
             this.txtWans.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtWans.Location = new System.Drawing.Point(375, 339);
             this.txtWans.Margin = new System.Windows.Forms.Padding(2);
@@ -472,7 +472,7 @@
             // 
             this.txtWans2.BackColor = System.Drawing.Color.Linen;
             this.txtWans2.Enabled = false;
-            this.txtWans2.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.txtWans2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F);
             this.txtWans2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtWans2.Location = new System.Drawing.Point(415, 339);
             this.txtWans2.Margin = new System.Windows.Forms.Padding(2);
@@ -487,7 +487,7 @@
             // 
             this.txtWans3.BackColor = System.Drawing.Color.Linen;
             this.txtWans3.Enabled = false;
-            this.txtWans3.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.txtWans3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F);
             this.txtWans3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtWans3.Location = new System.Drawing.Point(455, 339);
             this.txtWans3.Margin = new System.Windows.Forms.Padding(2);
@@ -509,7 +509,7 @@
             this.btnRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegis.Font = new System.Drawing.Font("Headline R", 15.9F);
+            this.btnRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.9F);
             this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRegis.Location = new System.Drawing.Point(248, 513);
@@ -530,7 +530,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Headline R", 15.9F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.9F);
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button1.Location = new System.Drawing.Point(60, 513);
@@ -552,7 +552,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(142, 23);
             this.label13.TabIndex = 92;
-            this.label13.Text = "Update Quesiton";
+            this.label13.Text = "Update Question";
             // 
             // label14
             // 
@@ -579,7 +579,7 @@
             this.BtnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.BtnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBack.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BtnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BtnBack.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtnBack.Location = new System.Drawing.Point(3, 694);
@@ -601,7 +601,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(87, 23);
             this.label15.TabIndex = 95;
-            this.label15.Text = "Quesitons";
+            this.label15.Text = "Questions";
             // 
             // FormAddQuestion
             // 
