@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
+
+
 namespace QuesitonsApp
 {
     public partial class FormAddQuestion : Form
@@ -17,6 +20,7 @@ namespace QuesitonsApp
             InitializeComponent();
         }
         SqlConnection connection = new SqlConnection("Data Source=MSI\\SQLEXPRESS;Initial Catalog=QuesitonApp;Integrated Security=True");
+        string imagepath;
         private void dataQuest_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -24,6 +28,12 @@ namespace QuesitonsApp
 
         private void btnRegis_Click(object sender, EventArgs e)
         {
+            FileStream fileStream = new FileStream(imagepath,FileMode.Open,FileAccess.Read);
+            BinaryReader binaryReader = new BinaryReader(fileStream);
+            byte[] resim = binaryReader.ReadBytes((int)imagepath.Length);
+            binaryReader.Close();
+            fileStream.Close();
+
             connection.Open();
             if (cmbSubjectID.SelectedItem == null || cmbObjects.SelectedItem == null || cmbRansw.SelectedItem == null)
             {
@@ -201,25 +211,43 @@ namespace QuesitonsApp
                     }
                 }
             }
-            
+
+
+
+
             
 
                
 
-                MessageBox.Show("REGISTRATION COMPLETED SUCCESSFULLY!!");
-
-                SqlCommand cmd = new SqlCommand("insert into Tbl_Question(Question,SchoolObject,UnitID,SubjectID,CorrectAnswer) values (@p1,@p2,@p3,@p4,@p5)", connection);
+                SqlCommand cmd = new SqlCommand("insert into Tbl_Question(Question,SchoolObject,UnitID,SubjectID,CorrectAnswer,Image) values (@p1,@p2,@p3,@p4,@p5,@p6)", connection);
                 cmd.Parameters.AddWithValue("@p1", txtQuestion.Text);
                 cmd.Parameters.AddWithValue("@p2", txtSchoolObj.Text);
                 cmd.Parameters.AddWithValue("@p3", cmbUnıtID.Text);
-                cmd.Parameters.AddWithValue("@p4", cmbSubjectID.Text);                         
+                cmd.Parameters.AddWithValue("@p4", cmbSubjectID.Text);
                 cmd.Parameters.AddWithValue("@p5", cmbRansw.Text);
-            //    cmd.Parameters.AddWithValue("@p6", pctImage);
-               
+                cmd.Parameters.Add("@p6 ", SqlDbType.Image,resim.Length).Value = resim;
+
+
+
                 cmd.ExecuteNonQuery();
 
                 connection.Close();
-            
+               MessageBox.Show("REGISTRATION COMPLETED SUCCESSFULLY!!","Register",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
         }
+
+        private void btnAddImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd=new OpenFileDialog();
+            ofd.Title = "Select Image";
+            ofd.Filter = "Jpeg File(*.jpeg) |*.jpeg| Jpg File(*.jpg)|*.jpg| PngFile(*.png)|*.png| Gif File(*.gif)|*.gif| Tif File(*.tif)|*.tif";
+            if(ofd.ShowDialog()== DialogResult.OK)
+            {
+            pctImage.Image=Image.FromFile(ofd.FileName);
+                imagepath=ofd.FileName;
+            }
+        }
+
+       
     }
 }

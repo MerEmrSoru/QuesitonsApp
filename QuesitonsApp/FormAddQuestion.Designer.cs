@@ -64,6 +64,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.BtnBack = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataQuest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctImage)).BeginInit();
             this.SuspendLayout();
@@ -220,6 +221,7 @@
             this.pctImage.Margin = new System.Windows.Forms.Padding(2);
             this.pctImage.Name = "pctImage";
             this.pctImage.Size = new System.Drawing.Size(544, 342);
+            this.pctImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctImage.TabIndex = 78;
             this.pctImage.TabStop = false;
             // 
@@ -241,6 +243,7 @@
             this.btnAddImage.TabIndex = 77;
             this.btnAddImage.Text = "...";
             this.btnAddImage.UseVisualStyleBackColor = false;
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
             // 
             // label8
             // 
@@ -259,7 +262,7 @@
             // txtImage
             // 
             this.txtImage.BackColor = System.Drawing.Color.White;
-            this.txtImage.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.txtImage.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtImage.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtImage.Location = new System.Drawing.Point(101, 399);
             this.txtImage.Margin = new System.Windows.Forms.Padding(2);
@@ -291,7 +294,7 @@
             // txtQuestion
             // 
             this.txtQuestion.BackColor = System.Drawing.Color.Linen;
-            this.txtQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuestion.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtQuestion.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtQuestion.Location = new System.Drawing.Point(16, 181);
             this.txtQuestion.Margin = new System.Windows.Forms.Padding(2);
@@ -508,7 +511,7 @@
             this.btnRegis.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegis.Location = new System.Drawing.Point(248, 513);
+            this.btnRegis.Location = new System.Drawing.Point(295, 593);
             this.btnRegis.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegis.Name = "btnRegis";
             this.btnRegis.Size = new System.Drawing.Size(123, 91);
@@ -530,7 +533,7 @@
             this.button1.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(60, 513);
+            this.button1.Location = new System.Drawing.Point(107, 593);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 91);
@@ -544,7 +547,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(34, 618);
+            this.label13.Location = new System.Drawing.Point(81, 698);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(142, 23);
@@ -558,7 +561,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(254, 618);
+            this.label14.Location = new System.Drawing.Point(296, 700);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(117, 23);
@@ -600,12 +603,35 @@
             this.label15.TabIndex = 95;
             this.label15.Text = "Quesitons";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.BorderSize = 3;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Headline R", 15.9F);
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(138, 456);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 56);
+            this.button2.TabIndex = 96;
+            this.button2.Text = "SHOW";
+            this.button2.UseVisualStyleBackColor = false;
+           
+            // 
             // FormAddQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1197, 734);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.label14);
@@ -643,6 +669,7 @@
             this.Controls.Add(this.label3);
             this.Name = "FormAddQuestion";
             this.Text = "ADD QUESTION";
+           
             ((System.ComponentModel.ISupportInitialize)(this.dataQuest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctImage)).EndInit();
             this.ResumeLayout(false);
@@ -687,5 +714,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button2;
     }
 }
