@@ -59,36 +59,54 @@
             this.btnRegis = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TxtQuesId = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lblNewDate = new System.Windows.Forms.Label();
+            this.TxtOpt4 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.BtnUpdate = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtOpt3 = new System.Windows.Forms.TextBox();
+            this.TxtOpt2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TxtOpt1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lblNewDate = new System.Windows.Forms.Label();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.schoolObjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correctAnswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ımageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.option1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.option2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.option3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.option4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
+            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctImage)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSchoolObj
@@ -127,7 +145,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(6, 286);
+            this.label11.Location = new System.Drawing.Point(6, 266);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(134, 23);
@@ -143,10 +161,10 @@
             this.cmbObjects.FormattingEnabled = true;
             this.cmbObjects.Items.AddRange(new object[] {
             "FEN BILIMLERI"});
-            this.cmbObjects.Location = new System.Drawing.Point(10, 311);
+            this.cmbObjects.Location = new System.Drawing.Point(10, 291);
             this.cmbObjects.Margin = new System.Windows.Forms.Padding(2);
             this.cmbObjects.Name = "cmbObjects";
-            this.cmbObjects.Size = new System.Drawing.Size(202, 26);
+            this.cmbObjects.Size = new System.Drawing.Size(207, 26);
             this.cmbObjects.TabIndex = 86;
             // 
             // txtUnitName
@@ -220,7 +238,6 @@
             this.label10.Size = new System.Drawing.Size(165, 28);
             this.label10.TabIndex = 79;
             this.label10.Text = "Quesiton Image:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // pctImage
             // 
@@ -238,19 +255,20 @@
             // 
             // btnAddImage
             // 
-            this.btnAddImage.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddImage.BackColor = System.Drawing.Color.MistyRose;
             this.btnAddImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddImage.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddImage.FlatAppearance.BorderSize = 3;
-            this.btnAddImage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnAddImage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnAddImage.FlatAppearance.CheckedBackColor = System.Drawing.Color.PeachPuff;
+            this.btnAddImage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
+            this.btnAddImage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
             this.btnAddImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddImage.Font = new System.Drawing.Font("Headline R", 10.2F);
             this.btnAddImage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddImage.Location = new System.Drawing.Point(273, 499);
+            this.btnAddImage.Location = new System.Drawing.Point(273, 497);
             this.btnAddImage.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddImage.Name = "btnAddImage";
-            this.btnAddImage.Size = new System.Drawing.Size(230, 65);
+            this.btnAddImage.Size = new System.Drawing.Size(257, 65);
             this.btnAddImage.TabIndex = 77;
             this.btnAddImage.Text = "Add Image";
             this.btnAddImage.UseVisualStyleBackColor = false;
@@ -268,7 +286,7 @@
             "B",
             "C",
             "D"});
-            this.cmbRansw.Location = new System.Drawing.Point(140, 427);
+            this.cmbRansw.Location = new System.Drawing.Point(169, 458);
             this.cmbRansw.Margin = new System.Windows.Forms.Padding(2);
             this.cmbRansw.Name = "cmbRansw";
             this.cmbRansw.Size = new System.Drawing.Size(52, 26);
@@ -325,7 +343,7 @@
             "4",
             "5",
             "6"});
-            this.cmbSubjectID.Location = new System.Drawing.Point(105, 386);
+            this.cmbSubjectID.Location = new System.Drawing.Point(171, 417);
             this.cmbSubjectID.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSubjectID.Name = "cmbSubjectID";
             this.cmbSubjectID.Size = new System.Drawing.Size(50, 26);
@@ -338,7 +356,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(10, 427);
+            this.label4.Location = new System.Drawing.Point(10, 458);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 23);
@@ -360,7 +378,7 @@
             "5",
             "6",
             "7"});
-            this.cmbUnıtID.Location = new System.Drawing.Point(92, 347);
+            this.cmbUnıtID.Location = new System.Drawing.Point(169, 377);
             this.cmbUnıtID.Margin = new System.Windows.Forms.Padding(2);
             this.cmbUnıtID.Name = "cmbUnıtID";
             this.cmbUnıtID.Size = new System.Drawing.Size(52, 26);
@@ -386,7 +404,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(10, 349);
+            this.label1.Location = new System.Drawing.Point(10, 380);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 23);
@@ -400,7 +418,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(10, 386);
+            this.label2.Location = new System.Drawing.Point(10, 417);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 23);
@@ -482,21 +500,22 @@
             // 
             // btnRegis
             // 
-            this.btnRegis.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
             this.btnRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRegis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegis.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRegis.FlatAppearance.BorderSize = 3;
-            this.btnRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnRegis.FlatAppearance.CheckedBackColor = System.Drawing.Color.PeachPuff;
+            this.btnRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
+            this.btnRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
             this.btnRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegis.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegis.Location = new System.Drawing.Point(1077, 497);
+            this.btnRegis.Location = new System.Drawing.Point(1045, 497);
             this.btnRegis.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegis.Name = "btnRegis";
-            this.btnRegis.Size = new System.Drawing.Size(241, 68);
+            this.btnRegis.Size = new System.Drawing.Size(273, 65);
             this.btnRegis.TabIndex = 90;
             this.btnRegis.Text = "Add Question";
             this.btnRegis.UseVisualStyleBackColor = false;
@@ -527,15 +546,16 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.TxtQuesId);
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.lblNewDate);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.TxtOpt4);
             this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.BtnUpdate);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.TxtOpt3);
+            this.panel1.Controls.Add(this.TxtOpt2);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.cmbObjects);
@@ -543,7 +563,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cmbRansw);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.TxtOpt1);
             this.panel1.Controls.Add(this.cmbUnıtID);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.cmbSubjectID);
@@ -553,6 +573,94 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 807);
             this.panel1.TabIndex = 98;
+            // 
+            // TxtQuesId
+            // 
+            this.TxtQuesId.BackColor = System.Drawing.Color.MistyRose;
+            this.TxtQuesId.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtQuesId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtQuesId.Location = new System.Drawing.Point(169, 339);
+            this.TxtQuesId.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtQuesId.MaxLength = 25;
+            this.TxtQuesId.Name = "TxtQuesId";
+            this.TxtQuesId.Size = new System.Drawing.Size(52, 23);
+            this.TxtQuesId.TabIndex = 109;
+            this.TxtQuesId.Text = " ";
+            this.TxtQuesId.Visible = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label17.Location = new System.Drawing.Point(11, 339);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(115, 23);
+            this.label17.TabIndex = 108;
+            this.label17.Text = "Question Id : ";
+            this.label17.Visible = false;
+            // 
+            // lblNewDate
+            // 
+            this.lblNewDate.AutoSize = true;
+            this.lblNewDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblNewDate.Location = new System.Drawing.Point(11, 620);
+            this.lblNewDate.Name = "lblNewDate";
+            this.lblNewDate.Size = new System.Drawing.Size(0, 23);
+            this.lblNewDate.TabIndex = 101;
+            // 
+            // TxtOpt4
+            // 
+            this.TxtOpt4.BackColor = System.Drawing.Color.MistyRose;
+            this.TxtOpt4.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtOpt4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtOpt4.Location = new System.Drawing.Point(93, 580);
+            this.TxtOpt4.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtOpt4.MaxLength = 25;
+            this.TxtOpt4.Name = "TxtOpt4";
+            this.TxtOpt4.Size = new System.Drawing.Size(128, 23);
+            this.TxtOpt4.TabIndex = 107;
+            this.TxtOpt4.Text = " ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label16.Location = new System.Drawing.Point(10, 577);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(79, 23);
+            this.label16.TabIndex = 106;
+            this.label16.Text = "Option4:";
+            // 
+            // BtnUpdate
+            // 
+            this.BtnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.BtnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnUpdate.FlatAppearance.BorderSize = 3;
+            this.BtnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.BtnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.BtnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUpdate.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BtnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnUpdate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnUpdate.Location = new System.Drawing.Point(10, 662);
+            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(230, 68);
+            this.BtnUpdate.TabIndex = 99;
+            this.BtnUpdate.Text = "Update Question";
+            this.BtnUpdate.UseVisualStyleBackColor = false;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // pictureBox1
             // 
@@ -585,26 +693,86 @@
             this.button6.TabIndex = 94;
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // TxtOpt3
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(10, 662);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 68);
-            this.button2.TabIndex = 99;
-            this.button2.Text = "Update Question";
-            this.button2.UseVisualStyleBackColor = false;
+            this.TxtOpt3.BackColor = System.Drawing.Color.MistyRose;
+            this.TxtOpt3.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtOpt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtOpt3.Location = new System.Drawing.Point(93, 553);
+            this.TxtOpt3.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtOpt3.MaxLength = 25;
+            this.TxtOpt3.Name = "TxtOpt3";
+            this.TxtOpt3.Size = new System.Drawing.Size(128, 23);
+            this.TxtOpt3.TabIndex = 105;
+            this.TxtOpt3.Text = " ";
+            // 
+            // TxtOpt2
+            // 
+            this.TxtOpt2.BackColor = System.Drawing.Color.MistyRose;
+            this.TxtOpt2.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtOpt2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtOpt2.Location = new System.Drawing.Point(93, 526);
+            this.TxtOpt2.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtOpt2.MaxLength = 25;
+            this.TxtOpt2.Name = "TxtOpt2";
+            this.TxtOpt2.Size = new System.Drawing.Size(128, 23);
+            this.TxtOpt2.TabIndex = 103;
+            this.TxtOpt2.Text = " ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label13.Location = new System.Drawing.Point(10, 526);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(79, 23);
+            this.label13.TabIndex = 102;
+            this.label13.Text = "Option2:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label15.Location = new System.Drawing.Point(10, 553);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(79, 23);
+            this.label15.TabIndex = 104;
+            this.label15.Text = "Option3:";
+            // 
+            // TxtOpt1
+            // 
+            this.TxtOpt1.BackColor = System.Drawing.Color.MistyRose;
+            this.TxtOpt1.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtOpt1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtOpt1.Location = new System.Drawing.Point(93, 499);
+            this.TxtOpt1.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtOpt1.MaxLength = 25;
+            this.TxtOpt1.Name = "TxtOpt1";
+            this.TxtOpt1.Size = new System.Drawing.Size(128, 23);
+            this.TxtOpt1.TabIndex = 101;
+            this.TxtOpt1.Text = " ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label8.Location = new System.Drawing.Point(10, 499);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 23);
+            this.label8.TabIndex = 100;
+            this.label8.Text = "Option1:";
             // 
             // panel2
             // 
@@ -624,244 +792,235 @@
             this.panel2.Size = new System.Drawing.Size(993, 109);
             this.panel2.TabIndex = 99;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(9, 467);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 23);
-            this.label8.TabIndex = 100;
-            this.label8.Text = "Option1:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox1.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox1.Location = new System.Drawing.Point(92, 467);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 25;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(142, 23);
-            this.textBox1.TabIndex = 101;
-            this.textBox1.Text = " ";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox2.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox2.Location = new System.Drawing.Point(92, 494);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.MaxLength = 25;
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(142, 23);
-            this.textBox2.TabIndex = 103;
-            this.textBox2.Text = " ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(9, 494);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 23);
-            this.label13.TabIndex = 102;
-            this.label13.Text = "Option2:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox3.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox3.Location = new System.Drawing.Point(92, 521);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.MaxLength = 25;
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(142, 23);
-            this.textBox3.TabIndex = 105;
-            this.textBox3.Text = " ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(9, 521);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 23);
-            this.label15.TabIndex = 104;
-            this.label15.Text = "Option3:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label16.Location = new System.Drawing.Point(9, 543);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(79, 23);
-            this.label16.TabIndex = 106;
-            this.label16.Text = "Option4:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox4.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox4.Location = new System.Drawing.Point(92, 546);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.MaxLength = 25;
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(142, 23);
-            this.textBox4.TabIndex = 107;
-            this.textBox4.Text = " ";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(8, 235);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(160, 31);
-            this.label14.TabIndex = 100;
-            this.label14.Text = "Add Question";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.dataGridView1.Location = new System.Drawing.Point(273, 581);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1045, 226);
-            this.dataGridView1.TabIndex = 100;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lblNewDate
+            // BtnDelete
             // 
-            this.lblNewDate.AutoSize = true;
-            this.lblNewDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblNewDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblNewDate.Location = new System.Drawing.Point(11, 597);
-            this.lblNewDate.Name = "lblNewDate";
-            this.lblNewDate.Size = new System.Drawing.Size(0, 23);
-            this.lblNewDate.TabIndex = 101;
+            this.BtnDelete.BackColor = System.Drawing.Color.MistyRose;
+            this.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnDelete.FlatAppearance.BorderSize = 3;
+            this.BtnDelete.FlatAppearance.CheckedBackColor = System.Drawing.Color.PeachPuff;
+            this.BtnDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
+            this.BtnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDelete.Font = new System.Drawing.Font("Headline R", 10.2F);
+            this.BtnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnDelete.Location = new System.Drawing.Point(779, 497);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(272, 65);
+            this.BtnDelete.TabIndex = 101;
+            this.BtnDelete.Text = "Delete Question";
+            this.BtnDelete.UseVisualStyleBackColor = false;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.questionIDDataGridViewTextBoxColumn,
+            this.questionDataGridViewTextBoxColumn,
+            this.schoolObjectDataGridViewTextBoxColumn,
+            this.unitIDDataGridViewTextBoxColumn,
+            this.subjectIDDataGridViewTextBoxColumn,
+            this.correctAnswerDataGridViewTextBoxColumn,
+            this.ımageDataGridViewImageColumn,
+            this.option1DataGridViewTextBoxColumn,
+            this.option2DataGridViewTextBoxColumn,
+            this.option3DataGridViewTextBoxColumn,
+            this.option4DataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblQuestionBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(272, 569);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1046, 227);
+            this.dataGridView1.TabIndex = 102;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // questionIDDataGridViewTextBoxColumn
+            // 
+            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
+            this.questionIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.questionIDDataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.questionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
+            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.questionIDDataGridViewTextBoxColumn.Width = 31;
+            // 
+            // questionDataGridViewTextBoxColumn
+            // 
+            this.questionDataGridViewTextBoxColumn.DataPropertyName = "Question";
+            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
+            this.questionDataGridViewTextBoxColumn.MaxInputLength = 10000;
+            this.questionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
+            this.questionDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // schoolObjectDataGridViewTextBoxColumn
+            // 
+            this.schoolObjectDataGridViewTextBoxColumn.DataPropertyName = "SchoolObject";
+            this.schoolObjectDataGridViewTextBoxColumn.HeaderText = "SchoolObject";
+            this.schoolObjectDataGridViewTextBoxColumn.MaxInputLength = 500;
+            this.schoolObjectDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.schoolObjectDataGridViewTextBoxColumn.Name = "schoolObjectDataGridViewTextBoxColumn";
+            this.schoolObjectDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // unitIDDataGridViewTextBoxColumn
+            // 
+            this.unitIDDataGridViewTextBoxColumn.DataPropertyName = "UnitID";
+            this.unitIDDataGridViewTextBoxColumn.HeaderText = "UnitID";
+            this.unitIDDataGridViewTextBoxColumn.MaxInputLength = 10;
+            this.unitIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitIDDataGridViewTextBoxColumn.Name = "unitIDDataGridViewTextBoxColumn";
+            this.unitIDDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // subjectIDDataGridViewTextBoxColumn
+            // 
+            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "SubjectID";
+            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "SubjectID";
+            this.subjectIDDataGridViewTextBoxColumn.MaxInputLength = 10;
+            this.subjectIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
+            this.subjectIDDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // correctAnswerDataGridViewTextBoxColumn
+            // 
+            this.correctAnswerDataGridViewTextBoxColumn.DataPropertyName = "CorrectAnswer";
+            this.correctAnswerDataGridViewTextBoxColumn.HeaderText = "CorrectAnswer";
+            this.correctAnswerDataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.correctAnswerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.correctAnswerDataGridViewTextBoxColumn.Name = "correctAnswerDataGridViewTextBoxColumn";
+            this.correctAnswerDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ımageDataGridViewImageColumn
+            // 
+            this.ımageDataGridViewImageColumn.DataPropertyName = "Image";
+            this.ımageDataGridViewImageColumn.HeaderText = "Image";
+            this.ımageDataGridViewImageColumn.MinimumWidth = 6;
+            this.ımageDataGridViewImageColumn.Name = "ımageDataGridViewImageColumn";
+            this.ımageDataGridViewImageColumn.Width = 70;
+            // 
+            // option1DataGridViewTextBoxColumn
+            // 
+            this.option1DataGridViewTextBoxColumn.DataPropertyName = "Option1";
+            this.option1DataGridViewTextBoxColumn.HeaderText = "Option1";
+            this.option1DataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.option1DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option1DataGridViewTextBoxColumn.Name = "option1DataGridViewTextBoxColumn";
+            this.option1DataGridViewTextBoxColumn.Width = 110;
+            // 
+            // option2DataGridViewTextBoxColumn
+            // 
+            this.option2DataGridViewTextBoxColumn.DataPropertyName = "Option2";
+            this.option2DataGridViewTextBoxColumn.HeaderText = "Option2";
+            this.option2DataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.option2DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option2DataGridViewTextBoxColumn.Name = "option2DataGridViewTextBoxColumn";
+            this.option2DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // option3DataGridViewTextBoxColumn
+            // 
+            this.option3DataGridViewTextBoxColumn.DataPropertyName = "Option3";
+            this.option3DataGridViewTextBoxColumn.HeaderText = "Option3";
+            this.option3DataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.option3DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option3DataGridViewTextBoxColumn.Name = "option3DataGridViewTextBoxColumn";
+            this.option3DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // option4DataGridViewTextBoxColumn
+            // 
+            this.option4DataGridViewTextBoxColumn.DataPropertyName = "Option4";
+            this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
+            this.option4DataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
+            this.option4DataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tblQuestionBindingSource
+            // 
+            this.tblQuestionBindingSource.DataMember = "Tbl_Question";
+            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet3;
+            // 
+            // quesitonAppDataSet3
+            // 
+            this.quesitonAppDataSet3.DataSetName = "QuesitonAppDataSet3";
+            this.quesitonAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_QuestionTableAdapter
+            // 
+            this.tbl_QuestionTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.PeachPuff;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Headline R", 10.2F);
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(827, 498);
+            this.button1.Location = new System.Drawing.Point(522, 497);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 67);
-            this.button1.TabIndex = 101;
-            this.button1.Text = "Delete Question";
+            this.button1.Size = new System.Drawing.Size(266, 65);
+            this.button1.TabIndex = 103;
+            this.button1.Text = "Question List";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1269, 511);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 104;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.MistyRose;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1003, 511);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 105;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(737, 511);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 106;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.MistyRose;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(470, 511);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(37, 35);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 107;
+            this.pictureBox5.TabStop = false;
             // 
             // FormAddQuestion
             // 
@@ -871,8 +1030,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1358, 807);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnBack);
@@ -895,6 +1059,12 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -931,30 +1101,42 @@
         private System.Windows.Forms.Button btnRegis;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtOpt1;
+        private System.Windows.Forms.TextBox TxtOpt2;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtOpt3;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.TextBox TxtOpt4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblNewDate;
+        private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private QuesitonAppDataSet3 quesitonAppDataSet3;
+        private System.Windows.Forms.BindingSource tblQuestionBindingSource;
+        private QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter tbl_QuestionTableAdapter;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn questionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn schoolObjectDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correctAnswerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn ımageDataGridViewImageColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn option1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn option2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn option3DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn option4DataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox TxtQuesId;
+        private System.Windows.Forms.Label label17;
     }
 }
