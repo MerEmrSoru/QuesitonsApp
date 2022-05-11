@@ -40,7 +40,7 @@ namespace QuesitonsApp
                 MessageBox.Show("The fields cannot be left blank ");
             }
 
-            else if (txtQuestion.Text == " " && txtImage.Text == " ")
+            else if (txtQuestion.Text == " " )
             {
                 MessageBox.Show("a picture or question is required");
             }
@@ -248,6 +248,32 @@ namespace QuesitonsApp
             }
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormAddQuestion_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // "Timer" için gerekli ayarlarmalar
+          
+            lblNewDate.Text = DateTime.Now.ToLongDateString();
+        }
     }
 }
