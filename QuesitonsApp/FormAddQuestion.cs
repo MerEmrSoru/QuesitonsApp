@@ -244,7 +244,7 @@ namespace QuesitonsApp
 
                MessageBox.Show("REGISTRATION COMPLETED SUCCESSFULLY!!","Register",MessageBoxButtons.OK,MessageBoxIcon.Information);
             //BUTONA BASILDIĞINDA TABLOYU DOLDURUR.
-            this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
+            button1.PerformClick();
             
         }
 
@@ -253,16 +253,19 @@ namespace QuesitonsApp
  
         private void FormAddQuestion_Load(object sender, EventArgs e)
         {
+           
+            this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet2.Tbl_Question);
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed 
             timer1.Start();
             //BU KOD İLE OTOMATİK OLARAK FORM AÇILDIĞINDA BİR KERE LİSTELE BUTONUNA BASACAK VE LİSTE AÇIK SEKİLDE FORM GELECEK
-            button1.PerformClick();
+            
             DataTable tbl = new DataTable();
             connection.Open();
             SqlDataAdapter adtr=new SqlDataAdapter("select *from tbl_Question",connection);
             adtr.Fill(tbl);
             dataGridView1.DataSource = tbl;
             connection.Close();
+          
         }
 
         
@@ -276,11 +279,14 @@ namespace QuesitonsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-  
-            this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
-           
-          
-           
+
+        this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet2.Tbl_Question);
+            DataTable tbl = new DataTable();
+            connection.Open();
+            SqlDataAdapter adtr = new SqlDataAdapter("select *from tbl_Question", connection);
+            adtr.Fill(tbl);
+            dataGridView1.DataSource = tbl;
+            connection.Close();
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
@@ -289,12 +295,9 @@ namespace QuesitonsApp
             SqlCommand cmdDelete=new SqlCommand("Delete from Tbl_Question where QuestionId=@k1",connection);
             cmdDelete.Parameters.AddWithValue("@k1",TxtQuesId.Text);
             cmdDelete.ExecuteNonQuery();
-            MessageBox.Show("Deletion successful");
-           
-            FormAddQuestion f1=new FormAddQuestion();
-            f1.Show();
-            this.Hide();
+            MessageBox.Show("Deletion successful");         
              connection.Close();
+            button1.PerformClick();
             
         }
 
@@ -343,7 +346,11 @@ namespace QuesitonsApp
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-           
+            FileStream fileStream = new FileStream(imagepath, FileMode.Open, FileAccess.Read);
+            BinaryReader binaryReader = new BinaryReader(fileStream);
+            byte[] image = binaryReader.ReadBytes((int)fileStream.Length);
+            binaryReader.Close();
+            fileStream.Close();
 
             connection.Open();
             SqlCommand cmdUpdate = new SqlCommand("Update Tbl_Question Set UnitId=@a1,SubjectId=@a2,CorrectAnswer=@a3,Image=@a4,Option1=@a5,Option2=@a6,Option3=@a7,Option4=@a8 where QuestionId=@a9",connection);
@@ -352,7 +359,7 @@ namespace QuesitonsApp
             cmdUpdate.Parameters.AddWithValue("@a1", cmbUnıtID.Text);
             cmdUpdate.Parameters.AddWithValue("@a2", cmbSubjectID.Text);
             cmdUpdate.Parameters.AddWithValue("@a3", cmbRansw.Text);
-            
+            cmdUpdate.Parameters.Add("@a4", SqlDbType.Image, image.Length).Value = image;
             cmdUpdate.Parameters.AddWithValue("@a5", TxtOpt1.Text);
             cmdUpdate.Parameters.AddWithValue("@a6", TxtOpt2.Text);
             cmdUpdate.Parameters.AddWithValue("@a7", TxtOpt3.Text);
@@ -363,6 +370,7 @@ namespace QuesitonsApp
 
             connection.Close();
             MessageBox.Show("Update Successful");
+            button1.PerformClick();
 
             
         }

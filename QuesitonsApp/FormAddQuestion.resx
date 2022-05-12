@@ -599,18 +599,21 @@
 </value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>486, 17</value>
+    <value>5, 15</value>
+  </metadata>
+  <metadata name="tblQuestionBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>781, 15</value>
+  </metadata>
+  <metadata name="quesitonAppDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>106, 15</value>
   </metadata>
   <metadata name="tblQuestionBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="tbl_QuestionTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>252, 17</value>
+    <value>312, 15</value>
   </metadata>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0QAADdEBwivf4wAAiCFJREFUeF7t/Q2wfmtaFnbadEMrdMdJg4kIU0QtIaKjEGMkI2GmNKVU4mfUoBUS
+        0AAADdABEGw9BwAAiCFJREFUeF7t/Q2wfmtaFnbadEMrdMdJg4kIU0QtIaKjEGMkI2GmNKVU4mfUoBUS
         J6CxwsQJFCY6mKBMZkSRJExZiowZAwY14geacsZ2sCZoaJzSyqgEUNMj6iAGIogiERDomWv12ef81zr7
         3vtee+/3Xe9a6/ldVT+wn9NGsvdzn/tZF33O+SE/+zN/DjCY5EfER8eHVH8cOC/zD+My/zCuN+a/+oPA
         eb0x/Pnv1R8Hzsv8w7jMP4xrPv/lvwE4p/nwV38cOC/zD+My/zCuN89/+W8CzufNww+Mw/zDuMw/jKua
@@ -2219,14 +2222,8 @@
         1wYAypM//uaPw/nj8euPzfnjdP54nT9u54/f3R/T6WThbf8PNWKkA2QOrRgAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="quesitonAppDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>587, 17</value>
-  </metadata>
-  <metadata name="quesitonAppDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>990, 17</value>
-  </metadata>
-  <metadata name="quesitonAppDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>793, 17</value>
+  <metadata name="tbl_QuestionTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>547, 15</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

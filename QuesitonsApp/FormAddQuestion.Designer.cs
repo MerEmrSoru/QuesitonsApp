@@ -78,13 +78,14 @@
             this.BtnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
-            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
+            this.quesitonAppDataSet2 = new QuesitonsApp.QuesitonAppDataSet2();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet2TableAdapters.Tbl_QuestionTableAdapter();
+            this.tblQuestionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.schoolObjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -102,11 +103,12 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSchoolObj
@@ -836,7 +838,7 @@
             this.option2DataGridViewTextBoxColumn,
             this.option3DataGridViewTextBoxColumn,
             this.option4DataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblQuestionBindingSource;
+            this.dataGridView1.DataSource = this.tblQuestionBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(272, 569);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -849,16 +851,12 @@
             // tblQuestionBindingSource
             // 
             this.tblQuestionBindingSource.DataMember = "Tbl_Question";
-            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet3;
+            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet2;
             // 
-            // quesitonAppDataSet3
+            // quesitonAppDataSet2
             // 
-            this.quesitonAppDataSet3.DataSetName = "QuesitonAppDataSet3";
-            this.quesitonAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbl_QuestionTableAdapter
-            // 
-            this.tbl_QuestionTableAdapter.ClearBeforeFill = true;
+            this.quesitonAppDataSet2.DataSetName = "QuesitonAppDataSet2";
+            this.quesitonAppDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -925,11 +923,19 @@
             this.pictureBox5.TabIndex = 107;
             this.pictureBox5.TabStop = false;
             // 
+            // tbl_QuestionTableAdapter
+            // 
+            this.tbl_QuestionTableAdapter.ClearBeforeFill = true;
+            // 
+            // tblQuestionBindingSource1
+            // 
+            this.tblQuestionBindingSource1.DataMember = "Tbl_Question";
+            this.tblQuestionBindingSource1.DataSource = this.quesitonAppDataSet2;
+            // 
             // questionIDDataGridViewTextBoxColumn
             // 
             this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
-            this.questionIDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.questionIDDataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.questionIDDataGridViewTextBoxColumn.HeaderText = "QuestionID";
             this.questionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
             this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
@@ -938,7 +944,6 @@
             // 
             this.questionDataGridViewTextBoxColumn.DataPropertyName = "Question";
             this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
-            this.questionDataGridViewTextBoxColumn.MaxInputLength = 10000;
             this.questionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
             // 
@@ -946,7 +951,6 @@
             // 
             this.schoolObjectDataGridViewTextBoxColumn.DataPropertyName = "SchoolObject";
             this.schoolObjectDataGridViewTextBoxColumn.HeaderText = "SchoolObject";
-            this.schoolObjectDataGridViewTextBoxColumn.MaxInputLength = 500;
             this.schoolObjectDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.schoolObjectDataGridViewTextBoxColumn.Name = "schoolObjectDataGridViewTextBoxColumn";
             // 
@@ -954,7 +958,6 @@
             // 
             this.unitIDDataGridViewTextBoxColumn.DataPropertyName = "UnitID";
             this.unitIDDataGridViewTextBoxColumn.HeaderText = "UnitID";
-            this.unitIDDataGridViewTextBoxColumn.MaxInputLength = 10;
             this.unitIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.unitIDDataGridViewTextBoxColumn.Name = "unitIDDataGridViewTextBoxColumn";
             // 
@@ -962,7 +965,6 @@
             // 
             this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "SubjectID";
             this.subjectIDDataGridViewTextBoxColumn.HeaderText = "SubjectID";
-            this.subjectIDDataGridViewTextBoxColumn.MaxInputLength = 10;
             this.subjectIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
             // 
@@ -970,14 +972,13 @@
             // 
             this.correctAnswerDataGridViewTextBoxColumn.DataPropertyName = "CorrectAnswer";
             this.correctAnswerDataGridViewTextBoxColumn.HeaderText = "CorrectAnswer";
-            this.correctAnswerDataGridViewTextBoxColumn.MaxInputLength = 5000;
             this.correctAnswerDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.correctAnswerDataGridViewTextBoxColumn.Name = "correctAnswerDataGridViewTextBoxColumn";
             // 
             // ımageDataGridViewImageColumn
             // 
             this.ımageDataGridViewImageColumn.DataPropertyName = "Image";
-            this.ımageDataGridViewImageColumn.HeaderText = "image";
+            this.ımageDataGridViewImageColumn.HeaderText = "Image";
             this.ımageDataGridViewImageColumn.MinimumWidth = 6;
             this.ımageDataGridViewImageColumn.Name = "ımageDataGridViewImageColumn";
             // 
@@ -985,7 +986,6 @@
             // 
             this.option1DataGridViewTextBoxColumn.DataPropertyName = "Option1";
             this.option1DataGridViewTextBoxColumn.HeaderText = "Option1";
-            this.option1DataGridViewTextBoxColumn.MaxInputLength = 5000;
             this.option1DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.option1DataGridViewTextBoxColumn.Name = "option1DataGridViewTextBoxColumn";
             // 
@@ -993,7 +993,6 @@
             // 
             this.option2DataGridViewTextBoxColumn.DataPropertyName = "Option2";
             this.option2DataGridViewTextBoxColumn.HeaderText = "Option2";
-            this.option2DataGridViewTextBoxColumn.MaxInputLength = 5000;
             this.option2DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.option2DataGridViewTextBoxColumn.Name = "option2DataGridViewTextBoxColumn";
             // 
@@ -1001,7 +1000,6 @@
             // 
             this.option3DataGridViewTextBoxColumn.DataPropertyName = "Option3";
             this.option3DataGridViewTextBoxColumn.HeaderText = "Option3";
-            this.option3DataGridViewTextBoxColumn.MaxInputLength = 5000;
             this.option3DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.option3DataGridViewTextBoxColumn.Name = "option3DataGridViewTextBoxColumn";
             // 
@@ -1009,7 +1007,6 @@
             // 
             this.option4DataGridViewTextBoxColumn.DataPropertyName = "Option4";
             this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
-            this.option4DataGridViewTextBoxColumn.MaxInputLength = 5000;
             this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
             // 
@@ -1051,11 +1048,12 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1108,9 +1106,6 @@
         private System.Windows.Forms.Label lblNewDate;
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private QuesitonAppDataSet3 quesitonAppDataSet3;
-        private System.Windows.Forms.BindingSource tblQuestionBindingSource;
-        private QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter tbl_QuestionTableAdapter;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -1118,6 +1113,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox TxtQuesId;
         private System.Windows.Forms.Label label17;
+        private QuesitonAppDataSet2 quesitonAppDataSet2;
+        private System.Windows.Forms.BindingSource tblQuestionBindingSource;
+        private QuesitonAppDataSet2TableAdapters.Tbl_QuestionTableAdapter tbl_QuestionTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn schoolObjectDataGridViewTextBoxColumn;
@@ -1129,5 +1127,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn option2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option3DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option4DataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource tblQuestionBindingSource1;
     }
 }
