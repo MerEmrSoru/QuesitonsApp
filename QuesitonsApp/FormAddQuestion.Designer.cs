@@ -77,6 +77,14 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.BtnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
+            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.schoolObjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,14 +96,6 @@
             this.option2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
-            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctImage)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -821,6 +821,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -840,108 +841,10 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1046, 227);
             this.dataGridView1.TabIndex = 102;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // questionIDDataGridViewTextBoxColumn
-            // 
-            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
-            this.questionIDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.questionIDDataGridViewTextBoxColumn.MaxInputLength = 5000;
-            this.questionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
-            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.questionIDDataGridViewTextBoxColumn.Width = 31;
-            // 
-            // questionDataGridViewTextBoxColumn
-            // 
-            this.questionDataGridViewTextBoxColumn.DataPropertyName = "Question";
-            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
-            this.questionDataGridViewTextBoxColumn.MaxInputLength = 10000;
-            this.questionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
-            this.questionDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // schoolObjectDataGridViewTextBoxColumn
-            // 
-            this.schoolObjectDataGridViewTextBoxColumn.DataPropertyName = "SchoolObject";
-            this.schoolObjectDataGridViewTextBoxColumn.HeaderText = "SchoolObject";
-            this.schoolObjectDataGridViewTextBoxColumn.MaxInputLength = 500;
-            this.schoolObjectDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.schoolObjectDataGridViewTextBoxColumn.Name = "schoolObjectDataGridViewTextBoxColumn";
-            this.schoolObjectDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // unitIDDataGridViewTextBoxColumn
-            // 
-            this.unitIDDataGridViewTextBoxColumn.DataPropertyName = "UnitID";
-            this.unitIDDataGridViewTextBoxColumn.HeaderText = "UnitID";
-            this.unitIDDataGridViewTextBoxColumn.MaxInputLength = 10;
-            this.unitIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.unitIDDataGridViewTextBoxColumn.Name = "unitIDDataGridViewTextBoxColumn";
-            this.unitIDDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // subjectIDDataGridViewTextBoxColumn
-            // 
-            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "SubjectID";
-            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "SubjectID";
-            this.subjectIDDataGridViewTextBoxColumn.MaxInputLength = 10;
-            this.subjectIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
-            this.subjectIDDataGridViewTextBoxColumn.Width = 70;
-            // 
-            // correctAnswerDataGridViewTextBoxColumn
-            // 
-            this.correctAnswerDataGridViewTextBoxColumn.DataPropertyName = "CorrectAnswer";
-            this.correctAnswerDataGridViewTextBoxColumn.HeaderText = "CorrectAnswer";
-            this.correctAnswerDataGridViewTextBoxColumn.MaxInputLength = 5000;
-            this.correctAnswerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.correctAnswerDataGridViewTextBoxColumn.Name = "correctAnswerDataGridViewTextBoxColumn";
-            this.correctAnswerDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ımageDataGridViewImageColumn
-            // 
-            this.ımageDataGridViewImageColumn.DataPropertyName = "Image";
-            this.ımageDataGridViewImageColumn.HeaderText = "Image";
-            this.ımageDataGridViewImageColumn.MinimumWidth = 6;
-            this.ımageDataGridViewImageColumn.Name = "ımageDataGridViewImageColumn";
-            this.ımageDataGridViewImageColumn.Width = 70;
-            // 
-            // option1DataGridViewTextBoxColumn
-            // 
-            this.option1DataGridViewTextBoxColumn.DataPropertyName = "Option1";
-            this.option1DataGridViewTextBoxColumn.HeaderText = "Option1";
-            this.option1DataGridViewTextBoxColumn.MaxInputLength = 5000;
-            this.option1DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option1DataGridViewTextBoxColumn.Name = "option1DataGridViewTextBoxColumn";
-            this.option1DataGridViewTextBoxColumn.Width = 110;
-            // 
-            // option2DataGridViewTextBoxColumn
-            // 
-            this.option2DataGridViewTextBoxColumn.DataPropertyName = "Option2";
-            this.option2DataGridViewTextBoxColumn.HeaderText = "Option2";
-            this.option2DataGridViewTextBoxColumn.MaxInputLength = 5000;
-            this.option2DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option2DataGridViewTextBoxColumn.Name = "option2DataGridViewTextBoxColumn";
-            this.option2DataGridViewTextBoxColumn.Width = 125;
-            // 
-            // option3DataGridViewTextBoxColumn
-            // 
-            this.option3DataGridViewTextBoxColumn.DataPropertyName = "Option3";
-            this.option3DataGridViewTextBoxColumn.HeaderText = "Option3";
-            this.option3DataGridViewTextBoxColumn.MaxInputLength = 5000;
-            this.option3DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option3DataGridViewTextBoxColumn.Name = "option3DataGridViewTextBoxColumn";
-            this.option3DataGridViewTextBoxColumn.Width = 125;
-            // 
-            // option4DataGridViewTextBoxColumn
-            // 
-            this.option4DataGridViewTextBoxColumn.DataPropertyName = "Option4";
-            this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
-            this.option4DataGridViewTextBoxColumn.MaxInputLength = 5000;
-            this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
-            this.option4DataGridViewTextBoxColumn.Width = 125;
             // 
             // tblQuestionBindingSource
             // 
@@ -1021,6 +924,94 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 107;
             this.pictureBox5.TabStop = false;
+            // 
+            // questionIDDataGridViewTextBoxColumn
+            // 
+            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
+            this.questionIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.questionIDDataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.questionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
+            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // questionDataGridViewTextBoxColumn
+            // 
+            this.questionDataGridViewTextBoxColumn.DataPropertyName = "Question";
+            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
+            this.questionDataGridViewTextBoxColumn.MaxInputLength = 10000;
+            this.questionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
+            // 
+            // schoolObjectDataGridViewTextBoxColumn
+            // 
+            this.schoolObjectDataGridViewTextBoxColumn.DataPropertyName = "SchoolObject";
+            this.schoolObjectDataGridViewTextBoxColumn.HeaderText = "SchoolObject";
+            this.schoolObjectDataGridViewTextBoxColumn.MaxInputLength = 500;
+            this.schoolObjectDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.schoolObjectDataGridViewTextBoxColumn.Name = "schoolObjectDataGridViewTextBoxColumn";
+            // 
+            // unitIDDataGridViewTextBoxColumn
+            // 
+            this.unitIDDataGridViewTextBoxColumn.DataPropertyName = "UnitID";
+            this.unitIDDataGridViewTextBoxColumn.HeaderText = "UnitID";
+            this.unitIDDataGridViewTextBoxColumn.MaxInputLength = 10;
+            this.unitIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitIDDataGridViewTextBoxColumn.Name = "unitIDDataGridViewTextBoxColumn";
+            // 
+            // subjectIDDataGridViewTextBoxColumn
+            // 
+            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "SubjectID";
+            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "SubjectID";
+            this.subjectIDDataGridViewTextBoxColumn.MaxInputLength = 10;
+            this.subjectIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
+            // 
+            // correctAnswerDataGridViewTextBoxColumn
+            // 
+            this.correctAnswerDataGridViewTextBoxColumn.DataPropertyName = "CorrectAnswer";
+            this.correctAnswerDataGridViewTextBoxColumn.HeaderText = "CorrectAnswer";
+            this.correctAnswerDataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.correctAnswerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.correctAnswerDataGridViewTextBoxColumn.Name = "correctAnswerDataGridViewTextBoxColumn";
+            // 
+            // ımageDataGridViewImageColumn
+            // 
+            this.ımageDataGridViewImageColumn.DataPropertyName = "Image";
+            this.ımageDataGridViewImageColumn.HeaderText = "image";
+            this.ımageDataGridViewImageColumn.MinimumWidth = 6;
+            this.ımageDataGridViewImageColumn.Name = "ımageDataGridViewImageColumn";
+            // 
+            // option1DataGridViewTextBoxColumn
+            // 
+            this.option1DataGridViewTextBoxColumn.DataPropertyName = "Option1";
+            this.option1DataGridViewTextBoxColumn.HeaderText = "Option1";
+            this.option1DataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.option1DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option1DataGridViewTextBoxColumn.Name = "option1DataGridViewTextBoxColumn";
+            // 
+            // option2DataGridViewTextBoxColumn
+            // 
+            this.option2DataGridViewTextBoxColumn.DataPropertyName = "Option2";
+            this.option2DataGridViewTextBoxColumn.HeaderText = "Option2";
+            this.option2DataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.option2DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option2DataGridViewTextBoxColumn.Name = "option2DataGridViewTextBoxColumn";
+            // 
+            // option3DataGridViewTextBoxColumn
+            // 
+            this.option3DataGridViewTextBoxColumn.DataPropertyName = "Option3";
+            this.option3DataGridViewTextBoxColumn.HeaderText = "Option3";
+            this.option3DataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.option3DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option3DataGridViewTextBoxColumn.Name = "option3DataGridViewTextBoxColumn";
+            // 
+            // option4DataGridViewTextBoxColumn
+            // 
+            this.option4DataGridViewTextBoxColumn.DataPropertyName = "Option4";
+            this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
+            this.option4DataGridViewTextBoxColumn.MaxInputLength = 5000;
+            this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
             // 
             // FormAddQuestion
             // 
@@ -1121,6 +1112,12 @@
         private System.Windows.Forms.BindingSource tblQuestionBindingSource;
         private QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter tbl_QuestionTableAdapter;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox TxtQuesId;
+        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn schoolObjectDataGridViewTextBoxColumn;
@@ -1132,11 +1129,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn option2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option3DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option4DataGridViewTextBoxColumn;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox TxtQuesId;
-        private System.Windows.Forms.Label label17;
     }
 }

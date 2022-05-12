@@ -121,7 +121,7 @@
   <data name="pctImage.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAGTtJREFUeF7t3Xe0nVWB93EJJIEEElroRXpoAoIICihlaAoDQ1FBQFHaCyqgw1Bf
+        vAAADrwBlbxySQAAGTtJREFUeF7t3Xe0nVWB93EJJIEEElroRXpoAoIICihlaAoDQ1FBQFHaCyqgw1Bf
         4JWiAioCUocmIiBCkF5CDRAIFiJKkTIz4jiWcSzz/57ZZ628i+XauUluknuf87ufPz5/uJZrn/1czjrf
         PG3vd73wL/9dAID+JugAEEDQASCAoANAAEEHgACCDgABBB0AAgg6AAQQdAAIIOgAEEDQASCAoANAAEEH
         gACCDgABBB0AAgg6AAQQdAAIIOgAEEDQASCAoANAAEEHgACCDgABBB0AAgg6AAQQdAAIIOgAEEDQASCA
@@ -331,7 +331,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAJ2FJREFUeF7t3XfU7GZ94HHTQi+hhhIIgbCEBHIICaEEbNOL6abZQFgDDt0GQnPA
+        vAAADrwBlbxySQAAJ2FJREFUeF7t3XfU7GZ94HHTQi+hhhIIgbCEBHIICaEEbNOL6abZQFgDDt0GQnPA
         9G5KAIMpoRcvmACmGRds3MGm2GCDY0p2D2dP9uzZDuaacmfnN0ZjzbzPjKQZaUbzzOePz+FyX0mj+97r
         9ys9eiTtcfa//XwAAGw2QQeADAg6AGRA0AEgA4IOABkQdADIgKADQAYEHQAyIOgAkAFBB4AMCDoAZEDQ
         ASADgg4AGRB0AMiAoANABgQdADIg6ACQAUEHgAwIOgBkQNABIAOCDgAZEHQAyICgA0AGBB0AMiDoAJAB
@@ -599,21 +599,18 @@
 </value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>486, 17</value>
   </metadata>
   <metadata name="tblQuestionBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>324, 17</value>
-  </metadata>
-  <metadata name="quesitonAppDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>118, 17</value>
+    <value>17, 17</value>
   </metadata>
   <metadata name="tbl_QuestionTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>559, 17</value>
+    <value>252, 17</value>
   </metadata>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAYAAAB/HSuDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0wAADdMBvdUcagAAiCFJREFUeF7t/Q2wfmtaFnbadEMrdMdJg4kIU0QtIaKjEGMkI2GmNKVU4mfUoBUS
+        0QAADdEBwivf4wAAiCFJREFUeF7t/Q2wfmtaFnbadEMrdMdJg4kIU0QtIaKjEGMkI2GmNKVU4mfUoBUS
         J6CxwsQJFCY6mKBMZkSRJExZiowZAwY14geacsZ2sCZoaJzSyqgEUNMj6iAGIogiERDomWv12ef81zr7
         3vtee+/3Xe9a6/ldVT+wn9NGsvdzn/tZF33O+SE/+zN/DjCY5EfER8eHVH8cOC/zD+My/zCuN+a/+oPA
         eb0x/Pnv1R8Hzsv8w7jMP4xrPv/lvwE4p/nwV38cOC/zD+My/zCuN89/+W8CzufNww+Mw/zDuMw/jKua
@@ -2222,6 +2219,15 @@
         1wYAypM//uaPw/nj8euPzfnjdP54nT9u54/f3R/T6WThbf8PNWKkA2QOrRgAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="quesitonAppDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>587, 17</value>
+  </metadata>
+  <metadata name="quesitonAppDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>990, 17</value>
+  </metadata>
+  <metadata name="quesitonAppDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>793, 17</value>
+  </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEBLAEsAAD/4QGIRXhpZgAATU0AKgAAAAgAAQEOAAIAAAFmAAAAGgAAAABPbGQg

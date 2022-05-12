@@ -85,6 +85,18 @@
     <Compile Include="FormTeacherLogin.Designer.cs">
       <DependentUpon>FormTeacherLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTeacherProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeacherProfile.Designer.cs">
+      <DependentUpon>FormTeacherProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeacherUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeacherUserProfile.Designer.cs">
+      <DependentUpon>FormTeacherUserProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUserSelect.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +160,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTeacherLogin.resx">
       <DependentUpon>FormTeacherLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeacherProfile.resx">
+      <DependentUpon>FormTeacherProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeacherUserProfile.resx">
+      <DependentUpon>FormTeacherUserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUserSelect.resx">
       <DependentUpon>FormUserSelect.cs</DependentUpon>
