@@ -353,18 +353,18 @@ namespace QuesitonsApp
             fileStream.Close();
 
             connection.Open();
-            SqlCommand cmdUpdate = new SqlCommand("Update Tbl_Question Set UnitId=@a1,SubjectId=@a2,CorrectAnswer=@a3,Image=@a4,Option1=@a5,Option2=@a6,Option3=@a7,Option4=@a8 where QuestionId=@a9",connection);
+            SqlCommand cmdUpdate = new SqlCommand("Update Tbl_Question Set Question=@a1,UnitId=@a2,SubjectId=@a3,CorrectAnswer=@a4,Image=@a5,Option1=@a6,Option2=@a7,Option3=@a8,Option4=@a9 where QuestionId=@a10",connection);
 
-        
-            cmdUpdate.Parameters.AddWithValue("@a1", cmbUnıtID.Text);
-            cmdUpdate.Parameters.AddWithValue("@a2", cmbSubjectID.Text);
-            cmdUpdate.Parameters.AddWithValue("@a3", cmbRansw.Text);
-            cmdUpdate.Parameters.Add("@a4", SqlDbType.Image, image.Length).Value = image;
-            cmdUpdate.Parameters.AddWithValue("@a5", TxtOpt1.Text);
-            cmdUpdate.Parameters.AddWithValue("@a6", TxtOpt2.Text);
-            cmdUpdate.Parameters.AddWithValue("@a7", TxtOpt3.Text);
-            cmdUpdate.Parameters.AddWithValue("@a8", TxtOpt4.Text);
-            cmdUpdate.Parameters.AddWithValue("@a9", TxtQuesId.Text);
+            cmdUpdate.Parameters.AddWithValue("@a1", txtQuestion.Text);
+            cmdUpdate.Parameters.AddWithValue("@a2", cmbUnıtID.Text);
+            cmdUpdate.Parameters.AddWithValue("@a3", cmbSubjectID.Text);
+            cmdUpdate.Parameters.AddWithValue("@a4", cmbRansw.Text);
+            cmdUpdate.Parameters.Add("@a5", SqlDbType.Image, image.Length).Value = image;
+            cmdUpdate.Parameters.AddWithValue("@a6", TxtOpt1.Text);
+            cmdUpdate.Parameters.AddWithValue("@a7", TxtOpt2.Text);
+            cmdUpdate.Parameters.AddWithValue("@a8", TxtOpt3.Text);
+            cmdUpdate.Parameters.AddWithValue("@a9", TxtOpt4.Text);
+            cmdUpdate.Parameters.AddWithValue("@a10", TxtQuesId.Text);
             cmdUpdate.ExecuteNonQuery();
 
 
