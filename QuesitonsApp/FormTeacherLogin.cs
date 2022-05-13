@@ -42,7 +42,7 @@ namespace QuesitonsApp
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                FormTeacherProfile frm = new FormTeacherProfile();
+                FormTeacher frm = new FormTeacher();
                 frm.Show();
                 this.Hide();
             }

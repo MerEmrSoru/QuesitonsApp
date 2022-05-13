@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuesitonsApp
 {
-    public partial class FormTeacherProfile : Form
+    public partial class FormTeacher : Form
     {
-        public FormTeacherProfile()
+        public FormTeacher()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace QuesitonsApp
 
         private void BtnUserProfile_Click(object sender, EventArgs e)
         {
-            FormTeacherUserProfile F1=new FormTeacherUserProfile();
+            FormStudentListTeac F1=new FormStudentListTeac();
             F1.Show();
             this.Hide();
         }

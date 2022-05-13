@@ -58,6 +58,7 @@
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // BtnBack
             // 
@@ -79,6 +80,7 @@
             this.BtnBack.Size = new System.Drawing.Size(46, 37);
             this.BtnBack.TabIndex = 5;
             this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // label1
             // 

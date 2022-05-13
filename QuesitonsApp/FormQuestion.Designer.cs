@@ -58,9 +58,11 @@
             this.lblSchoolObject = new System.Windows.Forms.Label();
             this.LblQuestion = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblSubject = new System.Windows.Forms.Label();
+            this.lblCorrectAnswer = new System.Windows.Forms.Label();
             this.lblUnitId = new System.Windows.Forms.Label();
+            this.lblSubjectID = new System.Windows.Forms.Label();
+            this.LblCorrect = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctimage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet2)).BeginInit();
@@ -96,7 +98,7 @@
             this.RdbA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbA.FlatAppearance.BorderSize = 0;
             this.RdbA.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbA.Location = new System.Drawing.Point(273, 587);
+            this.RdbA.Location = new System.Drawing.Point(295, 582);
             this.RdbA.Name = "RdbA";
             this.RdbA.Size = new System.Drawing.Size(59, 33);
             this.RdbA.TabIndex = 1;
@@ -111,7 +113,7 @@
             this.RdbB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbB.FlatAppearance.BorderSize = 0;
             this.RdbB.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbB.Location = new System.Drawing.Point(442, 587);
+            this.RdbB.Location = new System.Drawing.Point(464, 582);
             this.RdbB.Name = "RdbB";
             this.RdbB.Size = new System.Drawing.Size(55, 33);
             this.RdbB.TabIndex = 2;
@@ -126,7 +128,7 @@
             this.RdbC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbC.FlatAppearance.BorderSize = 0;
             this.RdbC.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbC.Location = new System.Drawing.Point(615, 587);
+            this.RdbC.Location = new System.Drawing.Point(637, 582);
             this.RdbC.Name = "RdbC";
             this.RdbC.Size = new System.Drawing.Size(58, 33);
             this.RdbC.TabIndex = 3;
@@ -141,7 +143,7 @@
             this.RdbD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbD.FlatAppearance.BorderSize = 0;
             this.RdbD.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbD.Location = new System.Drawing.Point(801, 587);
+            this.RdbD.Location = new System.Drawing.Point(823, 582);
             this.RdbD.Name = "RdbD";
             this.RdbD.Size = new System.Drawing.Size(56, 33);
             this.RdbD.TabIndex = 4;
@@ -248,7 +250,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1046, 65);
             this.dataGridView1.TabIndex = 103;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // questionIDDataGridViewTextBoxColumn
             // 
@@ -346,13 +347,12 @@
             // 
             this.LblQuestion.AutoSize = true;
             this.LblQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.LblQuestion.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F);
-            this.LblQuestion.Location = new System.Drawing.Point(293, 415);
+            this.LblQuestion.Font = new System.Drawing.Font("HYHeadLine-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LblQuestion.Location = new System.Drawing.Point(247, 408);
             this.LblQuestion.Name = "LblQuestion";
-            this.LblQuestion.Size = new System.Drawing.Size(79, 17);
+            this.LblQuestion.Size = new System.Drawing.Size(95, 20);
             this.LblQuestion.TabIndex = 105;
             this.LblQuestion.Text = "Question";
-            this.LblQuestion.Click += new System.EventHandler(this.label1_Click);
             // 
             // label1
             // 
@@ -361,40 +361,40 @@
             this.label1.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(29, 144);
+            this.label1.Location = new System.Drawing.Point(29, 140);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 17);
+            this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 106;
-            this.label1.Text = "School Object";
+            this.label1.Text = "Unit :";
             // 
-            // label3
+            // lblSubject
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(29, 190);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 17);
-            this.label3.TabIndex = 107;
-            this.label3.Text = "School Object";
+            this.lblSubject.AutoSize = true;
+            this.lblSubject.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubject.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblSubject.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSubject.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSubject.Location = new System.Drawing.Point(29, 190);
+            this.lblSubject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSubject.Name = "lblSubject";
+            this.lblSubject.Size = new System.Drawing.Size(80, 17);
+            this.lblSubject.TabIndex = 107;
+            this.lblSubject.Text = "Subject :";
             // 
-            // label4
+            // lblCorrectAnswer
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(29, 235);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 17);
-            this.label4.TabIndex = 108;
-            this.label4.Text = "School Object";
+            this.lblCorrectAnswer.AutoSize = true;
+            this.lblCorrectAnswer.BackColor = System.Drawing.Color.Transparent;
+            this.lblCorrectAnswer.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblCorrectAnswer.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblCorrectAnswer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblCorrectAnswer.Location = new System.Drawing.Point(29, 246);
+            this.lblCorrectAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCorrectAnswer.Name = "lblCorrectAnswer";
+            this.lblCorrectAnswer.Size = new System.Drawing.Size(147, 17);
+            this.lblCorrectAnswer.TabIndex = 108;
+            this.lblCorrectAnswer.Text = "Correct Answer :";
             // 
             // lblUnitId
             // 
@@ -403,11 +403,37 @@
             this.lblUnitId.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblUnitId.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblUnitId.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblUnitId.Location = new System.Drawing.Point(155, 144);
+            this.lblUnitId.Location = new System.Drawing.Point(82, 140);
             this.lblUnitId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUnitId.Name = "lblUnitId";
             this.lblUnitId.Size = new System.Drawing.Size(0, 17);
             this.lblUnitId.TabIndex = 109;
+            // 
+            // lblSubjectID
+            // 
+            this.lblSubjectID.AutoSize = true;
+            this.lblSubjectID.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubjectID.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblSubjectID.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSubjectID.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSubjectID.Location = new System.Drawing.Point(109, 190);
+            this.lblSubjectID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSubjectID.Name = "lblSubjectID";
+            this.lblSubjectID.Size = new System.Drawing.Size(0, 17);
+            this.lblSubjectID.TabIndex = 110;
+            // 
+            // LblCorrect
+            // 
+            this.LblCorrect.AutoSize = true;
+            this.LblCorrect.BackColor = System.Drawing.Color.Transparent;
+            this.LblCorrect.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LblCorrect.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.LblCorrect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.LblCorrect.Location = new System.Drawing.Point(180, 246);
+            this.LblCorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCorrect.Name = "LblCorrect";
+            this.LblCorrect.Size = new System.Drawing.Size(0, 17);
+            this.LblCorrect.TabIndex = 111;
             // 
             // FormQuestion
             // 
@@ -416,9 +442,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 734);
+            this.Controls.Add(this.LblCorrect);
+            this.Controls.Add(this.lblSubjectID);
             this.Controls.Add(this.lblUnitId);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblCorrectAnswer);
+            this.Controls.Add(this.lblSubject);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LblQuestion);
             this.Controls.Add(this.lblSchoolObject);
@@ -474,8 +502,10 @@
         private System.Windows.Forms.Label lblSchoolObject;
         private System.Windows.Forms.Label LblQuestion;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblSubject;
+        private System.Windows.Forms.Label lblCorrectAnswer;
         private System.Windows.Forms.Label lblUnitId;
+        private System.Windows.Forms.Label lblSubjectID;
+        private System.Windows.Forms.Label LblCorrect;
     }
 }

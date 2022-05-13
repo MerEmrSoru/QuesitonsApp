@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace QuesitonsApp
 {
-    public partial class FormAdminLogin : Form
+    public partial class FormAdmin : Form
     {
-        public FormAdminLogin()
+        public FormAdmin()
         {
             InitializeComponent();
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-           FormUserSelect f1=new FormUserSelect();
+            FormAdminLogin f1=new FormAdminLogin();
             f1.Show();
             this.Hide();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void BtnUserProfile_Click(object sender, EventArgs e)
         {
-            FormAdmin f1 = new FormAdmin();
-            f1.Show();
+            FormUserList formUserList = new FormUserList();
+            formUserList.Show();
             this.Hide();
         }
     }

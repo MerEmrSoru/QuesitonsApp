@@ -1,6 +1,6 @@
 ﻿namespace QuesitonsApp
 {
-    partial class FormTeacherProfile
+    partial class FormTeacher
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTeacherProfile));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTeacher));
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnUserProfile = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,7 +61,7 @@
             this.BtnUserProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnUserProfile.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnUserProfile.FlatAppearance.BorderSize = 3;
-            this.BtnUserProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MistyRose;
+            this.BtnUserProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
             this.BtnUserProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
             this.BtnUserProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnUserProfile.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -72,7 +72,7 @@
             this.BtnUserProfile.Name = "BtnUserProfile";
             this.BtnUserProfile.Size = new System.Drawing.Size(230, 68);
             this.BtnUserProfile.TabIndex = 102;
-            this.BtnUserProfile.Text = "USER PROFILE";
+            this.BtnUserProfile.Text = "STUDENT LIST";
             this.BtnUserProfile.UseVisualStyleBackColor = false;
             this.BtnUserProfile.Click += new System.EventHandler(this.BtnUserProfile_Click);
             // 
@@ -104,7 +104,7 @@
             this.BtnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnUpdate.FlatAppearance.BorderSize = 3;
-            this.BtnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MistyRose;
+            this.BtnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
             this.BtnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
             this.BtnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnUpdate.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -139,7 +139,7 @@
             this.button6.TabIndex = 94;
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // FormTeacherProfile
+            // FormTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,8 +148,8 @@
             this.ClientSize = new System.Drawing.Size(1197, 742);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.Name = "FormTeacherProfile";
-            this.Text = "FormTeacherProfile";
+            this.Name = "FormTeacher";
+            this.Text = "Teacher ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
