@@ -52,11 +52,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tblUserBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quesitonAppDataSet2 = new QuesitonsApp.QuesitonAppDataSet2();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.fillStudentToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillStudentToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.fillAllUserToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillAllUserToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.tbl_UserTableAdapter = new QuesitonsApp.QuesitonAppDataSet2TableAdapters.Tbl_UserTableAdapter();
+            this.fillTeacher1ToolStrip = new System.Windows.Forms.ToolStrip();
+            this.fillTeacher1ToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,18 +69,13 @@
             this.mailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userTypeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblUserBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quesitonAppDataSet2 = new QuesitonsApp.QuesitonAppDataSet2();
-            this.tbl_UserTableAdapter = new QuesitonsApp.QuesitonAppDataSet2TableAdapters.Tbl_UserTableAdapter();
-            this.fillTeacher1ToolStrip = new System.Windows.Forms.ToolStrip();
-            this.fillTeacher1ToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.fillStudentToolStrip.SuspendLayout();
-            this.fillAllUserToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblUserBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet2)).BeginInit();
+            this.fillStudentToolStrip.SuspendLayout();
+            this.fillAllUserToolStrip.SuspendLayout();
             this.fillTeacher1ToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -423,13 +423,23 @@
             this.passwordDataGridViewTextBoxColumn,
             this.userTypeIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblUserBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(263, 93);
+            this.dataGridView1.Location = new System.Drawing.Point(271, 93);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1095, 551);
+            this.dataGridView1.Size = new System.Drawing.Size(1087, 551);
             this.dataGridView1.TabIndex = 108;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // tblUserBindingSource
+            // 
+            this.tblUserBindingSource.DataMember = "Tbl_User";
+            this.tblUserBindingSource.DataSource = this.quesitonAppDataSet2;
+            // 
+            // quesitonAppDataSet2
+            // 
+            this.quesitonAppDataSet2.DataSetName = "QuesitonAppDataSet2";
+            this.quesitonAppDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnRefresh
             // 
@@ -454,50 +464,83 @@
             // 
             // fillStudentToolStrip
             // 
+            this.fillStudentToolStrip.BackColor = System.Drawing.Color.Transparent;
             this.fillStudentToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.fillStudentToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fillStudentToolStripButton});
             this.fillStudentToolStrip.Location = new System.Drawing.Point(257, 0);
             this.fillStudentToolStrip.Name = "fillStudentToolStrip";
-            this.fillStudentToolStrip.Size = new System.Drawing.Size(1121, 27);
+            this.fillStudentToolStrip.Size = new System.Drawing.Size(1121, 30);
             this.fillStudentToolStrip.TabIndex = 123;
             this.fillStudentToolStrip.Text = "fillStudentToolStrip";
             // 
             // fillStudentToolStripButton
             // 
+            this.fillStudentToolStripButton.BackColor = System.Drawing.Color.PeachPuff;
             this.fillStudentToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillStudentToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.fillStudentToolStripButton.Name = "fillStudentToolStripButton";
-            this.fillStudentToolStripButton.Size = new System.Drawing.Size(83, 24);
-            this.fillStudentToolStripButton.Text = "FillStudent";
+            this.fillStudentToolStripButton.Size = new System.Drawing.Size(81, 27);
+            this.fillStudentToolStripButton.Text = "Students";
             this.fillStudentToolStripButton.Click += new System.EventHandler(this.fillStudentToolStripButton_Click);
             // 
             // fillAllUserToolStrip
             // 
+            this.fillAllUserToolStrip.BackColor = System.Drawing.Color.Transparent;
             this.fillAllUserToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.fillAllUserToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fillAllUserToolStripButton});
-            this.fillAllUserToolStrip.Location = new System.Drawing.Point(257, 27);
+            this.fillAllUserToolStrip.Location = new System.Drawing.Point(257, 30);
             this.fillAllUserToolStrip.Name = "fillAllUserToolStrip";
-            this.fillAllUserToolStrip.Size = new System.Drawing.Size(1121, 27);
+            this.fillAllUserToolStrip.Size = new System.Drawing.Size(1121, 30);
             this.fillAllUserToolStrip.TabIndex = 125;
             this.fillAllUserToolStrip.Text = "fillAllUserToolStrip";
             // 
             // fillAllUserToolStripButton
             // 
+            this.fillAllUserToolStripButton.BackColor = System.Drawing.Color.PeachPuff;
             this.fillAllUserToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillAllUserToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.fillAllUserToolStripButton.Name = "fillAllUserToolStripButton";
-            this.fillAllUserToolStripButton.Size = new System.Drawing.Size(79, 24);
-            this.fillAllUserToolStripButton.Text = "FillAllUser";
+            this.fillAllUserToolStripButton.Size = new System.Drawing.Size(83, 27);
+            this.fillAllUserToolStripButton.Text = "All Users";
             this.fillAllUserToolStripButton.Click += new System.EventHandler(this.fillAllUserToolStripButton_Click);
+            // 
+            // tbl_UserTableAdapter
+            // 
+            this.tbl_UserTableAdapter.ClearBeforeFill = true;
+            // 
+            // fillTeacher1ToolStrip
+            // 
+            this.fillTeacher1ToolStrip.BackColor = System.Drawing.Color.Transparent;
+            this.fillTeacher1ToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.fillTeacher1ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillTeacher1ToolStripButton});
+            this.fillTeacher1ToolStrip.Location = new System.Drawing.Point(257, 60);
+            this.fillTeacher1ToolStrip.Name = "fillTeacher1ToolStrip";
+            this.fillTeacher1ToolStrip.Size = new System.Drawing.Size(1121, 30);
+            this.fillTeacher1ToolStrip.TabIndex = 126;
+            this.fillTeacher1ToolStrip.Text = "fillTeacher1ToolStrip";
+            // 
+            // fillTeacher1ToolStripButton
+            // 
+            this.fillTeacher1ToolStripButton.BackColor = System.Drawing.Color.PeachPuff;
+            this.fillTeacher1ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillTeacher1ToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.fillTeacher1ToolStripButton.Name = "fillTeacher1ToolStripButton";
+            this.fillTeacher1ToolStripButton.Size = new System.Drawing.Size(84, 27);
+            this.fillTeacher1ToolStripButton.Text = "Teachers";
+            this.fillTeacher1ToolStripButton.Click += new System.EventHandler(this.fillTeacher1ToolStripButton_Click);
             // 
             // userIDDataGridViewTextBoxColumn
             // 
             this.userIDDataGridViewTextBoxColumn.DataPropertyName = "UserID";
+            this.userIDDataGridViewTextBoxColumn.FillWeight = 50F;
             this.userIDDataGridViewTextBoxColumn.HeaderText = "UserID";
             this.userIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.userIDDataGridViewTextBoxColumn.Name = "userIDDataGridViewTextBoxColumn";
             this.userIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.userIDDataGridViewTextBoxColumn.Width = 125;
+            this.userIDDataGridViewTextBoxColumn.Width = 60;
             // 
             // usernameDataGridViewTextBoxColumn
             // 
@@ -529,7 +572,7 @@
             this.mailDataGridViewTextBoxColumn.HeaderText = "Mail";
             this.mailDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.mailDataGridViewTextBoxColumn.Name = "mailDataGridViewTextBoxColumn";
-            this.mailDataGridViewTextBoxColumn.Width = 250;
+            this.mailDataGridViewTextBoxColumn.Width = 310;
             // 
             // passwordDataGridViewTextBoxColumn
             // 
@@ -546,39 +589,6 @@
             this.userTypeIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.userTypeIDDataGridViewTextBoxColumn.Name = "userTypeIDDataGridViewTextBoxColumn";
             this.userTypeIDDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // tblUserBindingSource
-            // 
-            this.tblUserBindingSource.DataMember = "Tbl_User";
-            this.tblUserBindingSource.DataSource = this.quesitonAppDataSet2;
-            // 
-            // quesitonAppDataSet2
-            // 
-            this.quesitonAppDataSet2.DataSetName = "QuesitonAppDataSet2";
-            this.quesitonAppDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbl_UserTableAdapter
-            // 
-            this.tbl_UserTableAdapter.ClearBeforeFill = true;
-            // 
-            // fillTeacher1ToolStrip
-            // 
-            this.fillTeacher1ToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.fillTeacher1ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillTeacher1ToolStripButton});
-            this.fillTeacher1ToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillTeacher1ToolStrip.Name = "fillTeacher1ToolStrip";
-            this.fillTeacher1ToolStrip.Size = new System.Drawing.Size(112, 25);
-            this.fillTeacher1ToolStrip.TabIndex = 126;
-            this.fillTeacher1ToolStrip.Text = "fillTeacher1ToolStrip";
-            // 
-            // fillTeacher1ToolStripButton
-            // 
-            this.fillTeacher1ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillTeacher1ToolStripButton.Name = "fillTeacher1ToolStripButton";
-            this.fillTeacher1ToolStripButton.Size = new System.Drawing.Size(91, 22);
-            this.fillTeacher1ToolStripButton.Text = "FillTeacher1";
-            this.fillTeacher1ToolStripButton.Click += new System.EventHandler(this.fillTeacher1ToolStripButton_Click);
             // 
             // FormUserList
             // 
@@ -599,12 +609,12 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblUserBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet2)).EndInit();
             this.fillStudentToolStrip.ResumeLayout(false);
             this.fillStudentToolStrip.PerformLayout();
             this.fillAllUserToolStrip.ResumeLayout(false);
             this.fillAllUserToolStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tblUserBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet2)).EndInit();
             this.fillTeacher1ToolStrip.ResumeLayout(false);
             this.fillTeacher1ToolStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -627,13 +637,6 @@
         private QuesitonAppDataSet2 quesitonAppDataSet2;
         private System.Windows.Forms.BindingSource tblUserBindingSource;
         private QuesitonAppDataSet2TableAdapters.Tbl_UserTableAdapter tbl_UserTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userTypeIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnUserDelete;
         private System.Windows.Forms.ComboBox cmbUserTypeId;
         private System.Windows.Forms.Button button2;
@@ -652,5 +655,12 @@
         private System.Windows.Forms.ToolStripButton fillAllUserToolStripButton;
         private System.Windows.Forms.ToolStrip fillTeacher1ToolStrip;
         private System.Windows.Forms.ToolStripButton fillTeacher1ToolStripButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userTypeIDDataGridViewTextBoxColumn;
     }
 }
