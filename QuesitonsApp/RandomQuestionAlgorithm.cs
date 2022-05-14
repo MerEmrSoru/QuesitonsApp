@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuesitonsApp
 {
-    public class QuestionAlgorithm
+    public class RandomQuestionAlgorithm
     {
         static void main()
         {
@@ -14,6 +14,15 @@ namespace QuesitonsApp
 
             Random Random = new Random();
             int QuestionRandom = Random.Next(0, Counter.QuestionCount + 1); //Rastgele sorular seçmek üzere "QuestionRandom" değişkeni oluşturuldu
+
+            /*
+             * 
+             * 
+             * "QuestionRandom" değişkenini QuestionID'ye eşitleyip forma yollayan kod buraya yazılacak.
+             * 
+             * 
+             */
+
         }
     }
 }
