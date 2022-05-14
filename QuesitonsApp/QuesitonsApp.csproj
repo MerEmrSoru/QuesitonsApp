@@ -117,7 +117,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuesitonAppDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="QuestionCounter.cs" />
+    <Compile Include="QuesitonAppDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuesitonAppDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuesitonAppDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuesitonAppDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuesitonAppDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuesitonAppDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAdminLogin.resx">
       <DependentUpon>FormAdminLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +191,39 @@
     </None>
     <None Include="QuesitonAppDataSet.xss">
       <DependentUpon>QuesitonAppDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet1.xsc">
+      <DependentUpon>QuesitonAppDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuesitonAppDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuesitonAppDataSet1.xss">
+      <DependentUpon>QuesitonAppDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet2.xsc">
+      <DependentUpon>QuesitonAppDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuesitonAppDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuesitonAppDataSet2.xss">
+      <DependentUpon>QuesitonAppDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet3.xsc">
+      <DependentUpon>QuesitonAppDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuesitonAppDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuesitonAppDataSet3.xss">
+      <DependentUpon>QuesitonAppDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
