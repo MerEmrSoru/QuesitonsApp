@@ -21,5 +21,10 @@ namespace QuesitonsApp
         {
 
         }
+
+        private void FormAddQuestion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
