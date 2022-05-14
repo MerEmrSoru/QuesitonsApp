@@ -157,7 +157,6 @@
       <DependentUpon>QuesitonAppDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="RandomQuestionAlgorithm.cs" />
-    <Compile Include="QuestionCounter.cs" />
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>

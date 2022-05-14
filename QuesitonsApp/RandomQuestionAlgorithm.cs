@@ -10,10 +10,8 @@ namespace QuesitonsApp
     {
         static void main()
         {
-            QuestionCounter Counter = new QuestionCounter(); //"QuestionCount" değerini kullanmak üzere "QuestionCounter" sınıfından instance alındı
-
             Random Random = new Random();
-            int QuestionRandom = Random.Next(0, Counter.QuestionCount + 1); //Rastgele sorular seçmek üzere "QuestionRandom" değişkeni oluşturuldu
+            int QuestionRandom = Random.Next(0, 0/*Veritabanından son sorunun ID'si çekilip bir eklenecek */); //Rastgele sorular seçmek üzere "QuestionRandom" değişkeni oluşturuldu
 
             /*
              * 
