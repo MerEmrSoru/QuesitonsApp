@@ -138,6 +138,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuesitonAppDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuestionAlgorithm.cs" />
     <Compile Include="QuestionCounter.cs" />
     <EmbeddedResource Include="FormAdminLogin.resx">
       <DependentUpon>FormAdminLogin.cs</DependentUpon>
