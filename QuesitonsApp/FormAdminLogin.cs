@@ -16,5 +16,19 @@ namespace QuesitonsApp
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+           FormAdmin f1=new FormAdmin();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            FormUserSelect f2 = new FormUserSelect();
+            f2.Show();
+            this.Hide();
+        }
     }
 }

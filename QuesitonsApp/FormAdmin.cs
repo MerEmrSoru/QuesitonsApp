@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuesitonsApp
 {
-    public partial class Admin : Form
+    public partial class FormAdmin : Form
     {
-        public Admin()
+        public FormAdmin()
         {
             InitializeComponent();
         }

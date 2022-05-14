@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace QuesitonsApp
 {
@@ -16,10 +18,38 @@ namespace QuesitonsApp
         {
             InitializeComponent();
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        SqlConnection connection = new SqlConnection("Data Source=MSI\\SQLEXPRESS;Initial Catalog=QuesitonApp;Integrated Security=True");
+        private void FormQuestion_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
+            this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
 
+            DataTable tbl = new DataTable();
+            connection.Open();
+            SqlDataAdapter adtr = new SqlDataAdapter("select *from tbl_Question", connection);
+            adtr.Fill(tbl);
+            dataGridView1.DataSource = tbl;
+            connection.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd = new SqlCommand("select *from Tbl_Question where QuestionId='" + int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString()) + "'", connection);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                if (dr["Image"] != null)
+                {
+                    byte[] image = new byte[0];
+                    image = (byte[])dr["Image"];
+                    MemoryStream memorystream = new MemoryStream(image);
+                    pctimage.Image = Image.FromStream(memorystream);
+                    dr.Close();
+                    cmd.Dispose();
+                    connection.Close();
+                }
+            }
         }
     }
 }
