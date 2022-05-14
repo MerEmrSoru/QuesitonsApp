@@ -255,13 +255,8 @@ namespace QuesitonsApp
         {
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
-            // TODO: This line of code loads data into the 'quesitonAppDataSet2.Tbl_Question' table. You can move, or remove it, as needed.
-            this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
-            // TODO: This line of code loads data into the 'quesitonAppDataSet.Tbl_Question' table. You can move, or remove it, as needed.
 
-
-            this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
-            // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed 
+                
             timer1.Start();
             //BU KOD İLE OTOMATİK OLARAK FORM AÇILDIĞINDA BİR KERE LİSTELE BUTONUNA BASACAK VE LİSTE AÇIK SEKİLDE FORM GELECEK
 
@@ -436,6 +431,21 @@ namespace QuesitonsApp
                 }
             }
             connection.Close();
+
+            int select = dataGridView1.SelectedCells[0].RowIndex;
+
+            TxtQuesId.Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
+            txtQuestion.Text = dataGridView1.Rows[select].Cells[1].Value.ToString();
+            txtSchoolObj.Text = dataGridView1.Rows[select].Cells[2].Value.ToString();
+            cmbUnıtID.Text = dataGridView1.Rows[select].Cells[3].Value.ToString();
+            cmbSubjectID.Text = dataGridView1.Rows[select].Cells[4].Value.ToString();
+            cmbRansw.Text = dataGridView1.Rows[select].Cells[5].Value.ToString();
+
+            TxtOpt1.Text = dataGridView1.Rows[select].Cells[7].Value.ToString();
+            TxtOpt2.Text = dataGridView1.Rows[select].Cells[8].Value.ToString();
+            TxtOpt3.Text = dataGridView1.Rows[select].Cells[9].Value.ToString();
+            TxtOpt4.Text = dataGridView1.Rows[select].Cells[10].Value.ToString();
+
         }
 
         private void btnAddQuestion_Click(object sender, EventArgs e)
@@ -648,5 +658,34 @@ namespace QuesitonsApp
 
         
     }
+
+        private void BtnUpdate_Click_1(object sender, EventArgs e)
+        {
+            FileStream fileStream = new FileStream(imagepath, FileMode.Open, FileAccess.Read);
+            BinaryReader binaryReader = new BinaryReader(fileStream);
+            byte[] image = binaryReader.ReadBytes((int)fileStream.Length);
+            binaryReader.Close();
+            fileStream.Close();
+
+            connection.Open();
+            SqlCommand cmdUpdate = new SqlCommand("Update Tbl_Question Set Question=@a1,UnitId=@a2,SubjectId=@a3,CorrectAnswer=@a4,Image=@a5,Option1=@a6,Option2=@a7,Option3=@a8,Option4=@a9 where QuestionId=@a10", connection);
+
+            cmdUpdate.Parameters.AddWithValue("@a1", txtQuestion.Text);
+            cmdUpdate.Parameters.AddWithValue("@a2", cmbUnıtID.Text);
+            cmdUpdate.Parameters.AddWithValue("@a3", cmbSubjectID.Text);
+            cmdUpdate.Parameters.AddWithValue("@a4", cmbRansw.Text);
+            cmdUpdate.Parameters.Add("@a5", SqlDbType.Image, image.Length).Value = image;
+            cmdUpdate.Parameters.AddWithValue("@a6", TxtOpt1.Text);
+            cmdUpdate.Parameters.AddWithValue("@a7", TxtOpt2.Text);
+            cmdUpdate.Parameters.AddWithValue("@a8", TxtOpt3.Text);
+            cmdUpdate.Parameters.AddWithValue("@a9", TxtOpt4.Text);
+            cmdUpdate.Parameters.AddWithValue("@a10", TxtQuesId.Text);
+            cmdUpdate.ExecuteNonQuery();
+
+
+            connection.Close();
+            MessageBox.Show("Update Successful");
+            BtnQuestionList.PerformClick();
+        }
     }
 }
