@@ -35,8 +35,21 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnQuestionList = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.schoolObjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correctAnswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ımageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.option1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.option2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.option3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.option4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
             this.BtnDelete = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -76,37 +89,24 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pctImage = new System.Windows.Forms.PictureBox();
             this.txtQuestion = new System.Windows.Forms.TextBox();
-            this.btnRegis = new System.Windows.Forms.Button();
+            this.btnAddQuestion = new System.Windows.Forms.Button();
             this.lbldate = new System.Windows.Forms.Label();
             this.lbltime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAddImage = new System.Windows.Forms.Button();
-            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
-            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
-            this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.schoolObjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subjectIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correctAnswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ımageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.option1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.option2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.option3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.option4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -166,25 +166,26 @@
             this.pictureBox2.TabIndex = 122;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // BtnQuestionList
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.PeachPuff;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Headline R", 10.2F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(529, 497);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(266, 65);
-            this.button1.TabIndex = 121;
-            this.button1.Text = "Question List";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnQuestionList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.BtnQuestionList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnQuestionList.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnQuestionList.FlatAppearance.BorderSize = 3;
+            this.BtnQuestionList.FlatAppearance.CheckedBackColor = System.Drawing.Color.PeachPuff;
+            this.BtnQuestionList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
+            this.BtnQuestionList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.BtnQuestionList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnQuestionList.Font = new System.Drawing.Font("Headline R", 10.2F);
+            this.BtnQuestionList.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnQuestionList.Location = new System.Drawing.Point(529, 497);
+            this.BtnQuestionList.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnQuestionList.Name = "BtnQuestionList";
+            this.BtnQuestionList.Size = new System.Drawing.Size(266, 65);
+            this.BtnQuestionList.TabIndex = 121;
+            this.BtnQuestionList.Text = "Question List";
+            this.BtnQuestionList.UseVisualStyleBackColor = false;
+            this.BtnQuestionList.Click += new System.EventHandler(this.BtnQuestionList_Click);
             // 
             // dataGridView1
             // 
@@ -213,6 +214,95 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1046, 227);
             this.dataGridView1.TabIndex = 120;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // questionIDDataGridViewTextBoxColumn
+            // 
+            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
+            this.questionIDDataGridViewTextBoxColumn.HeaderText = "QuestionID";
+            this.questionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
+            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // questionDataGridViewTextBoxColumn
+            // 
+            this.questionDataGridViewTextBoxColumn.DataPropertyName = "Question";
+            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
+            this.questionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
+            // 
+            // schoolObjectDataGridViewTextBoxColumn
+            // 
+            this.schoolObjectDataGridViewTextBoxColumn.DataPropertyName = "SchoolObject";
+            this.schoolObjectDataGridViewTextBoxColumn.HeaderText = "SchoolObject";
+            this.schoolObjectDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.schoolObjectDataGridViewTextBoxColumn.Name = "schoolObjectDataGridViewTextBoxColumn";
+            // 
+            // unitIDDataGridViewTextBoxColumn
+            // 
+            this.unitIDDataGridViewTextBoxColumn.DataPropertyName = "UnitID";
+            this.unitIDDataGridViewTextBoxColumn.HeaderText = "UnitID";
+            this.unitIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitIDDataGridViewTextBoxColumn.Name = "unitIDDataGridViewTextBoxColumn";
+            // 
+            // subjectIDDataGridViewTextBoxColumn
+            // 
+            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "SubjectID";
+            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "SubjectID";
+            this.subjectIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
+            // 
+            // correctAnswerDataGridViewTextBoxColumn
+            // 
+            this.correctAnswerDataGridViewTextBoxColumn.DataPropertyName = "CorrectAnswer";
+            this.correctAnswerDataGridViewTextBoxColumn.HeaderText = "CorrectAnswer";
+            this.correctAnswerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.correctAnswerDataGridViewTextBoxColumn.Name = "correctAnswerDataGridViewTextBoxColumn";
+            // 
+            // ımageDataGridViewImageColumn
+            // 
+            this.ımageDataGridViewImageColumn.DataPropertyName = "Image";
+            this.ımageDataGridViewImageColumn.HeaderText = "Image";
+            this.ımageDataGridViewImageColumn.MinimumWidth = 6;
+            this.ımageDataGridViewImageColumn.Name = "ımageDataGridViewImageColumn";
+            // 
+            // option1DataGridViewTextBoxColumn
+            // 
+            this.option1DataGridViewTextBoxColumn.DataPropertyName = "Option1";
+            this.option1DataGridViewTextBoxColumn.HeaderText = "Option1";
+            this.option1DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option1DataGridViewTextBoxColumn.Name = "option1DataGridViewTextBoxColumn";
+            // 
+            // option2DataGridViewTextBoxColumn
+            // 
+            this.option2DataGridViewTextBoxColumn.DataPropertyName = "Option2";
+            this.option2DataGridViewTextBoxColumn.HeaderText = "Option2";
+            this.option2DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option2DataGridViewTextBoxColumn.Name = "option2DataGridViewTextBoxColumn";
+            // 
+            // option3DataGridViewTextBoxColumn
+            // 
+            this.option3DataGridViewTextBoxColumn.DataPropertyName = "Option3";
+            this.option3DataGridViewTextBoxColumn.HeaderText = "Option3";
+            this.option3DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option3DataGridViewTextBoxColumn.Name = "option3DataGridViewTextBoxColumn";
+            // 
+            // option4DataGridViewTextBoxColumn
+            // 
+            this.option4DataGridViewTextBoxColumn.DataPropertyName = "Option4";
+            this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
+            this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
+            // 
+            // tblQuestionBindingSource
+            // 
+            this.tblQuestionBindingSource.DataMember = "Tbl_Question";
+            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet3;
+            // 
+            // quesitonAppDataSet3
+            // 
+            this.quesitonAppDataSet3.DataSetName = "QuesitonAppDataSet3";
+            this.quesitonAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // BtnDelete
             // 
@@ -233,6 +323,7 @@
             this.BtnDelete.TabIndex = 119;
             this.BtnDelete.Text = "Delete Question";
             this.BtnDelete.UseVisualStyleBackColor = false;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click_1);
             // 
             // panel2
             // 
@@ -823,27 +914,28 @@
             this.txtQuestion.TabIndex = 109;
             this.txtQuestion.Text = " ";
             // 
-            // btnRegis
+            // btnAddQuestion
             // 
-            this.btnRegis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.btnRegis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegis.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnRegis.FlatAppearance.BorderSize = 3;
-            this.btnRegis.FlatAppearance.CheckedBackColor = System.Drawing.Color.PeachPuff;
-            this.btnRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
-            this.btnRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
-            this.btnRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegis.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRegis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegis.Location = new System.Drawing.Point(1052, 497);
-            this.btnRegis.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRegis.Name = "btnRegis";
-            this.btnRegis.Size = new System.Drawing.Size(273, 65);
-            this.btnRegis.TabIndex = 115;
-            this.btnRegis.Text = "Add Question";
-            this.btnRegis.UseVisualStyleBackColor = false;
+            this.btnAddQuestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.btnAddQuestion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddQuestion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddQuestion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAddQuestion.FlatAppearance.BorderSize = 3;
+            this.btnAddQuestion.FlatAppearance.CheckedBackColor = System.Drawing.Color.PeachPuff;
+            this.btnAddQuestion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Snow;
+            this.btnAddQuestion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.btnAddQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddQuestion.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAddQuestion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAddQuestion.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnAddQuestion.Location = new System.Drawing.Point(1052, 497);
+            this.btnAddQuestion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddQuestion.Name = "btnAddQuestion";
+            this.btnAddQuestion.Size = new System.Drawing.Size(273, 65);
+            this.btnAddQuestion.TabIndex = 115;
+            this.btnAddQuestion.Text = "Add Question";
+            this.btnAddQuestion.UseVisualStyleBackColor = false;
+            this.btnAddQuestion.Click += new System.EventHandler(this.btnAddQuestion_Click);
             // 
             // lbldate
             // 
@@ -900,98 +992,11 @@
             this.btnAddImage.TabIndex = 112;
             this.btnAddImage.Text = "Add Image";
             this.btnAddImage.UseVisualStyleBackColor = false;
-            // 
-            // quesitonAppDataSet3
-            // 
-            this.quesitonAppDataSet3.DataSetName = "QuesitonAppDataSet3";
-            this.quesitonAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblQuestionBindingSource
-            // 
-            this.tblQuestionBindingSource.DataMember = "Tbl_Question";
-            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet3;
+            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click_1);
             // 
             // tbl_QuestionTableAdapter
             // 
             this.tbl_QuestionTableAdapter.ClearBeforeFill = true;
-            // 
-            // questionIDDataGridViewTextBoxColumn
-            // 
-            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
-            this.questionIDDataGridViewTextBoxColumn.HeaderText = "QuestionID";
-            this.questionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
-            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // questionDataGridViewTextBoxColumn
-            // 
-            this.questionDataGridViewTextBoxColumn.DataPropertyName = "Question";
-            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
-            this.questionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
-            // 
-            // schoolObjectDataGridViewTextBoxColumn
-            // 
-            this.schoolObjectDataGridViewTextBoxColumn.DataPropertyName = "SchoolObject";
-            this.schoolObjectDataGridViewTextBoxColumn.HeaderText = "SchoolObject";
-            this.schoolObjectDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.schoolObjectDataGridViewTextBoxColumn.Name = "schoolObjectDataGridViewTextBoxColumn";
-            // 
-            // unitIDDataGridViewTextBoxColumn
-            // 
-            this.unitIDDataGridViewTextBoxColumn.DataPropertyName = "UnitID";
-            this.unitIDDataGridViewTextBoxColumn.HeaderText = "UnitID";
-            this.unitIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.unitIDDataGridViewTextBoxColumn.Name = "unitIDDataGridViewTextBoxColumn";
-            // 
-            // subjectIDDataGridViewTextBoxColumn
-            // 
-            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "SubjectID";
-            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "SubjectID";
-            this.subjectIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
-            // 
-            // correctAnswerDataGridViewTextBoxColumn
-            // 
-            this.correctAnswerDataGridViewTextBoxColumn.DataPropertyName = "CorrectAnswer";
-            this.correctAnswerDataGridViewTextBoxColumn.HeaderText = "CorrectAnswer";
-            this.correctAnswerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.correctAnswerDataGridViewTextBoxColumn.Name = "correctAnswerDataGridViewTextBoxColumn";
-            // 
-            // ımageDataGridViewImageColumn
-            // 
-            this.ımageDataGridViewImageColumn.DataPropertyName = "Image";
-            this.ımageDataGridViewImageColumn.HeaderText = "Image";
-            this.ımageDataGridViewImageColumn.MinimumWidth = 6;
-            this.ımageDataGridViewImageColumn.Name = "ımageDataGridViewImageColumn";
-            // 
-            // option1DataGridViewTextBoxColumn
-            // 
-            this.option1DataGridViewTextBoxColumn.DataPropertyName = "Option1";
-            this.option1DataGridViewTextBoxColumn.HeaderText = "Option1";
-            this.option1DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option1DataGridViewTextBoxColumn.Name = "option1DataGridViewTextBoxColumn";
-            // 
-            // option2DataGridViewTextBoxColumn
-            // 
-            this.option2DataGridViewTextBoxColumn.DataPropertyName = "Option2";
-            this.option2DataGridViewTextBoxColumn.HeaderText = "Option2";
-            this.option2DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option2DataGridViewTextBoxColumn.Name = "option2DataGridViewTextBoxColumn";
-            // 
-            // option3DataGridViewTextBoxColumn
-            // 
-            this.option3DataGridViewTextBoxColumn.DataPropertyName = "Option3";
-            this.option3DataGridViewTextBoxColumn.HeaderText = "Option3";
-            this.option3DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option3DataGridViewTextBoxColumn.Name = "option3DataGridViewTextBoxColumn";
-            // 
-            // option4DataGridViewTextBoxColumn
-            // 
-            this.option4DataGridViewTextBoxColumn.DataPropertyName = "Option4";
-            this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
-            this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
             // 
             // timer1
             // 
@@ -1006,7 +1011,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnQuestionList);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.panel2);
@@ -1015,7 +1020,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pctImage);
             this.Controls.Add(this.txtQuestion);
-            this.Controls.Add(this.btnRegis);
+            this.Controls.Add(this.btnAddQuestion);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.lbltime);
             this.Controls.Add(this.label3);
@@ -1029,14 +1034,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1048,7 +1053,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnQuestionList;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Panel panel2;
@@ -1089,7 +1094,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pctImage;
         private System.Windows.Forms.TextBox txtQuestion;
-        private System.Windows.Forms.Button btnRegis;
+        private System.Windows.Forms.Button btnAddQuestion;
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Label lbltime;
         private System.Windows.Forms.Label label3;
