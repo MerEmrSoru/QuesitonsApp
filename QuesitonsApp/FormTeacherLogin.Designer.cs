@@ -29,28 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTeacherLogin));
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LnkRegister = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtPassword = new System.Windows.Forms.TextBox();
-            this.TxtMail = new System.Windows.Forms.TextBox();
+            this.TxtUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(472, 156);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(274, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 65;
+            this.pictureBox1.TabStop = false;
             // 
             // LnkRegister
             // 
             this.LnkRegister.AutoSize = true;
             this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
-            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
-            this.LnkRegister.Location = new System.Drawing.Point(940, 711);
+            this.LnkRegister.Location = new System.Drawing.Point(374, 624);
             this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(245, 20);
-            this.LnkRegister.TabIndex = 55;
+            this.LnkRegister.Size = new System.Drawing.Size(146, 16);
+            this.LnkRegister.TabIndex = 64;
             this.LnkRegister.TabStop = true;
-            this.LnkRegister.Text = "Did You Have Any Account?";
+            this.LnkRegister.Text = "Create New Account";
             // 
             // btnLogin
             // 
@@ -66,12 +79,13 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(627, 469);
+            this.btnLogin.Location = new System.Drawing.Point(623, 549);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
-            this.btnLogin.TabIndex = 54;
+            this.btnLogin.TabIndex = 63;
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // BtnBack
             // 
@@ -91,9 +105,8 @@
             this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(46, 37);
-            this.BtnBack.TabIndex = 53;
+            this.BtnBack.TabIndex = 62;
             this.BtnBack.UseVisualStyleBackColor = false;
-            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // label1
             // 
@@ -102,40 +115,40 @@
             this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(309, 153);
+            this.label1.Location = new System.Drawing.Point(11, 65);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(613, 45);
-            this.label1.TabIndex = 52;
+            this.label1.TabIndex = 61;
             this.label1.Text = "TEACHER LOGIN PANEL";
             // 
             // TxtPassword
             // 
             this.TxtPassword.BackColor = System.Drawing.Color.Linen;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtPassword.Location = new System.Drawing.Point(567, 387);
+            this.TxtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtPassword.Location = new System.Drawing.Point(563, 467);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
             this.TxtPassword.Multiline = true;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(254, 39);
-            this.TxtPassword.TabIndex = 50;
+            this.TxtPassword.TabIndex = 59;
             // 
-            // TxtMail
+            // TxtUsername
             // 
-            this.TxtMail.BackColor = System.Drawing.Color.Linen;
-            this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtMail.Location = new System.Drawing.Point(567, 305);
-            this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
-            this.TxtMail.MaxLength = 50;
-            this.TxtMail.Multiline = true;
-            this.TxtMail.Name = "TxtMail";
-            this.TxtMail.Size = new System.Drawing.Size(254, 39);
-            this.TxtMail.TabIndex = 48;
+            this.TxtUsername.BackColor = System.Drawing.Color.Linen;
+            this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.TxtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtUsername.Location = new System.Drawing.Point(563, 385);
+            this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtUsername.MaxLength = 50;
+            this.TxtUsername.Multiline = true;
+            this.TxtUsername.Name = "TxtUsername";
+            this.TxtUsername.Size = new System.Drawing.Size(254, 39);
+            this.TxtUsername.TabIndex = 57;
             // 
             // label4
             // 
@@ -144,12 +157,12 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(373, 305);
+            this.label4.Location = new System.Drawing.Point(369, 385);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 45);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "E-Mail :";
+            this.label4.Size = new System.Drawing.Size(184, 45);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Username:";
             // 
             // label5
             // 
@@ -158,11 +171,11 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(373, 387);
+            this.label5.Location = new System.Drawing.Point(369, 467);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(185, 45);
-            this.label5.TabIndex = 51;
+            this.label5.TabIndex = 60;
             this.label5.Text = "Password :";
             // 
             // FormTeacherLogin
@@ -172,16 +185,18 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LnkRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtPassword);
-            this.Controls.Add(this.TxtMail);
+            this.Controls.Add(this.TxtUsername);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Name = "FormTeacherLogin";
             this.Text = "TEACHER LOGIN";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,12 +204,13 @@
 
         #endregion
 
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel LnkRegister;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtPassword;
-        private System.Windows.Forms.TextBox TxtMail;
+        private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
     }
