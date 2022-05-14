@@ -117,6 +117,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuesitonAppDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuestionCounter.cs" />
     <EmbeddedResource Include="FormAdminLogin.resx">
       <DependentUpon>FormAdminLogin.cs</DependentUpon>
     </EmbeddedResource>
