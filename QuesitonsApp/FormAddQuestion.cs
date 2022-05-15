@@ -53,6 +53,9 @@ namespace QuesitonsApp
                 MessageBox.Show("a picture or question is required");
             }
 
+
+            //Girilen doğru şık doğrultusunda yanlış şıkları gösteren kod
+
             else if (cmbRansw.SelectedItem.ToString() == "A")
             {
                 txtWans.Text = "B";
@@ -77,9 +80,16 @@ namespace QuesitonsApp
                 txtWans2.Text = "B";
                 txtWans3.Text = "C";
             }
+
+            
+            //Eğer bir şık girilmezse herhangi bir şey gösterilmemesini sağlayan kod
+            
             else MessageBox.Show(" ");
 
 
+            
+            //Ünite ve konu numarasını tespit edebilmek için kodlar
+            
             if (cmbObjects.Text == "FEN BILIMLERI")
             {
                 txtSchoolObj.Text = cmbObjects.SelectedItem.ToString();
@@ -100,7 +110,6 @@ namespace QuesitonsApp
                     else { MessageBox.Show("The fields cannot be left blank"); }
 
                 }
-
 
                 else if (cmbUnıtID.SelectedItem.ToString() == "2")
                 {
@@ -135,8 +144,6 @@ namespace QuesitonsApp
                         txtSubjectName.Text = "Basinc";
                     }
                 }
-
-
 
                 else if (cmbUnıtID.SelectedItem.ToString() == "4")
                 {
@@ -201,7 +208,6 @@ namespace QuesitonsApp
                     }
                 }
 
-
                 else if (cmbUnıtID.SelectedItem.ToString() == "7")
                 {
                     txtUnitName.Text = ("Elektrik yukleri ve Elektrik Enerjisi");
@@ -219,6 +225,7 @@ namespace QuesitonsApp
                     }
                 }
             }
+
             FileStream fileStream = new FileStream(imagepath, FileMode.Open, FileAccess.Read);
             BinaryReader binaryReader = new BinaryReader(fileStream);
             byte[] image = binaryReader.ReadBytes((int)fileStream.Length);
@@ -240,12 +247,13 @@ namespace QuesitonsApp
 
             cmd.ExecuteNonQuery();
 
+            //Bağlantıyı kapatır
             connection.Close();
 
             MessageBox.Show("REGISTRATION COMPLETED SUCCESSFULLY!!", "Register", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //BUTONA BASILDIĞINDA TABLOYU DOLDURUR.
-            BtnQuestionList.PerformClick();
 
+            //Butona basıldığı zaman tabloyu dolduran kod
+            BtnQuestionList.PerformClick();
         }
 
 
