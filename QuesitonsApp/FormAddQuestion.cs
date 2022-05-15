@@ -21,7 +21,7 @@ namespace QuesitonsApp
         }
         SqlConnection connection = new SqlConnection("Data Source=MSI\\SQLEXPRESS;Initial Catalog=QuesitonApp;Integrated Security=True");
         string imagepath;
-        int lastQuestId;
+        public int lastQuestId;
         private void dataQuest_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -76,7 +76,7 @@ namespace QuesitonsApp
       
 
 
-        private void BtnQuestionList_Click(object sender, EventArgs e)
+        public void BtnQuestionList_Click(object sender, EventArgs e)
         {
             //VERİTABANINDAKİ SORU SAYISI CEKİLDİ(3 ADET SORU EKSİK GÖZÜKÜYOR SEBEBİ İSE 3 ADET DELETE İŞLEMİ OLDUĞU İÇİN QUESTION IMAGE LABELININ SAĞ TARAFINDA SORU SAYISINI VEREN LABEL KOYULDU)
             lastQuestId = dataGridView1.RowCount - 1;
