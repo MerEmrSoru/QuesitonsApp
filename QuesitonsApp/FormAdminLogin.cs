@@ -30,5 +30,10 @@ namespace QuesitonsApp
             f2.Show();
             this.Hide();
         }
+
+        private void FormAdminLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

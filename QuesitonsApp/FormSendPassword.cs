@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
+using System.Net;
+using System.Net.Mail;
 
 namespace QuesitonsApp
 {
@@ -16,10 +20,11 @@ namespace QuesitonsApp
         {
             InitializeComponent();
         }
-
-        private void FormSendPassword_Load(object sender, EventArgs e)
+        SqlConnection connection = new SqlConnection("Data Source=MSI\\SQLEXPRESS;Initial Catalog=QuesitonApp;Integrated Security=True");
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conn = new SqlConnection();
+          //  SqlCommand cmd = new SqlCommand("Select *from Tbl_Users where Username='" + txtUsername.Text.ToString() + "'and Email='" + TxtMail.Text.ToString() + "'", conn.
         }
     }
 }

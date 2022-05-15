@@ -27,17 +27,7 @@ namespace QuesitonsApp
 
         }
 
-        private void btnAddImage_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Title = "Resim Seç";
-            ofd.Filter = "Jpeg File(*.jpeg)|*.jpeg| Jpg File(*.jpg)|*.jpg| Png File(*.png)|*.png| Gif File(*.gif)|*.gif| Tif File(*.tif)|tif";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                pctImage.Image = Image.FromFile(ofd.FileName);
-                imagepath = ofd.FileName;
-            }
-        }
+    
 
 
         private void FormAddQuestion_Load(object sender, EventArgs e)
@@ -45,9 +35,7 @@ namespace QuesitonsApp
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
 
-            //VERİTABANINDAKİ SORU SAYISI CEKİLDİ(3 ADET SORU EKSİK GÖZÜKÜYOR SEBEBİ İSE 3 ADET DELETE İŞLEMİ OLDUĞU İÇİN QUESTION IMAGE LABELININ SAĞ TARAFINDA SORU SAYISINI VEREN LABEL KOYULDU)
-            lastQuestId = dataGridView1.RowCount-1;
-            lblQuestNumber.Text = lastQuestId.ToString();
+           
 
 
             timer1.Start();
@@ -83,101 +71,16 @@ namespace QuesitonsApp
             connection.Close();
         }
 
-        private void BtnDelete_Click(object sender, EventArgs e)
-        {
-            connection.Open();
-            SqlCommand cmdDelete = new SqlCommand("Delete from Tbl_Question where QuestionId=@k1", connection);
-            cmdDelete.Parameters.AddWithValue("@k1", TxtQuesId.Text);
-            cmdDelete.ExecuteNonQuery();
-            MessageBox.Show("Deletion successful");
-            connection.Close();
-            BtnQuestionList.PerformClick();
+       
 
-        }
+      
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            connection.Open();
-            SqlCommand cmd = new SqlCommand("select *from Tbl_Question where QuestionId='" + int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString()) + "'", connection);
-            SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
-            {
-                if (dr["Image"] != null)
-                {
-                    byte[] image = new byte[0];
-                    image = (byte[])dr["Image"];
-                    MemoryStream memorystream = new MemoryStream(image);
-                    pctImage.Image = Image.FromStream(memorystream);
-                    dr.Close();
-                    cmd.Dispose();
-                    connection.Close();
-
-                }
-            }
-            connection.Close();
-            
-            int select = dataGridView1.SelectedCells[0].RowIndex;
-
-            TxtQuesId.Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
-            txtQuestion.Text = dataGridView1.Rows[select].Cells[1].Value.ToString();
-            txtSchoolObj.Text = dataGridView1.Rows[select].Cells[2].Value.ToString();
-            cmbUnıtID.Text = dataGridView1.Rows[select].Cells[3].Value.ToString();
-            cmbSubjectID.Text = dataGridView1.Rows[select].Cells[4].Value.ToString();
-            cmbRansw.Text = dataGridView1.Rows[select].Cells[5].Value.ToString();
-
-            TxtOpt1.Text = dataGridView1.Rows[select].Cells[7].Value.ToString();
-            TxtOpt2.Text = dataGridView1.Rows[select].Cells[8].Value.ToString();
-            TxtOpt3.Text = dataGridView1.Rows[select].Cells[9].Value.ToString();
-            TxtOpt4.Text = dataGridView1.Rows[select].Cells[10].Value.ToString();
-
-
-        }
-
-        private void BtnUpdate_Click(object sender, EventArgs e)
-        {
-            FileStream fileStream = new FileStream(imagepath, FileMode.Open, FileAccess.Read);
-            BinaryReader binaryReader = new BinaryReader(fileStream);
-            byte[] image = binaryReader.ReadBytes((int)fileStream.Length);
-            binaryReader.Close();
-            fileStream.Close();
-
-            connection.Open();
-            SqlCommand cmdUpdate = new SqlCommand("Update Tbl_Question Set Question=@a1,UnitId=@a2,SubjectId=@a3,CorrectAnswer=@a4,Image=@a5,Option1=@a6,Option2=@a7,Option3=@a8,Option4=@a9 where QuestionId=@a10", connection);
-
-            cmdUpdate.Parameters.AddWithValue("@a1", txtQuestion.Text);
-            cmdUpdate.Parameters.AddWithValue("@a2", cmbUnıtID.Text);
-            cmdUpdate.Parameters.AddWithValue("@a3", cmbSubjectID.Text);
-            cmdUpdate.Parameters.AddWithValue("@a4", cmbRansw.Text);
-            cmdUpdate.Parameters.Add("@a5", SqlDbType.Image, image.Length).Value = image;
-            cmdUpdate.Parameters.AddWithValue("@a6", TxtOpt1.Text);
-            cmdUpdate.Parameters.AddWithValue("@a7", TxtOpt2.Text);
-            cmdUpdate.Parameters.AddWithValue("@a8", TxtOpt3.Text);
-            cmdUpdate.Parameters.AddWithValue("@a9", TxtOpt4.Text);
-            cmdUpdate.Parameters.AddWithValue("@a10", TxtQuesId.Text);
-            cmdUpdate.ExecuteNonQuery();
-
-
-            connection.Close();
-            MessageBox.Show("Update Successful");
-            BtnQuestionList.PerformClick();
-
-
-        }
-
-        private void btnAddImage_Click_1(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Title = "Resim Seç";
-            ofd.Filter = "Jpeg File(*.jpeg)|*.jpeg| Jpg File(*.jpg)|*.jpg| Png File(*.png)|*.png| Gif File(*.gif)|*.gif| Tif File(*.tif)|tif";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                pctImage.Image = Image.FromFile(ofd.FileName);
-                imagepath = ofd.FileName;
-            }
-        }
 
         private void BtnQuestionList_Click(object sender, EventArgs e)
         {
+            //VERİTABANINDAKİ SORU SAYISI CEKİLDİ(3 ADET SORU EKSİK GÖZÜKÜYOR SEBEBİ İSE 3 ADET DELETE İŞLEMİ OLDUĞU İÇİN QUESTION IMAGE LABELININ SAĞ TARAFINDA SORU SAYISINI VEREN LABEL KOYULDU)
+            lastQuestId = dataGridView1.RowCount - 1;
+            lblQuestNumber.Text = lastQuestId.ToString();
 
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
             DataTable tbl = new DataTable();
@@ -188,53 +91,9 @@ namespace QuesitonsApp
             connection.Close();
         }
 
-        private void BtnDelete_Click_1(object sender, EventArgs e)
-        {
-            connection.Open();
-            SqlCommand cmdDelete = new SqlCommand("Delete from Tbl_Question where QuestionId=@k1", connection);
-            cmdDelete.Parameters.AddWithValue("@k1", TxtQuesId.Text);
-            cmdDelete.ExecuteNonQuery();
-            MessageBox.Show("Deletion successful");
-            connection.Close();
-            BtnQuestionList.PerformClick();
-        }
+       
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            connection.Open();
-            SqlCommand cmd = new SqlCommand("select *from Tbl_Question where QuestionId='" + int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString()) + "'", connection);
-            SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
-            {
-                if (dr["Image"] != null)
-                {
-                    byte[] image = new byte[0];
-                    image = (byte[])dr["Image"];
-                    MemoryStream memorystream = new MemoryStream(image);
-                    pctImage.Image = Image.FromStream(memorystream);
-                    dr.Close();
-                    cmd.Dispose();
-                    connection.Close();
-
-                }
-            }
-            connection.Close();
-
-            int select = dataGridView1.SelectedCells[0].RowIndex;
-
-            TxtQuesId.Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
-            txtQuestion.Text = dataGridView1.Rows[select].Cells[1].Value.ToString();
-            txtSchoolObj.Text = dataGridView1.Rows[select].Cells[2].Value.ToString();
-            cmbUnıtID.Text = dataGridView1.Rows[select].Cells[3].Value.ToString();
-            cmbSubjectID.Text = dataGridView1.Rows[select].Cells[4].Value.ToString();
-            cmbRansw.Text = dataGridView1.Rows[select].Cells[5].Value.ToString();
-
-            TxtOpt1.Text = dataGridView1.Rows[select].Cells[7].Value.ToString();
-            TxtOpt2.Text = dataGridView1.Rows[select].Cells[8].Value.ToString();
-            TxtOpt3.Text = dataGridView1.Rows[select].Cells[9].Value.ToString();
-            TxtOpt4.Text = dataGridView1.Rows[select].Cells[10].Value.ToString();
-
-        }
+       
 
         private void btnAddQuestion_Click(object sender, EventArgs e)
         {
@@ -447,6 +306,67 @@ namespace QuesitonsApp
         
     }
 
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd = new SqlCommand("select *from Tbl_Question where QuestionId='" + int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString()) + "'", connection);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                if (dr["Image"] != null)
+                {
+                    byte[] image = new byte[0];
+                    image = (byte[])dr["Image"];
+                    MemoryStream memorystream = new MemoryStream(image);
+                    pctImage.Image = Image.FromStream(memorystream);
+                    dr.Close();
+                    cmd.Dispose();
+                    connection.Close();
+
+                }
+            }
+            connection.Close();
+
+            int select = dataGridView1.SelectedCells[0].RowIndex;
+
+            TxtQuesId.Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
+            txtQuestion.Text = dataGridView1.Rows[select].Cells[1].Value.ToString();
+            txtSchoolObj.Text = dataGridView1.Rows[select].Cells[2].Value.ToString();
+            cmbUnıtID.Text = dataGridView1.Rows[select].Cells[3].Value.ToString();
+            cmbSubjectID.Text = dataGridView1.Rows[select].Cells[4].Value.ToString();
+            cmbRansw.Text = dataGridView1.Rows[select].Cells[5].Value.ToString();
+
+            TxtOpt1.Text = dataGridView1.Rows[select].Cells[7].Value.ToString();
+            TxtOpt2.Text = dataGridView1.Rows[select].Cells[8].Value.ToString();
+            TxtOpt3.Text = dataGridView1.Rows[select].Cells[9].Value.ToString();
+            TxtOpt4.Text = dataGridView1.Rows[select].Cells[10].Value.ToString();
+
+
+        }
+
+        private void btnAddImage_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Resim Seç";
+            ofd.Filter = "Jpeg File(*.jpeg)|*.jpeg| Jpg File(*.jpg)|*.jpg| Png File(*.png)|*.png| Gif File(*.gif)|*.gif| Tif File(*.tif)|tif";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                pctImage.Image = Image.FromFile(ofd.FileName);
+                imagepath = ofd.FileName;
+            }
+        }
+
+        private void BtnDelete_Click_1(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmdDelete = new SqlCommand("Delete from Tbl_Question where QuestionId=@k1", connection);
+            cmdDelete.Parameters.AddWithValue("@k1", TxtQuesId.Text);
+            cmdDelete.ExecuteNonQuery();
+            MessageBox.Show("Deletion successful");
+            connection.Close();
+            BtnQuestionList.PerformClick();
+        }
+
         private void BtnUpdate_Click_1(object sender, EventArgs e)
         {
             FileStream fileStream = new FileStream(imagepath, FileMode.Open, FileAccess.Read);
@@ -474,6 +394,13 @@ namespace QuesitonsApp
             connection.Close();
             MessageBox.Show("Update Successful");
             BtnQuestionList.PerformClick();
+        }
+
+        private void btnBackk_Click(object sender, EventArgs e)
+        {
+            FormTeacher f1=new FormTeacher();
+            f1.Show();
+            this.Hide();
         }
     }
 }

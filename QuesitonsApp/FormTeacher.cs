@@ -33,7 +33,9 @@ namespace QuesitonsApp
 
         private void BtnUserProfile_Click(object sender, EventArgs e)
         {
-            
+            FormStudentList f1=new FormStudentList();
+            f1.Show();
+            this.Hide();
         }
     }
 }

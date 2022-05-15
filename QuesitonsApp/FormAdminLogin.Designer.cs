@@ -184,6 +184,7 @@
             this.Controls.Add(this.label5);
             this.Name = "FormAdminLogin";
             this.Text = "ADMIN LOGIN";
+            this.Load += new System.EventHandler(this.FormAdminLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
