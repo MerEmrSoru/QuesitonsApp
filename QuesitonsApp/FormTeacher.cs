@@ -28,7 +28,7 @@ namespace QuesitonsApp
         {
             FormAddQuestion f2=new FormAddQuestion();
             f2.Show();
-            this.Show();
+            this.Hide();
         }
 
         private void BtnUserProfile_Click(object sender, EventArgs e)

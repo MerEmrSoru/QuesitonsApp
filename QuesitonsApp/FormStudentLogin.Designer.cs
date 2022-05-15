@@ -52,6 +52,7 @@
             this.TxtPassword.MaxLength = 50;
             this.TxtPassword.Multiline = true;
             this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.PasswordChar = '*';
             this.TxtPassword.Size = new System.Drawing.Size(254, 39);
             this.TxtPassword.TabIndex = 7;
             // 

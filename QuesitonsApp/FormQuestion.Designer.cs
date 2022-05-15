@@ -31,14 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuestion));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
+            this.BtnBackPage = new System.Windows.Forms.Button();
+            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pctimage = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblSubjecIId = new System.Windows.Forms.Label();
+            this.lblSchoolObject = new System.Windows.Forms.Label();
             this.LblCorrect = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblSubjectID = new System.Windows.Forms.Label();
+            this.lblSubject = new System.Windows.Forms.Label();
             this.lblUnitId = new System.Windows.Forms.Label();
             this.lblCorrectAnswer = new System.Windows.Forms.Label();
-            this.lblSubject = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.LblQuestion = new System.Windows.Forms.Label();
-            this.lblSchoolObject = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,41 +59,150 @@
             this.option2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
-            this.pctimage = new System.Windows.Forms.PictureBox();
             this.ButtonAfterQuest = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RdbD = new System.Windows.Forms.RadioButton();
             this.RdbC = new System.Windows.Forms.RadioButton();
             this.RdbB = new System.Windows.Forms.RadioButton();
             this.RdbA = new System.Windows.Forms.RadioButton();
-            this.BtnBackPage = new System.Windows.Forms.Button();
-            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctimage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             // 
+            // tblQuestionBindingSource
+            // 
+            this.tblQuestionBindingSource.DataMember = "Tbl_Question";
+            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet3;
+            // 
+            // quesitonAppDataSet3
+            // 
+            this.quesitonAppDataSet3.DataSetName = "QuesitonAppDataSet3";
+            this.quesitonAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // BtnBackPage
+            // 
+            this.BtnBackPage.BackColor = System.Drawing.Color.Transparent;
+            this.BtnBackPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBackPage.BackgroundImage")));
+            this.BtnBackPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnBackPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBackPage.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnBackPage.FlatAppearance.BorderSize = 0;
+            this.BtnBackPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnBackPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnBackPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBackPage.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BtnBackPage.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BtnBackPage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnBackPage.Location = new System.Drawing.Point(21, 687);
+            this.BtnBackPage.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBackPage.Name = "BtnBackPage";
+            this.BtnBackPage.Size = new System.Drawing.Size(46, 37);
+            this.BtnBackPage.TabIndex = 116;
+            this.BtnBackPage.UseVisualStyleBackColor = false;
+            // 
+            // tbl_QuestionTableAdapter
+            // 
+            this.tbl_QuestionTableAdapter.ClearBeforeFill = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.pctimage);
+            this.panel2.Location = new System.Drawing.Point(-6, -42);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(861, 661);
+            this.panel2.TabIndex = 141;
+            // 
+            // pctimage
+            // 
+            this.pctimage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pctimage.Image = ((System.Drawing.Image)(resources.GetObject("pctimage.Image")));
+            this.pctimage.Location = new System.Drawing.Point(26, 25);
+            this.pctimage.Name = "pctimage";
+            this.pctimage.Size = new System.Drawing.Size(811, 614);
+            this.pctimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctimage.TabIndex = 120;
+            this.pctimage.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblSubjecIId);
+            this.panel1.Controls.Add(this.lblSchoolObject);
+            this.panel1.Controls.Add(this.LblCorrect);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblSubjectID);
+            this.panel1.Controls.Add(this.lblSubject);
+            this.panel1.Controls.Add(this.lblUnitId);
+            this.panel1.Controls.Add(this.lblCorrectAnswer);
+            this.panel1.Location = new System.Drawing.Point(865, -6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(322, 143);
+            this.panel1.TabIndex = 140;
+            // 
+            // lblSubjecIId
+            // 
+            this.lblSubjecIId.AutoSize = true;
+            this.lblSubjecIId.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubjecIId.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubjecIId.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSubjecIId.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSubjecIId.Location = new System.Drawing.Point(114, 104);
+            this.lblSubjecIId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSubjecIId.Name = "lblSubjecIId";
+            this.lblSubjecIId.Size = new System.Drawing.Size(0, 28);
+            this.lblSubjecIId.TabIndex = 130;
+            // 
+            // lblSchoolObject
+            // 
+            this.lblSchoolObject.AutoSize = true;
+            this.lblSchoolObject.BackColor = System.Drawing.Color.Transparent;
+            this.lblSchoolObject.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSchoolObject.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSchoolObject.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSchoolObject.Location = new System.Drawing.Point(21, 8);
+            this.lblSchoolObject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSchoolObject.Name = "lblSchoolObject";
+            this.lblSchoolObject.Size = new System.Drawing.Size(139, 28);
+            this.lblSchoolObject.TabIndex = 122;
+            this.lblSchoolObject.Text = "School Object";
+            // 
             // LblCorrect
             // 
             this.LblCorrect.AutoSize = true;
             this.LblCorrect.BackColor = System.Drawing.Color.Transparent;
-            this.LblCorrect.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LblCorrect.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCorrect.ForeColor = System.Drawing.SystemColors.Desktop;
             this.LblCorrect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblCorrect.Location = new System.Drawing.Point(190, 247);
+            this.LblCorrect.Location = new System.Drawing.Point(252, 84);
             this.LblCorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCorrect.Name = "LblCorrect";
-            this.LblCorrect.Size = new System.Drawing.Size(0, 17);
+            this.LblCorrect.Size = new System.Drawing.Size(0, 28);
             this.LblCorrect.TabIndex = 129;
+            this.LblCorrect.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(21, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 28);
+            this.label1.TabIndex = 124;
+            this.label1.Text = "Unit :";
             // 
             // lblSubjectID
             // 
@@ -94,91 +211,60 @@
             this.lblSubjectID.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblSubjectID.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblSubjectID.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSubjectID.Location = new System.Drawing.Point(119, 191);
+            this.lblSubjectID.Location = new System.Drawing.Point(424, 28);
             this.lblSubjectID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSubjectID.Name = "lblSubjectID";
             this.lblSubjectID.Size = new System.Drawing.Size(0, 17);
             this.lblSubjectID.TabIndex = 128;
             // 
+            // lblSubject
+            // 
+            this.lblSubject.AutoSize = true;
+            this.lblSubject.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubject.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubject.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSubject.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSubject.Location = new System.Drawing.Point(20, 104);
+            this.lblSubject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSubject.Name = "lblSubject";
+            this.lblSubject.Size = new System.Drawing.Size(90, 28);
+            this.lblSubject.TabIndex = 125;
+            this.lblSubject.Text = "Subject :";
+            // 
             // lblUnitId
             // 
             this.lblUnitId.AutoSize = true;
             this.lblUnitId.BackColor = System.Drawing.Color.Transparent;
-            this.lblUnitId.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblUnitId.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnitId.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblUnitId.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblUnitId.Location = new System.Drawing.Point(92, 141);
+            this.lblUnitId.Location = new System.Drawing.Point(88, 54);
             this.lblUnitId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUnitId.Name = "lblUnitId";
-            this.lblUnitId.Size = new System.Drawing.Size(0, 17);
+            this.lblUnitId.Size = new System.Drawing.Size(0, 28);
             this.lblUnitId.TabIndex = 127;
             // 
             // lblCorrectAnswer
             // 
             this.lblCorrectAnswer.AutoSize = true;
             this.lblCorrectAnswer.BackColor = System.Drawing.Color.Transparent;
-            this.lblCorrectAnswer.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblCorrectAnswer.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorrectAnswer.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblCorrectAnswer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblCorrectAnswer.Location = new System.Drawing.Point(39, 247);
+            this.lblCorrectAnswer.Location = new System.Drawing.Point(213, 73);
             this.lblCorrectAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCorrectAnswer.Name = "lblCorrectAnswer";
-            this.lblCorrectAnswer.Size = new System.Drawing.Size(147, 17);
+            this.lblCorrectAnswer.Size = new System.Drawing.Size(0, 28);
             this.lblCorrectAnswer.TabIndex = 126;
-            this.lblCorrectAnswer.Text = "Correct Answer :";
-            // 
-            // lblSubject
-            // 
-            this.lblSubject.AutoSize = true;
-            this.lblSubject.BackColor = System.Drawing.Color.Transparent;
-            this.lblSubject.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblSubject.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblSubject.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSubject.Location = new System.Drawing.Point(35, 191);
-            this.lblSubject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(80, 17);
-            this.lblSubject.TabIndex = 125;
-            this.lblSubject.Text = "Subject :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(39, 141);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
-            this.label1.TabIndex = 124;
-            this.label1.Text = "Unit :";
             // 
             // LblQuestion
             // 
-            this.LblQuestion.AutoSize = true;
             this.LblQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.LblQuestion.Font = new System.Drawing.Font("HYHeadLine-Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LblQuestion.Location = new System.Drawing.Point(230, 424);
+            this.LblQuestion.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblQuestion.Location = new System.Drawing.Point(878, 162);
             this.LblQuestion.Name = "LblQuestion";
-            this.LblQuestion.Size = new System.Drawing.Size(95, 20);
-            this.LblQuestion.TabIndex = 123;
-            this.LblQuestion.Text = "Question";
-            // 
-            // lblSchoolObject
-            // 
-            this.lblSchoolObject.AutoSize = true;
-            this.lblSchoolObject.BackColor = System.Drawing.Color.Transparent;
-            this.lblSchoolObject.Font = new System.Drawing.Font("HYHeadLine-Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblSchoolObject.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblSchoolObject.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSchoolObject.Location = new System.Drawing.Point(39, 103);
-            this.lblSchoolObject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSchoolObject.Name = "lblSchoolObject";
-            this.lblSchoolObject.Size = new System.Drawing.Size(122, 17);
-            this.lblSchoolObject.TabIndex = 122;
-            this.lblSchoolObject.Text = "School Object";
+            this.LblQuestion.Size = new System.Drawing.Size(309, 265);
+            this.LblQuestion.TabIndex = 139;
             // 
             // dataGridView1
             // 
@@ -199,14 +285,13 @@
             this.option3DataGridViewTextBoxColumn,
             this.option4DataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblQuestionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(82, 641);
+            this.dataGridView1.Location = new System.Drawing.Point(71, 637);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1055, 83);
-            this.dataGridView1.TabIndex = 121;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.Size = new System.Drawing.Size(742, 140);
+            this.dataGridView1.TabIndex = 138;
             // 
             // questionIDDataGridViewTextBoxColumn
             // 
@@ -286,70 +371,26 @@
             this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
             // 
-            // tblQuestionBindingSource
-            // 
-            this.tblQuestionBindingSource.DataMember = "Tbl_Question";
-            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet3;
-            // 
-            // quesitonAppDataSet3
-            // 
-            this.quesitonAppDataSet3.DataSetName = "QuesitonAppDataSet3";
-            this.quesitonAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pctimage
-            // 
-            this.pctimage.Location = new System.Drawing.Point(224, 10);
-            this.pctimage.Name = "pctimage";
-            this.pctimage.Size = new System.Drawing.Size(757, 402);
-            this.pctimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctimage.TabIndex = 120;
-            this.pctimage.TabStop = false;
-            // 
             // ButtonAfterQuest
             // 
             this.ButtonAfterQuest.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonAfterQuest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonAfterQuest.BackgroundImage")));
             this.ButtonAfterQuest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonAfterQuest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAfterQuest.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.ButtonAfterQuest.FlatAppearance.BorderSize = 0;
+            this.ButtonAfterQuest.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ButtonAfterQuest.FlatAppearance.BorderSize = 2;
             this.ButtonAfterQuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.ButtonAfterQuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.ButtonAfterQuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAfterQuest.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ButtonAfterQuest.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ButtonAfterQuest.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAfterQuest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ButtonAfterQuest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ButtonAfterQuest.Location = new System.Drawing.Point(1007, 479);
+            this.ButtonAfterQuest.Location = new System.Drawing.Point(993, 637);
             this.ButtonAfterQuest.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonAfterQuest.Name = "ButtonAfterQuest";
-            this.ButtonAfterQuest.Size = new System.Drawing.Size(62, 37);
-            this.ButtonAfterQuest.TabIndex = 119;
+            this.ButtonAfterQuest.Size = new System.Drawing.Size(210, 43);
+            this.ButtonAfterQuest.TabIndex = 137;
+            this.ButtonAfterQuest.Text = "Next Question";
             this.ButtonAfterQuest.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Headline R", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(15, 25);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 34);
-            this.label2.TabIndex = 117;
-            this.label2.Text = "Time";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1007, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 122);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 118;
-            this.pictureBox1.TabStop = false;
             // 
             // RdbD
             // 
@@ -358,10 +399,10 @@
             this.RdbD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbD.FlatAppearance.BorderSize = 0;
             this.RdbD.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbD.Location = new System.Drawing.Point(925, 583);
+            this.RdbD.Location = new System.Drawing.Point(882, 564);
             this.RdbD.Name = "RdbD";
             this.RdbD.Size = new System.Drawing.Size(56, 33);
-            this.RdbD.TabIndex = 115;
+            this.RdbD.TabIndex = 135;
             this.RdbD.TabStop = true;
             this.RdbD.Text = "D";
             this.RdbD.UseVisualStyleBackColor = false;
@@ -373,10 +414,10 @@
             this.RdbC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbC.FlatAppearance.BorderSize = 0;
             this.RdbC.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbC.Location = new System.Drawing.Point(663, 583);
+            this.RdbC.Location = new System.Drawing.Point(882, 516);
             this.RdbC.Name = "RdbC";
             this.RdbC.Size = new System.Drawing.Size(58, 33);
-            this.RdbC.TabIndex = 114;
+            this.RdbC.TabIndex = 134;
             this.RdbC.TabStop = true;
             this.RdbC.Text = "C";
             this.RdbC.UseVisualStyleBackColor = false;
@@ -388,10 +429,10 @@
             this.RdbB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbB.FlatAppearance.BorderSize = 0;
             this.RdbB.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbB.Location = new System.Drawing.Point(403, 583);
+            this.RdbB.Location = new System.Drawing.Point(882, 468);
             this.RdbB.Name = "RdbB";
             this.RdbB.Size = new System.Drawing.Size(55, 33);
-            this.RdbB.TabIndex = 113;
+            this.RdbB.TabIndex = 133;
             this.RdbB.TabStop = true;
             this.RdbB.Text = "B";
             this.RdbB.UseVisualStyleBackColor = false;
@@ -403,38 +444,34 @@
             this.RdbA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbA.FlatAppearance.BorderSize = 0;
             this.RdbA.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbA.Location = new System.Drawing.Point(176, 583);
+            this.RdbA.Location = new System.Drawing.Point(882, 420);
             this.RdbA.Name = "RdbA";
             this.RdbA.Size = new System.Drawing.Size(59, 33);
-            this.RdbA.TabIndex = 112;
+            this.RdbA.TabIndex = 132;
             this.RdbA.TabStop = true;
             this.RdbA.Text = "A";
             this.RdbA.UseVisualStyleBackColor = false;
             // 
-            // BtnBackPage
+            // button1
             // 
-            this.BtnBackPage.BackColor = System.Drawing.Color.Transparent;
-            this.BtnBackPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBackPage.BackgroundImage")));
-            this.BtnBackPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnBackPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBackPage.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.BtnBackPage.FlatAppearance.BorderSize = 0;
-            this.BtnBackPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.BtnBackPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.BtnBackPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBackPage.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnBackPage.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnBackPage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnBackPage.Location = new System.Drawing.Point(21, 687);
-            this.BtnBackPage.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnBackPage.Name = "BtnBackPage";
-            this.BtnBackPage.Size = new System.Drawing.Size(46, 37);
-            this.BtnBackPage.TabIndex = 116;
-            this.BtnBackPage.UseVisualStyleBackColor = false;
-            // 
-            // tbl_QuestionTableAdapter
-            // 
-            this.tbl_QuestionTableAdapter.ClearBeforeFill = true;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(5, 732);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 37);
+            this.button1.TabIndex = 136;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // FormQuestion
             // 
@@ -442,33 +479,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1197, 734);
-            this.Controls.Add(this.LblCorrect);
-            this.Controls.Add(this.lblSubjectID);
-            this.Controls.Add(this.lblUnitId);
-            this.Controls.Add(this.lblCorrectAnswer);
-            this.Controls.Add(this.lblSubject);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1220, 822);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblQuestion);
-            this.Controls.Add(this.lblSchoolObject);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pctimage);
             this.Controls.Add(this.ButtonAfterQuest);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.RdbD);
             this.Controls.Add(this.RdbC);
             this.Controls.Add(this.RdbB);
             this.Controls.Add(this.RdbA);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnBackPage);
             this.Name = "FormQuestion";
             this.Text = "FormQuestion";
             this.Load += new System.EventHandler(this.FormQuestion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctimage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -476,27 +508,23 @@
 
         #endregion
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label LblCorrect;
-        private System.Windows.Forms.Label lblSubjectID;
-        private System.Windows.Forms.Label lblUnitId;
-        private System.Windows.Forms.Label lblCorrectAnswer;
-        private System.Windows.Forms.Label lblSubject;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label LblQuestion;
-        private System.Windows.Forms.Label lblSchoolObject;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pctimage;
-        private System.Windows.Forms.Button ButtonAfterQuest;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.RadioButton RdbD;
-        private System.Windows.Forms.RadioButton RdbC;
-        private System.Windows.Forms.RadioButton RdbB;
-        private System.Windows.Forms.RadioButton RdbA;
         private System.Windows.Forms.Button BtnBackPage;
         private QuesitonAppDataSet3 quesitonAppDataSet3;
         private System.Windows.Forms.BindingSource tblQuestionBindingSource;
         private QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter tbl_QuestionTableAdapter;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pctimage;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblSubjecIId;
+        private System.Windows.Forms.Label lblSchoolObject;
+        private System.Windows.Forms.Label LblCorrect;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSubjectID;
+        private System.Windows.Forms.Label lblSubject;
+        private System.Windows.Forms.Label lblUnitId;
+        private System.Windows.Forms.Label lblCorrectAnswer;
+        private System.Windows.Forms.Label LblQuestion;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn schoolObjectDataGridViewTextBoxColumn;
@@ -508,5 +536,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn option2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option3DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option4DataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button ButtonAfterQuest;
+        private System.Windows.Forms.RadioButton RdbD;
+        private System.Windows.Forms.RadioButton RdbC;
+        private System.Windows.Forms.RadioButton RdbB;
+        private System.Windows.Forms.RadioButton RdbA;
+        private System.Windows.Forms.Button button1;
     }
 }
