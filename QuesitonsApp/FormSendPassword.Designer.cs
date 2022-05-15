@@ -124,6 +124,7 @@
             this.BtnBack.Size = new System.Drawing.Size(46, 37);
             this.BtnBack.TabIndex = 54;
             this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // pictureBox1
             // 

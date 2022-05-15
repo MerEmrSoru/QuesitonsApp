@@ -55,7 +55,6 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseS.cs" />
     <Compile Include="FormAdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +156,7 @@
       <DependentUpon>QuesitonAppDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="RandomQuestionAlgorithm.cs" />
+    <Compile Include="SqlConnection.cs" />
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>

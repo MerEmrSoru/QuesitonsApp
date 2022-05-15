@@ -46,5 +46,19 @@ namespace QuesitonsApp
             }
             connection.Close();
         }
+
+        private void LnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormRegister f1=new FormRegister();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void lnkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormSendPassword f2=new FormSendPassword();
+            f2.Show();
+            this.Hide();
+        }
     }
 }

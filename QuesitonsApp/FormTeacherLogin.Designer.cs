@@ -38,6 +38,7 @@
             this.TxtUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.lnkForgotPassword = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,14 +57,15 @@
             // 
             this.LnkRegister.AutoSize = true;
             this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
-            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnkRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
-            this.LnkRegister.Location = new System.Drawing.Point(374, 624);
+            this.LnkRegister.Location = new System.Drawing.Point(378, 617);
             this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(146, 16);
+            this.LnkRegister.Size = new System.Drawing.Size(168, 23);
             this.LnkRegister.TabIndex = 64;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Create New Account";
+            this.LnkRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkRegister_LinkClicked);
             // 
             // btnLogin
             // 
@@ -179,6 +181,20 @@
             this.label5.TabIndex = 60;
             this.label5.Text = "Password :";
             // 
+            // lnkForgotPassword
+            // 
+            this.lnkForgotPassword.AutoSize = true;
+            this.lnkForgotPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lnkForgotPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkForgotPassword.LinkColor = System.Drawing.Color.Blue;
+            this.lnkForgotPassword.Location = new System.Drawing.Point(378, 569);
+            this.lnkForgotPassword.Name = "lnkForgotPassword";
+            this.lnkForgotPassword.Size = new System.Drawing.Size(175, 23);
+            this.lnkForgotPassword.TabIndex = 66;
+            this.lnkForgotPassword.TabStop = true;
+            this.lnkForgotPassword.Text = "Forgot your password";
+            this.lnkForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkForgotPassword_LinkClicked);
+            // 
             // FormTeacherLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,6 +202,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
+            this.Controls.Add(this.lnkForgotPassword);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LnkRegister);
             this.Controls.Add(this.btnLogin);
@@ -214,5 +231,6 @@
         private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel lnkForgotPassword;
     }
 }

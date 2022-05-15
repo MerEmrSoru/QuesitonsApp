@@ -38,6 +38,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.LnkRegister = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lnkForgotPassword = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,7 +149,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(519, 583);
+            this.btnLogin.Location = new System.Drawing.Point(626, 583);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -160,11 +161,11 @@
             // 
             this.LnkRegister.AutoSize = true;
             this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
-            this.LnkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnkRegister.LinkColor = System.Drawing.Color.Blue;
-            this.LnkRegister.Location = new System.Drawing.Point(1004, 711);
+            this.LnkRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnkRegister.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.LnkRegister.Location = new System.Drawing.Point(375, 583);
             this.LnkRegister.Name = "LnkRegister";
-            this.LnkRegister.Size = new System.Drawing.Size(181, 20);
+            this.LnkRegister.Size = new System.Drawing.Size(168, 23);
             this.LnkRegister.TabIndex = 47;
             this.LnkRegister.TabStop = true;
             this.LnkRegister.Text = "Create New Account";
@@ -181,6 +182,19 @@
             this.pictureBox1.TabIndex = 48;
             this.pictureBox1.TabStop = false;
             // 
+            // lnkForgotPassword
+            // 
+            this.lnkForgotPassword.AutoSize = true;
+            this.lnkForgotPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lnkForgotPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkForgotPassword.LinkColor = System.Drawing.Color.DodgerBlue;
+            this.lnkForgotPassword.Location = new System.Drawing.Point(375, 619);
+            this.lnkForgotPassword.Name = "lnkForgotPassword";
+            this.lnkForgotPassword.Size = new System.Drawing.Size(175, 23);
+            this.lnkForgotPassword.TabIndex = 49;
+            this.lnkForgotPassword.TabStop = true;
+            this.lnkForgotPassword.Text = "Forgot your password";
+            // 
             // FormStudentLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -188,6 +202,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 742);
+            this.Controls.Add(this.lnkForgotPassword);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LnkRegister);
             this.Controls.Add(this.btnLogin);
@@ -216,5 +231,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.LinkLabel LnkRegister;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel lnkForgotPassword;
     }
 }
