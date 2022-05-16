@@ -48,12 +48,6 @@
             this.lblCorrectAnswer = new System.Windows.Forms.Label();
             this.LblQuestion = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ButtonAfterQuest = new System.Windows.Forms.Button();
-            this.RdbD = new System.Windows.Forms.RadioButton();
-            this.RdbC = new System.Windows.Forms.RadioButton();
-            this.RdbB = new System.Windows.Forms.RadioButton();
-            this.RdbA = new System.Windows.Forms.RadioButton();
-            this.lblRandQu = new System.Windows.Forms.Label();
             this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.schoolObjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +59,12 @@
             this.option2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ButtonAfterQuest = new System.Windows.Forms.Button();
+            this.RdbD = new System.Windows.Forms.RadioButton();
+            this.RdbC = new System.Windows.Forms.RadioButton();
+            this.RdbB = new System.Windows.Forms.RadioButton();
+            this.RdbA = new System.Windows.Forms.RadioButton();
+            this.lblRandQu = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -295,100 +295,6 @@
             this.dataGridView1.TabIndex = 138;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
-            // ButtonAfterQuest
-            // 
-            this.ButtonAfterQuest.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonAfterQuest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonAfterQuest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAfterQuest.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.ButtonAfterQuest.FlatAppearance.BorderSize = 2;
-            this.ButtonAfterQuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.ButtonAfterQuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.ButtonAfterQuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAfterQuest.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonAfterQuest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ButtonAfterQuest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ButtonAfterQuest.Location = new System.Drawing.Point(1016, 640);
-            this.ButtonAfterQuest.Margin = new System.Windows.Forms.Padding(2);
-            this.ButtonAfterQuest.Name = "ButtonAfterQuest";
-            this.ButtonAfterQuest.Size = new System.Drawing.Size(210, 43);
-            this.ButtonAfterQuest.TabIndex = 137;
-            this.ButtonAfterQuest.Text = "Next Question";
-            this.ButtonAfterQuest.UseVisualStyleBackColor = false;
-            // 
-            // RdbD
-            // 
-            this.RdbD.AutoSize = true;
-            this.RdbD.BackColor = System.Drawing.Color.Transparent;
-            this.RdbD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RdbD.FlatAppearance.BorderSize = 0;
-            this.RdbD.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.RdbD.Location = new System.Drawing.Point(1054, 561);
-            this.RdbD.Name = "RdbD";
-            this.RdbD.Size = new System.Drawing.Size(48, 32);
-            this.RdbD.TabIndex = 135;
-            this.RdbD.TabStop = true;
-            this.RdbD.Text = "D";
-            this.RdbD.UseVisualStyleBackColor = false;
-            // 
-            // RdbC
-            // 
-            this.RdbC.AutoSize = true;
-            this.RdbC.BackColor = System.Drawing.Color.Transparent;
-            this.RdbC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RdbC.FlatAppearance.BorderSize = 0;
-            this.RdbC.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.RdbC.Location = new System.Drawing.Point(863, 561);
-            this.RdbC.Name = "RdbC";
-            this.RdbC.Size = new System.Drawing.Size(46, 32);
-            this.RdbC.TabIndex = 134;
-            this.RdbC.TabStop = true;
-            this.RdbC.Text = "C";
-            this.RdbC.UseVisualStyleBackColor = false;
-            // 
-            // RdbB
-            // 
-            this.RdbB.AutoSize = true;
-            this.RdbB.BackColor = System.Drawing.Color.Transparent;
-            this.RdbB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RdbB.FlatAppearance.BorderSize = 0;
-            this.RdbB.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.RdbB.Location = new System.Drawing.Point(1056, 496);
-            this.RdbB.Name = "RdbB";
-            this.RdbB.Size = new System.Drawing.Size(46, 32);
-            this.RdbB.TabIndex = 133;
-            this.RdbB.TabStop = true;
-            this.RdbB.Text = "B";
-            this.RdbB.UseVisualStyleBackColor = false;
-            // 
-            // RdbA
-            // 
-            this.RdbA.AutoSize = true;
-            this.RdbA.BackColor = System.Drawing.Color.Transparent;
-            this.RdbA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RdbA.FlatAppearance.BorderSize = 0;
-            this.RdbA.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.RdbA.Location = new System.Drawing.Point(863, 496);
-            this.RdbA.Name = "RdbA";
-            this.RdbA.Size = new System.Drawing.Size(47, 32);
-            this.RdbA.TabIndex = 132;
-            this.RdbA.TabStop = true;
-            this.RdbA.Text = "A";
-            this.RdbA.UseVisualStyleBackColor = false;
-            // 
-            // lblRandQu
-            // 
-            this.lblRandQu.AutoSize = true;
-            this.lblRandQu.BackColor = System.Drawing.Color.Transparent;
-            this.lblRandQu.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRandQu.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblRandQu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblRandQu.Location = new System.Drawing.Point(833, 760);
-            this.lblRandQu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRandQu.Name = "lblRandQu";
-            this.lblRandQu.Size = new System.Drawing.Size(0, 28);
-            this.lblRandQu.TabIndex = 142;
-            // 
             // questionIDDataGridViewTextBoxColumn
             // 
             this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
@@ -467,6 +373,101 @@
             this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
             this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
+            // 
+            // ButtonAfterQuest
+            // 
+            this.ButtonAfterQuest.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonAfterQuest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonAfterQuest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonAfterQuest.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ButtonAfterQuest.FlatAppearance.BorderSize = 2;
+            this.ButtonAfterQuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.ButtonAfterQuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.ButtonAfterQuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonAfterQuest.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAfterQuest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ButtonAfterQuest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ButtonAfterQuest.Location = new System.Drawing.Point(1016, 640);
+            this.ButtonAfterQuest.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonAfterQuest.Name = "ButtonAfterQuest";
+            this.ButtonAfterQuest.Size = new System.Drawing.Size(210, 43);
+            this.ButtonAfterQuest.TabIndex = 137;
+            this.ButtonAfterQuest.Text = "Next Question";
+            this.ButtonAfterQuest.UseVisualStyleBackColor = false;
+            this.ButtonAfterQuest.Click += new System.EventHandler(this.ButtonAfterQuest_Click);
+            // 
+            // RdbD
+            // 
+            this.RdbD.AutoSize = true;
+            this.RdbD.BackColor = System.Drawing.Color.Transparent;
+            this.RdbD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RdbD.FlatAppearance.BorderSize = 0;
+            this.RdbD.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.RdbD.Location = new System.Drawing.Point(1054, 561);
+            this.RdbD.Name = "RdbD";
+            this.RdbD.Size = new System.Drawing.Size(48, 32);
+            this.RdbD.TabIndex = 135;
+            this.RdbD.TabStop = true;
+            this.RdbD.Text = "D";
+            this.RdbD.UseVisualStyleBackColor = false;
+            // 
+            // RdbC
+            // 
+            this.RdbC.AutoSize = true;
+            this.RdbC.BackColor = System.Drawing.Color.Transparent;
+            this.RdbC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RdbC.FlatAppearance.BorderSize = 0;
+            this.RdbC.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.RdbC.Location = new System.Drawing.Point(863, 561);
+            this.RdbC.Name = "RdbC";
+            this.RdbC.Size = new System.Drawing.Size(46, 32);
+            this.RdbC.TabIndex = 134;
+            this.RdbC.TabStop = true;
+            this.RdbC.Text = "C";
+            this.RdbC.UseVisualStyleBackColor = false;
+            // 
+            // RdbB
+            // 
+            this.RdbB.AutoSize = true;
+            this.RdbB.BackColor = System.Drawing.Color.Transparent;
+            this.RdbB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RdbB.FlatAppearance.BorderSize = 0;
+            this.RdbB.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.RdbB.Location = new System.Drawing.Point(1056, 496);
+            this.RdbB.Name = "RdbB";
+            this.RdbB.Size = new System.Drawing.Size(46, 32);
+            this.RdbB.TabIndex = 133;
+            this.RdbB.TabStop = true;
+            this.RdbB.Text = "B";
+            this.RdbB.UseVisualStyleBackColor = false;
+            // 
+            // RdbA
+            // 
+            this.RdbA.AutoSize = true;
+            this.RdbA.BackColor = System.Drawing.Color.Transparent;
+            this.RdbA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RdbA.FlatAppearance.BorderSize = 0;
+            this.RdbA.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.RdbA.Location = new System.Drawing.Point(863, 496);
+            this.RdbA.Name = "RdbA";
+            this.RdbA.Size = new System.Drawing.Size(47, 32);
+            this.RdbA.TabIndex = 132;
+            this.RdbA.TabStop = true;
+            this.RdbA.Text = "A";
+            this.RdbA.UseVisualStyleBackColor = false;
+            // 
+            // lblRandQu
+            // 
+            this.lblRandQu.AutoSize = true;
+            this.lblRandQu.BackColor = System.Drawing.Color.Transparent;
+            this.lblRandQu.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRandQu.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblRandQu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblRandQu.Location = new System.Drawing.Point(833, 760);
+            this.lblRandQu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRandQu.Name = "lblRandQu";
+            this.lblRandQu.Size = new System.Drawing.Size(0, 28);
+            this.lblRandQu.TabIndex = 142;
             // 
             // FormQuestion
             // 

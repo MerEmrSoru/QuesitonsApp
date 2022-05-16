@@ -53,19 +53,24 @@ namespace QuesitonsApp
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+           
+        }
+
+        private void ButtonAfterQuest_Click(object sender, EventArgs e)
+        {
             int RandQ;
             RandQ = Convert.ToInt32(lblRandQu.Text);
 
             Random Random = new Random();
-         //   for (int QuestionNumber = 1; QuestionNumber <= 10; QuestionNumber++) //10 soruluk bir sınav hazırlanacağı için fonksiyonu 10 kere çalıştıracak olan kod yazıldı 
-           // {
-                int QuestionRandom = Random.Next(0, RandQ ); //Rastgele sorular seçmek üzere "QuestionRandom" değişkeni oluşturuldu
+            //   for (int QuestionNumber = 1; QuestionNumber <= 10; QuestionNumber++) //10 soruluk bir sınav hazırlanacağı için fonksiyonu 10 kere çalıştıracak olan kod yazıldı 
+            // {
+            int QuestionRandom = Random.Next(0, RandQ-4); //Rastgele sorular seçmek üzere "QuestionRandom" değişkeni oluşturuldu
 
-            
-          //  }
+
+            //  }
 
             connection.Open();
-            SqlCommand cmd = new SqlCommand("select *from Tbl_Question where QuestionId='" +QuestionRandom + "'", connection);;
+            SqlCommand cmd = new SqlCommand("select *from Tbl_Question where QuestionId='" + QuestionRandom + "'", connection); ;
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
@@ -83,24 +88,19 @@ namespace QuesitonsApp
             }
             connection.Close();
 
-           
+
 
             //Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
-            LblQuestion.Text = dataGridView1.Rows[QuestionRandom-1].Cells[1].Value.ToString();
-            lblSchoolObject.Text = dataGridView1.Rows[QuestionRandom-1].Cells[2].Value.ToString();
-            lblUnitId.Text = dataGridView1.Rows[QuestionRandom-1].Cells[3].Value.ToString();
-            lblSubjecIId.Text = dataGridView1.Rows[QuestionRandom-1].Cells[4].Value.ToString();
-            LblCorrect.Text = dataGridView1.Rows[QuestionRandom-1].Cells[5].Value.ToString();
+            LblQuestion.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[1].Value.ToString();
+            lblSchoolObject.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[2].Value.ToString();
+            lblUnitId.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[3].Value.ToString();
+            lblSubjecIId.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[4].Value.ToString();
+            LblCorrect.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[5].Value.ToString();
 
-            RdbA.Text = dataGridView1.Rows[QuestionRandom-1].Cells[7].Value.ToString();
-            RdbB.Text = dataGridView1.Rows[QuestionRandom-1].Cells[8].Value.ToString();
-            RdbC.Text = dataGridView1.Rows[QuestionRandom-1].Cells[9].Value.ToString();
-            RdbD.Text = dataGridView1.Rows[QuestionRandom-1].Cells[10].Value.ToString();
-        }
-
-        private void ButtonAfterQuest_Click(object sender, EventArgs e)
-        {
-
+            RdbA.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[7].Value.ToString();
+            RdbB.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[8].Value.ToString();
+            RdbC.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[9].Value.ToString();
+            RdbD.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[10].Value.ToString();
         }
     }
 }
