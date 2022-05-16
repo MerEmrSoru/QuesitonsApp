@@ -100,6 +100,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label14 = new System.Windows.Forms.Label();
             this.lblQuestNumber = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -1056,7 +1057,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(1119, 135);
+            this.label14.Location = new System.Drawing.Point(1093, 135);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(121, 28);
@@ -1076,11 +1077,26 @@
             this.lblQuestNumber.Size = new System.Drawing.Size(0, 28);
             this.lblQuestNumber.TabIndex = 127;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label18.Location = new System.Drawing.Point(569, 135);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(148, 28);
+            this.label18.TabIndex = 128;
+            this.label18.Text = "Question Text:";
+            // 
             // FormAddQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1358, 807);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.lblQuestNumber);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.pictureBox5);
@@ -1192,5 +1208,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn option4DataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblQuestNumber;
+        private System.Windows.Forms.Label label18;
     }
 }

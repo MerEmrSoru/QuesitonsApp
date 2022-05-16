@@ -30,7 +30,7 @@ namespace QuesitonsApp
     
 
 
-        private void FormAddQuestion_Load(object sender, EventArgs e)
+        public void FormAddQuestion_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
@@ -47,9 +47,14 @@ namespace QuesitonsApp
             adtr.Fill(tbl);
             dataGridView1.DataSource = tbl;
             connection.Close();
+            BtnQuestionList.PerformClick();
 
+        lastQuestId = dataGridView1.RowCount - 1;
+        lblQuestNumber.Text = lastQuestId.ToString();
+          
         }
-
+       
+        
 
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -79,8 +84,7 @@ namespace QuesitonsApp
         public void BtnQuestionList_Click(object sender, EventArgs e)
         {
             //VERİTABANINDAKİ SORU SAYISI CEKİLDİ(3 ADET SORU EKSİK GÖZÜKÜYOR SEBEBİ İSE 3 ADET DELETE İŞLEMİ OLDUĞU İÇİN QUESTION IMAGE LABELININ SAĞ TARAFINDA SORU SAYISINI VEREN LABEL KOYULDU)
-            lastQuestId = dataGridView1.RowCount - 1;
-            lblQuestNumber.Text = lastQuestId.ToString();
+           
 
 
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
@@ -90,7 +94,9 @@ namespace QuesitonsApp
             adtr.Fill(tbl);
             dataGridView1.DataSource = tbl;
             connection.Close();
+              
         }
+      
 
        
 
@@ -378,7 +384,7 @@ namespace QuesitonsApp
 
             connection.Open();
             SqlCommand cmdUpdate = new SqlCommand("Update Tbl_Question Set Question=@a1,UnitId=@a2,SubjectId=@a3,CorrectAnswer=@a4,Image=@a5,Option1=@a6,Option2=@a7,Option3=@a8,Option4=@a9 where QuestionId=@a10", connection);
-
+            
             cmdUpdate.Parameters.AddWithValue("@a1", txtQuestion.Text);
             cmdUpdate.Parameters.AddWithValue("@a2", cmbUnıtID.Text);
             cmdUpdate.Parameters.AddWithValue("@a3", cmbSubjectID.Text);

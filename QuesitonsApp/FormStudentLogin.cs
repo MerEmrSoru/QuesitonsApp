@@ -35,7 +35,7 @@ namespace QuesitonsApp
         private void btnLogin_Click(object sender, EventArgs e)
         {
             connection.Open();
-            SqlCommand cmd = new SqlCommand("Select * from Tbl_User where UserTypeID='2'and Username=@p1 and Password=@p2", connection);
+            SqlCommand cmd = new SqlCommand("Select * from Tbl_User where UserTypeID='1'and Username=@p1 and Password=@p2", connection);
             cmd.Parameters.AddWithValue("@p1", TxtMail.Text);
             cmd.Parameters.AddWithValue("@p2", TxtPassword.Text);
 
