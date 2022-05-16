@@ -27,7 +27,7 @@ namespace QuesitonsApp
         private void btnLogin_Click(object sender, EventArgs e)
         {
             SqlBaglanti bgln = new SqlBaglanti();
-            SqlCommand cmd = new SqlCommand("Select *from Tbl_Users where Username='" + txtUsername.Text.ToString() + "'and Email='" + TxtMail.Text.ToString() + "'", bgln.baglanti());
+            SqlCommand cmd = new SqlCommand("Select *from Tbl_User where Username='" + txtUsername.Text.ToString() + "'and Mail='" + TxtMail.Text.ToString() + "'", bgln.baglanti());
 
             SqlDataReader read = cmd.ExecuteReader();
             while (read.Read())
@@ -44,7 +44,7 @@ namespace QuesitonsApp
                     string mailAd = ("soruuygulama@gmail.com");
                     string password = ("kurti2001");
                     string smtpsrvr = "smtp.gmail.com";
-                    string toWho = (read["Email"].ToString());
+                    string toWho = (read["Mail"].ToString());
                     string subject = ("Password Expiration Report");
                     string write = ("Mrs/Ms," + read["Name"].ToString() + "\nyou requested a password reminder from us on" + Date + "\n" + "Your Password :" + read["Password"].ToString() + "\n Have a nice day.");
 
