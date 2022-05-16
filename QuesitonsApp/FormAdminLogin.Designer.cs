@@ -52,7 +52,7 @@
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
-            this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnLogin.ForeColor = System.Drawing.Color.Linen;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnLogin.Location = new System.Drawing.Point(597, 509);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
@@ -102,8 +102,8 @@
             // 
             this.TxtPassword.BackColor = System.Drawing.Color.Linen;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtPassword.Location = new System.Drawing.Point(534, 402);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
@@ -117,8 +117,8 @@
             // 
             this.TxtMail.BackColor = System.Drawing.Color.Linen;
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtMail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.TxtMail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtMail.Location = new System.Drawing.Point(534, 320);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
@@ -201,7 +201,7 @@
             this.Controls.Add(this.label5);
             this.Name = "FormAdminLogin";
             this.Text = "ADMIN LOGIN";
-            this.Load += new System.EventHandler(this.FormAdminLogin_Load);
+        
             this.ResumeLayout(false);
             this.PerformLayout();
 

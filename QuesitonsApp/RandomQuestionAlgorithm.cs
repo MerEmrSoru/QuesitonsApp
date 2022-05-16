@@ -24,7 +24,9 @@ namespace QuesitonsApp
                  * "QuestionRandom" değişkenini QuestionID'ye eşitleyip forma yollayan kod buraya yazılacak.
                  * 
                  * 
+                 * 
                  */
+            
             }
         }
     }

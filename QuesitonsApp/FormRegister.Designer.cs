@@ -172,6 +172,7 @@
             this.BtnBack.Size = new System.Drawing.Size(46, 37);
             this.BtnBack.TabIndex = 58;
             this.BtnBack.UseVisualStyleBackColor = false;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // TxtPassword
             // 
@@ -293,8 +294,8 @@
             this.btnRegis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegis.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnRegis.FlatAppearance.BorderSize = 0;
-            this.btnRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnRegis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Linen;
+            this.btnRegis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Linen;
             this.btnRegis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegis.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnRegis.ForeColor = System.Drawing.SystemColors.ActiveBorder;

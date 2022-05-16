@@ -32,7 +32,7 @@ namespace QuesitonsApp
             connection.Close();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             connection.Open();
             SqlCommand cmd = new SqlCommand("select *from Tbl_Question where QuestionId='" + int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString()) + "'", connection);
@@ -50,6 +50,25 @@ namespace QuesitonsApp
                     connection.Close();
                 }
             }
+
+            int select = dataGridView1.SelectedCells[0].RowIndex;
+
+            //.Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
+            LblQuestion.Text = dataGridView1.Rows[select].Cells[1].Value.ToString();
+            lblSchoolObject.Text = dataGridView1.Rows[select].Cells[2].Value.ToString();
+            lblUnitId.Text = dataGridView1.Rows[select].Cells[3].Value.ToString();
+            lblSubjecIId.Text = dataGridView1.Rows[select].Cells[4].Value.ToString();
+            LblCorrect.Text = dataGridView1.Rows[select].Cells[5].Value.ToString();
+
+            RdbA.Text = dataGridView1.Rows[select].Cells[7].Value.ToString();
+            RdbB.Text = dataGridView1.Rows[select].Cells[8].Value.ToString();
+            RdbC.Text = dataGridView1.Rows[select].Cells[9].Value.ToString();
+            RdbD.Text = dataGridView1.Rows[select].Cells[10].Value.ToString();
+        }
+
+        private void ButtonAfterQuest_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

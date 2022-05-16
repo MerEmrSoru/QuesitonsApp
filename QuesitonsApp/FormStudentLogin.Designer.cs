@@ -46,9 +46,9 @@
             // 
             this.TxtPassword.BackColor = System.Drawing.Color.Linen;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtPassword.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtPassword.Location = new System.Drawing.Point(566, 492);
+            this.TxtPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtPassword.Location = new System.Drawing.Point(554, 492);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
             this.TxtPassword.Multiline = true;
@@ -61,9 +61,9 @@
             // 
             this.TxtMail.BackColor = System.Drawing.Color.Linen;
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.TxtMail.Location = new System.Drawing.Point(566, 410);
+            this.TxtMail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.TxtMail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TxtMail.Location = new System.Drawing.Point(554, 410);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
             this.TxtMail.Multiline = true;
@@ -78,7 +78,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(372, 410);
+            this.label4.Location = new System.Drawing.Point(360, 410);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 38);
@@ -92,7 +92,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(372, 492);
+            this.label5.Location = new System.Drawing.Point(360, 492);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 38);
@@ -149,7 +149,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Headline R", 15.9F);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(626, 583);
+            this.btnLogin.Location = new System.Drawing.Point(614, 583);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(123, 91);
@@ -163,7 +163,7 @@
             this.LnkRegister.BackColor = System.Drawing.Color.Transparent;
             this.LnkRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnkRegister.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.LnkRegister.Location = new System.Drawing.Point(375, 583);
+            this.LnkRegister.Location = new System.Drawing.Point(363, 583);
             this.LnkRegister.Name = "LnkRegister";
             this.LnkRegister.Size = new System.Drawing.Size(168, 23);
             this.LnkRegister.TabIndex = 47;
@@ -175,7 +175,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(463, 185);
+            this.pictureBox1.Location = new System.Drawing.Point(451, 185);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(265, 178);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -188,12 +188,13 @@
             this.lnkForgotPassword.BackColor = System.Drawing.Color.Transparent;
             this.lnkForgotPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkForgotPassword.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.lnkForgotPassword.Location = new System.Drawing.Point(375, 619);
+            this.lnkForgotPassword.Location = new System.Drawing.Point(363, 619);
             this.lnkForgotPassword.Name = "lnkForgotPassword";
             this.lnkForgotPassword.Size = new System.Drawing.Size(175, 23);
             this.lnkForgotPassword.TabIndex = 49;
             this.lnkForgotPassword.TabStop = true;
             this.lnkForgotPassword.Text = "Forgot your password";
+            this.lnkForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkForgotPassword_LinkClicked);
             // 
             // FormStudentLogin
             // 

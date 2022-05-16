@@ -12,7 +12,7 @@ namespace QuesitonsApp
     {
         public SqlConnection baglanti()
         {
-            SqlConnection connection = new SqlConnection("Data Source = MSI; Initial Catalog = Questions Aplication;Integrated Security = True");
+            SqlConnection connection = new SqlConnection("Data Source=MSI\\SQLEXPRESS;Initial Catalog=QuesitonApp;Integrated Security=True");
             connection.Open();
             return connection;
         }

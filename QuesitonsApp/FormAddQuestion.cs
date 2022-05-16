@@ -82,6 +82,7 @@ namespace QuesitonsApp
             lastQuestId = dataGridView1.RowCount - 1;
             lblQuestNumber.Text = lastQuestId.ToString();
 
+
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
             DataTable tbl = new DataTable();
             connection.Open();

@@ -60,5 +60,13 @@ namespace QuesitonsApp
             f2.Show();
             this.Hide();
         }
+
+        private void BtnBack_Click_1(object sender, EventArgs e)
+        {
+            FormUserSelect f3=new FormUserSelect();
+             f3.Show();
+            this.Hide();
+
+        }
     }
 }

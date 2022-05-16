@@ -138,6 +138,7 @@
             this.Controls.Add(this.BtnAdmin);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormUserSelect";
             this.Text = "USER TYPE";
             this.ResumeLayout(false);

@@ -31,15 +31,6 @@ namespace QuesitonsApp
             this.Hide();
         }
 
-        private void FormAdminLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
 
         private void LnkRegister_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {

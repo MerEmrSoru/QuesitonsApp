@@ -80,8 +80,8 @@
             // 
             this.TxtMail.BackColor = System.Drawing.Color.Linen;
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtMail.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.TxtMail.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TxtMail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.TxtMail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtMail.Location = new System.Drawing.Point(535, 509);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
@@ -141,8 +141,8 @@
             // 
             this.txtUsername.BackColor = System.Drawing.Color.Linen;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Font = new System.Drawing.Font("Headline R", 14.1F);
-            this.txtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtUsername.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.txtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtUsername.Location = new System.Drawing.Point(535, 448);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.MaxLength = 50;

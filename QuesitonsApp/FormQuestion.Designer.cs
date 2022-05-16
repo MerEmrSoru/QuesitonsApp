@@ -64,7 +64,6 @@
             this.RdbC = new System.Windows.Forms.RadioButton();
             this.RdbB = new System.Windows.Forms.RadioButton();
             this.RdbA = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -101,7 +100,7 @@
             this.BtnBackPage.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BtnBackPage.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnBackPage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnBackPage.Location = new System.Drawing.Point(21, 687);
+            this.BtnBackPage.Location = new System.Drawing.Point(23, 751);
             this.BtnBackPage.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBackPage.Name = "BtnBackPage";
             this.BtnBackPage.Size = new System.Drawing.Size(46, 37);
@@ -116,9 +115,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pctimage);
-            this.panel2.Location = new System.Drawing.Point(-6, -42);
+            this.panel2.Location = new System.Drawing.Point(-4, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(861, 661);
+            this.panel2.Size = new System.Drawing.Size(861, 684);
             this.panel2.TabIndex = 141;
             // 
             // pctimage
@@ -144,7 +143,7 @@
             this.panel1.Controls.Add(this.lblSubject);
             this.panel1.Controls.Add(this.lblUnitId);
             this.panel1.Controls.Add(this.lblCorrectAnswer);
-            this.panel1.Location = new System.Drawing.Point(865, -6);
+            this.panel1.Location = new System.Drawing.Point(863, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(322, 143);
             this.panel1.TabIndex = 140;
@@ -261,7 +260,7 @@
             // 
             this.LblQuestion.BackColor = System.Drawing.Color.Transparent;
             this.LblQuestion.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblQuestion.Location = new System.Drawing.Point(878, 162);
+            this.LblQuestion.Location = new System.Drawing.Point(880, 226);
             this.LblQuestion.Name = "LblQuestion";
             this.LblQuestion.Size = new System.Drawing.Size(309, 265);
             this.LblQuestion.TabIndex = 139;
@@ -285,13 +284,14 @@
             this.option3DataGridViewTextBoxColumn,
             this.option4DataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblQuestionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(71, 637);
+            this.dataGridView1.Location = new System.Drawing.Point(73, 701);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(742, 140);
+            this.dataGridView1.Size = new System.Drawing.Size(742, 87);
             this.dataGridView1.TabIndex = 138;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // questionIDDataGridViewTextBoxColumn
             // 
@@ -384,13 +384,14 @@
             this.ButtonAfterQuest.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonAfterQuest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ButtonAfterQuest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ButtonAfterQuest.Location = new System.Drawing.Point(993, 637);
+            this.ButtonAfterQuest.Location = new System.Drawing.Point(1016, 640);
             this.ButtonAfterQuest.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonAfterQuest.Name = "ButtonAfterQuest";
             this.ButtonAfterQuest.Size = new System.Drawing.Size(210, 43);
             this.ButtonAfterQuest.TabIndex = 137;
             this.ButtonAfterQuest.Text = "Next Question";
             this.ButtonAfterQuest.UseVisualStyleBackColor = false;
+            this.ButtonAfterQuest.Click += new System.EventHandler(this.ButtonAfterQuest_Click);
             // 
             // RdbD
             // 
@@ -398,10 +399,10 @@
             this.RdbD.BackColor = System.Drawing.Color.Transparent;
             this.RdbD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbD.FlatAppearance.BorderSize = 0;
-            this.RdbD.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbD.Location = new System.Drawing.Point(882, 564);
+            this.RdbD.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.RdbD.Location = new System.Drawing.Point(1054, 561);
             this.RdbD.Name = "RdbD";
-            this.RdbD.Size = new System.Drawing.Size(56, 33);
+            this.RdbD.Size = new System.Drawing.Size(48, 32);
             this.RdbD.TabIndex = 135;
             this.RdbD.TabStop = true;
             this.RdbD.Text = "D";
@@ -413,10 +414,10 @@
             this.RdbC.BackColor = System.Drawing.Color.Transparent;
             this.RdbC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbC.FlatAppearance.BorderSize = 0;
-            this.RdbC.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbC.Location = new System.Drawing.Point(882, 516);
+            this.RdbC.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.RdbC.Location = new System.Drawing.Point(863, 561);
             this.RdbC.Name = "RdbC";
-            this.RdbC.Size = new System.Drawing.Size(58, 33);
+            this.RdbC.Size = new System.Drawing.Size(46, 32);
             this.RdbC.TabIndex = 134;
             this.RdbC.TabStop = true;
             this.RdbC.Text = "C";
@@ -428,10 +429,10 @@
             this.RdbB.BackColor = System.Drawing.Color.Transparent;
             this.RdbB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbB.FlatAppearance.BorderSize = 0;
-            this.RdbB.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbB.Location = new System.Drawing.Point(882, 468);
+            this.RdbB.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.RdbB.Location = new System.Drawing.Point(1056, 496);
             this.RdbB.Name = "RdbB";
-            this.RdbB.Size = new System.Drawing.Size(55, 33);
+            this.RdbB.Size = new System.Drawing.Size(46, 32);
             this.RdbB.TabIndex = 133;
             this.RdbB.TabStop = true;
             this.RdbB.Text = "B";
@@ -443,35 +444,14 @@
             this.RdbA.BackColor = System.Drawing.Color.Transparent;
             this.RdbA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbA.FlatAppearance.BorderSize = 0;
-            this.RdbA.Font = new System.Drawing.Font("Headline R", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RdbA.Location = new System.Drawing.Point(882, 420);
+            this.RdbA.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.RdbA.Location = new System.Drawing.Point(863, 496);
             this.RdbA.Name = "RdbA";
-            this.RdbA.Size = new System.Drawing.Size(59, 33);
+            this.RdbA.Size = new System.Drawing.Size(47, 32);
             this.RdbA.TabIndex = 132;
             this.RdbA.TabStop = true;
             this.RdbA.Text = "A";
             this.RdbA.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Headline R", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(5, 732);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 37);
-            this.button1.TabIndex = 136;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // FormQuestion
             // 
@@ -479,7 +459,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1220, 822);
+            this.ClientSize = new System.Drawing.Size(1237, 803);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblQuestion);
@@ -489,7 +469,6 @@
             this.Controls.Add(this.RdbC);
             this.Controls.Add(this.RdbB);
             this.Controls.Add(this.RdbA);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnBackPage);
             this.Name = "FormQuestion";
             this.Text = "FormQuestion";
@@ -541,6 +520,5 @@
         private System.Windows.Forms.RadioButton RdbC;
         private System.Windows.Forms.RadioButton RdbB;
         private System.Windows.Forms.RadioButton RdbA;
-        private System.Windows.Forms.Button button1;
     }
 }
