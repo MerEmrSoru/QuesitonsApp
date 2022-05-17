@@ -65,6 +65,10 @@
             this.RdbB = new System.Windows.Forms.RadioButton();
             this.RdbA = new System.Windows.Forms.RadioButton();
             this.lblRandQu = new System.Windows.Forms.Label();
+            this.lblMin = new System.Windows.Forms.Label();
+            this.lblSec = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnTime = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -76,6 +80,7 @@
             // timer1
             // 
             this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // tblQuestionBindingSource
             // 
@@ -118,8 +123,9 @@
             this.panel2.Controls.Add(this.pctimage);
             this.panel2.Location = new System.Drawing.Point(-4, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(861, 684);
+            this.panel2.Size = new System.Drawing.Size(861, 747);
             this.panel2.TabIndex = 141;
+         
             // 
             // pctimage
             // 
@@ -127,7 +133,7 @@
             this.pctimage.Image = ((System.Drawing.Image)(resources.GetObject("pctimage.Image")));
             this.pctimage.Location = new System.Drawing.Point(26, 25);
             this.pctimage.Name = "pctimage";
-            this.pctimage.Size = new System.Drawing.Size(811, 614);
+            this.pctimage.Size = new System.Drawing.Size(811, 705);
             this.pctimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctimage.TabIndex = 120;
             this.pctimage.TabStop = false;
@@ -136,17 +142,20 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnTime);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblSubjecIId);
             this.panel1.Controls.Add(this.lblSchoolObject);
-            this.panel1.Controls.Add(this.LblCorrect);
+            this.panel1.Controls.Add(this.lblSec);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblMin);
             this.panel1.Controls.Add(this.lblSubjectID);
             this.panel1.Controls.Add(this.lblSubject);
             this.panel1.Controls.Add(this.lblUnitId);
             this.panel1.Controls.Add(this.lblCorrectAnswer);
             this.panel1.Location = new System.Drawing.Point(863, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(322, 143);
+            this.panel1.Size = new System.Drawing.Size(322, 155);
             this.panel1.TabIndex = 140;
             // 
             // lblSubjecIId
@@ -156,7 +165,7 @@
             this.lblSubjecIId.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubjecIId.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblSubjecIId.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSubjecIId.Location = new System.Drawing.Point(114, 104);
+            this.lblSubjecIId.Location = new System.Drawing.Point(256, 54);
             this.lblSubjecIId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSubjecIId.Name = "lblSubjecIId";
             this.lblSubjecIId.Size = new System.Drawing.Size(0, 28);
@@ -183,7 +192,7 @@
             this.LblCorrect.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCorrect.ForeColor = System.Drawing.SystemColors.Desktop;
             this.LblCorrect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblCorrect.Location = new System.Drawing.Point(252, 84);
+            this.LblCorrect.Location = new System.Drawing.Point(1088, 244);
             this.LblCorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCorrect.Name = "LblCorrect";
             this.LblCorrect.Size = new System.Drawing.Size(0, 28);
@@ -224,7 +233,7 @@
             this.lblSubject.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubject.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblSubject.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblSubject.Location = new System.Drawing.Point(20, 104);
+            this.lblSubject.Location = new System.Drawing.Point(162, 54);
             this.lblSubject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSubject.Name = "lblSubject";
             this.lblSubject.Size = new System.Drawing.Size(90, 28);
@@ -285,14 +294,15 @@
             this.option3DataGridViewTextBoxColumn,
             this.option4DataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblQuestionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(73, 701);
+            this.dataGridView1.Location = new System.Drawing.Point(73, 735);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(742, 87);
+            this.dataGridView1.Size = new System.Drawing.Size(742, 53);
             this.dataGridView1.TabIndex = 138;
+            this.dataGridView1.Visible = false;
             // 
             // questionIDDataGridViewTextBoxColumn
             // 
@@ -386,10 +396,10 @@
             this.BtnNextQuest.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNextQuest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnNextQuest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnNextQuest.Location = new System.Drawing.Point(1016, 640);
+            this.BtnNextQuest.Location = new System.Drawing.Point(922, 673);
             this.BtnNextQuest.Margin = new System.Windows.Forms.Padding(2);
             this.BtnNextQuest.Name = "BtnNextQuest";
-            this.BtnNextQuest.Size = new System.Drawing.Size(210, 43);
+            this.BtnNextQuest.Size = new System.Drawing.Size(239, 56);
             this.BtnNextQuest.TabIndex = 137;
             this.BtnNextQuest.Text = "Next Question";
             this.BtnNextQuest.UseVisualStyleBackColor = false;
@@ -402,11 +412,10 @@
             this.RdbD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbD.FlatAppearance.BorderSize = 0;
             this.RdbD.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.RdbD.Location = new System.Drawing.Point(1054, 561);
+            this.RdbD.Location = new System.Drawing.Point(1113, 594);
             this.RdbD.Name = "RdbD";
             this.RdbD.Size = new System.Drawing.Size(48, 32);
             this.RdbD.TabIndex = 135;
-            this.RdbD.TabStop = true;
             this.RdbD.Text = "D";
             this.RdbD.UseVisualStyleBackColor = false;
             // 
@@ -417,11 +426,10 @@
             this.RdbC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbC.FlatAppearance.BorderSize = 0;
             this.RdbC.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.RdbC.Location = new System.Drawing.Point(863, 561);
+            this.RdbC.Location = new System.Drawing.Point(922, 594);
             this.RdbC.Name = "RdbC";
             this.RdbC.Size = new System.Drawing.Size(46, 32);
             this.RdbC.TabIndex = 134;
-            this.RdbC.TabStop = true;
             this.RdbC.Text = "C";
             this.RdbC.UseVisualStyleBackColor = false;
             // 
@@ -432,11 +440,10 @@
             this.RdbB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbB.FlatAppearance.BorderSize = 0;
             this.RdbB.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.RdbB.Location = new System.Drawing.Point(1056, 496);
+            this.RdbB.Location = new System.Drawing.Point(1115, 529);
             this.RdbB.Name = "RdbB";
             this.RdbB.Size = new System.Drawing.Size(46, 32);
             this.RdbB.TabIndex = 133;
-            this.RdbB.TabStop = true;
             this.RdbB.Text = "B";
             this.RdbB.UseVisualStyleBackColor = false;
             // 
@@ -444,10 +451,11 @@
             // 
             this.RdbA.AutoSize = true;
             this.RdbA.BackColor = System.Drawing.Color.Transparent;
+            this.RdbA.Checked = true;
             this.RdbA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RdbA.FlatAppearance.BorderSize = 0;
             this.RdbA.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.RdbA.Location = new System.Drawing.Point(863, 496);
+            this.RdbA.Location = new System.Drawing.Point(922, 529);
             this.RdbA.Name = "RdbA";
             this.RdbA.Size = new System.Drawing.Size(47, 32);
             this.RdbA.TabIndex = 132;
@@ -468,6 +476,70 @@
             this.lblRandQu.Size = new System.Drawing.Size(0, 28);
             this.lblRandQu.TabIndex = 142;
             // 
+            // lblMin
+            // 
+            this.lblMin.AutoSize = true;
+            this.lblMin.BackColor = System.Drawing.Color.Transparent;
+            this.lblMin.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMin.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblMin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblMin.Location = new System.Drawing.Point(136, 105);
+            this.lblMin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMin.Name = "lblMin";
+            this.lblMin.Size = new System.Drawing.Size(67, 38);
+            this.lblMin.TabIndex = 143;
+            this.lblMin.Text = "Min";
+            // 
+            // lblSec
+            // 
+            this.lblSec.AutoSize = true;
+            this.lblSec.BackColor = System.Drawing.Color.Transparent;
+            this.lblSec.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSec.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblSec.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSec.Location = new System.Drawing.Point(236, 105);
+            this.lblSec.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSec.Name = "lblSec";
+            this.lblSec.Size = new System.Drawing.Size(60, 38);
+            this.lblSec.TabIndex = 144;
+            this.lblSec.Text = "Sec";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(203, 105);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 38);
+            this.label2.TabIndex = 145;
+            this.label2.Text = ":";
+            // 
+            // btnTime
+            // 
+            this.btnTime.BackColor = System.Drawing.Color.Transparent;
+            this.btnTime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTime.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTime.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnTime.FlatAppearance.BorderSize = 0;
+            this.btnTime.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnTime.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTime.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnTime.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnTime.Location = new System.Drawing.Point(-2, 102);
+            this.btnTime.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTime.Name = "btnTime";
+            this.btnTime.Size = new System.Drawing.Size(102, 49);
+            this.btnTime.TabIndex = 143;
+            this.btnTime.Text = "Time";
+            this.btnTime.UseVisualStyleBackColor = false;
+            
+            // 
             // FormQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -480,6 +552,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblQuestion);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.LblCorrect);
             this.Controls.Add(this.BtnNextQuest);
             this.Controls.Add(this.RdbD);
             this.Controls.Add(this.RdbC);
@@ -538,5 +611,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn option2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option3DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option4DataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label lblMin;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSec;
+        private System.Windows.Forms.Button btnTime;
     }
 }

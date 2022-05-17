@@ -18,7 +18,8 @@ namespace QuesitonsApp
         {
             InitializeComponent();
         }
-        
+        int second = 60;
+        public int minute = 10;
 
 
         SqlConnection connection = new SqlConnection("Data Source=MSI\\SQLEXPRESS;Initial Catalog=QuesitonApp;Integrated Security=True");
@@ -26,7 +27,8 @@ namespace QuesitonsApp
         
         private void FormQuestion_Load(object sender, EventArgs e)
         {
-         
+           
+
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
 
@@ -41,11 +43,13 @@ namespace QuesitonsApp
             connection.Open();
             SqlCommand com=new SqlCommand("Select Count(*)From Tbl_Question",connection);
             lblRandQu.Text=com.ExecuteScalar().ToString();
-            connection.Close();
+            connection.Close();         
             BtnNextQuest.PerformClick();
         }       
         private void ButtonAfterQuest_Click(object sender, EventArgs e)
         {
+            timer1.Start();
+
             int RandQ;
             RandQ = Convert.ToInt32(lblRandQu.Text);
 
@@ -88,6 +92,40 @@ namespace QuesitonsApp
             RdbD.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[10].Value.ToString();
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Interval = 1000;
+            second = second - 1;
+            lblSec.Text = Convert.ToString(second);
+            lblMin.Text = Convert.ToString(minute - 1);
+            if (second == 0)
+            {
+
+                minute = minute - 1;
+                lblMin.Text = Convert.ToString(minute);
+                second = 60;
+            }
+
+            if (second == 0)
+            {
+
+                minute = minute - 1;
+                lblMin.Text = Convert.ToString(minute);
+                second = 60;
+            }
+
+            if (lblMin.Text == "00" &&lblSec.Text=="10")
+            {
+                this.lblMin.BackColor = Color.Red;
+                this.lblSec.BackColor = Color.Red;
+            }
+            if (lblMin.Text == "-1")
+            {
+                timer1.Stop();
+                lblMin.Text = "00";
+                lblSec.Text = "00";
+                BtnNextQuest.PerformClick();
+            }
+        }       
     }
 }
