@@ -70,5 +70,7 @@ namespace QuesitonsApp
             f1.Show();
             this.Hide();
         }
+
+       
     }
 }

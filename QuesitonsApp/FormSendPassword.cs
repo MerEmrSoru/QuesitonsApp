@@ -21,14 +21,12 @@ namespace QuesitonsApp
             InitializeComponent();
         }
        
-       
-
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             SqlBaglanti bgln = new SqlBaglanti();
             SqlCommand cmd = new SqlCommand("Select *from Tbl_User where Username='" + txtUsername.Text.ToString() + "'and Mail='" + TxtMail.Text.ToString() + "'", bgln.baglanti());
-
+            //Aşağıdaki kodlar ile mail atma işlemi yapıldı.
             SqlDataReader read = cmd.ExecuteReader();
             while (read.Read())
             {
@@ -67,11 +65,8 @@ namespace QuesitonsApp
                     MessageBox.Show("Error", error.Message);
                 }
             }
-
-
-
-
         }
+
 
         private void BtnBack_Click(object sender, EventArgs e)
         {

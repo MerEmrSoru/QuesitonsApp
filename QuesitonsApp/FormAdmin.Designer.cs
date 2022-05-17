@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.BtnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnUserProfile = new System.Windows.Forms.Button();
+            this.BtnUserList = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNewDate = new System.Windows.Forms.Label();
-            this.BtnUpdate = new System.Windows.Forms.Button();
+            this.BtnAddQuestion = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,37 +67,37 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.BtnUserProfile);
+            this.panel1.Controls.Add(this.BtnUserList);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblNewDate);
-            this.panel1.Controls.Add(this.BtnUpdate);
+            this.panel1.Controls.Add(this.BtnAddQuestion);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Location = new System.Drawing.Point(428, 87);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(330, 561);
             this.panel1.TabIndex = 102;
             // 
-            // BtnUserProfile
+            // BtnUserList
             // 
-            this.BtnUserProfile.BackColor = System.Drawing.Color.Transparent;
-            this.BtnUserProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnUserProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnUserProfile.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnUserProfile.FlatAppearance.BorderSize = 3;
-            this.BtnUserProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
-            this.BtnUserProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
-            this.BtnUserProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUserProfile.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnUserProfile.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnUserProfile.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnUserProfile.Location = new System.Drawing.Point(54, 426);
-            this.BtnUserProfile.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnUserProfile.Name = "BtnUserProfile";
-            this.BtnUserProfile.Size = new System.Drawing.Size(230, 68);
-            this.BtnUserProfile.TabIndex = 102;
-            this.BtnUserProfile.Text = "USER LIST";
-            this.BtnUserProfile.UseVisualStyleBackColor = false;
-            this.BtnUserProfile.Click += new System.EventHandler(this.BtnUserProfile_Click);
+            this.BtnUserList.BackColor = System.Drawing.Color.Transparent;
+            this.BtnUserList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnUserList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnUserList.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnUserList.FlatAppearance.BorderSize = 3;
+            this.BtnUserList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
+            this.BtnUserList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.BtnUserList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUserList.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BtnUserList.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnUserList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnUserList.Location = new System.Drawing.Point(54, 426);
+            this.BtnUserList.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnUserList.Name = "BtnUserList";
+            this.BtnUserList.Size = new System.Drawing.Size(230, 68);
+            this.BtnUserList.TabIndex = 102;
+            this.BtnUserList.Text = "USER LIST";
+            this.BtnUserList.UseVisualStyleBackColor = false;
+            this.BtnUserList.Click += new System.EventHandler(this.BtnUserProfile_Click);
             // 
             // pictureBox1
             // 
@@ -120,27 +120,27 @@
             this.lblNewDate.Size = new System.Drawing.Size(0, 23);
             this.lblNewDate.TabIndex = 101;
             // 
-            // BtnUpdate
+            // BtnAddQuestion
             // 
-            this.BtnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.BtnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnUpdate.FlatAppearance.BorderSize = 3;
-            this.BtnUpdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
-            this.BtnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
-            this.BtnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUpdate.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BtnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnUpdate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnUpdate.Location = new System.Drawing.Point(52, 326);
-            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(230, 68);
-            this.BtnUpdate.TabIndex = 99;
-            this.BtnUpdate.Text = "ADD QUESTION";
-            this.BtnUpdate.UseVisualStyleBackColor = false;
-            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            this.BtnAddQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAddQuestion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAddQuestion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAddQuestion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnAddQuestion.FlatAppearance.BorderSize = 3;
+            this.BtnAddQuestion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PeachPuff;
+            this.BtnAddQuestion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PeachPuff;
+            this.BtnAddQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddQuestion.Font = new System.Drawing.Font("Headline R", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BtnAddQuestion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnAddQuestion.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnAddQuestion.Location = new System.Drawing.Point(52, 326);
+            this.BtnAddQuestion.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnAddQuestion.Name = "BtnAddQuestion";
+            this.BtnAddQuestion.Size = new System.Drawing.Size(230, 68);
+            this.BtnAddQuestion.TabIndex = 99;
+            this.BtnAddQuestion.Text = "ADD QUESTION";
+            this.BtnAddQuestion.UseVisualStyleBackColor = false;
+            this.BtnAddQuestion.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // button6
             // 
@@ -162,7 +162,7 @@
             this.button6.TabIndex = 94;
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // Admin
+            // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,7 +171,7 @@
             this.ClientSize = new System.Drawing.Size(1197, 742);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.panel1);
-            this.Name = "Admin";
+            this.Name = "FormAdmin";
             this.Text = "Admin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -184,10 +184,10 @@
 
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button BtnUserProfile;
+        private System.Windows.Forms.Button BtnUserList;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblNewDate;
-        private System.Windows.Forms.Button BtnUpdate;
+        private System.Windows.Forms.Button BtnAddQuestion;
         private System.Windows.Forms.Button button6;
     }
 }

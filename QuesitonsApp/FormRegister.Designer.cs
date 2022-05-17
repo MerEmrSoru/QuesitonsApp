@@ -394,6 +394,7 @@
             this.Controls.Add(this.lbltime);
             this.Name = "FormRegister";
             this.Text = "REGISTER";
+        
             this.ResumeLayout(false);
             this.PerformLayout();
 

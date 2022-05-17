@@ -27,15 +27,15 @@ namespace QuesitonsApp
 
         private void BtnTeacher_Click(object sender, EventArgs e)
         {
-            FormTeacherLogin f1=new FormTeacherLogin();
-            f1.Show();
+            FormTeacherLogin f2=new FormTeacherLogin();
+            f2.Show();
             this.Hide();
         }
 
         private void BtnAdmin_Click(object sender, EventArgs e)
         {
-            FormAdminLogin f1=new FormAdminLogin();
-            f1.Show();
+            FormAdminLogin f3=new FormAdminLogin();
+            f3.Show();
             this.Hide();
         }
     }

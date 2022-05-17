@@ -84,20 +84,13 @@ namespace QuesitonsApp
 
             connection.Open();
             SqlCommand cmd = new SqlCommand("insert into Tbl_User(Username,Name,Surname,Mail,Password,UserTypeId) values (@a1,@a2,@a3,@a4,@a5,@a6)", connection);
-
-
-
             cmd.Parameters.AddWithValue("@a1", txtUsername.Text);
             cmd.Parameters.AddWithValue("@a2", txtName.Text);
             cmd.Parameters.AddWithValue("@a3", txtSurname.Text);
             cmd.Parameters.AddWithValue("@a4", txtMail.Text);
             cmd.Parameters.AddWithValue("@a5", txtPassword.Text);
             cmd.Parameters.AddWithValue("@a6", cmbUserTypeId.Text);
-
-
             cmd.ExecuteNonQuery();
-
-
             connection.Close();
 
             MessageBox.Show("User has been added successfully!");
@@ -107,7 +100,6 @@ namespace QuesitonsApp
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int select = dataGridView1.SelectedCells[0].RowIndex;
-
             txtUserID.Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
             txtUsername.Text = dataGridView1.Rows[select].Cells[1].Value.ToString();
             txtName.Text = dataGridView1.Rows[select].Cells[2].Value.ToString();
@@ -119,13 +111,8 @@ namespace QuesitonsApp
 
         private void btnaUpdateUser_Click(object sender, EventArgs e)
         {
-
-
             connection.Open();
             SqlCommand cmdUpdate = new SqlCommand("Update Tbl_User Set Username=@a1,Name=@a2,Surname=@a3,Mail=@a4,Password=@a5,UserTypeID=@a6 Where UserID=@a7", connection);
-
-
-
             cmdUpdate.Parameters.AddWithValue("@a1", txtUsername.Text);
             cmdUpdate.Parameters.AddWithValue("@a2", txtName.Text);
             cmdUpdate.Parameters.AddWithValue("@a3", txtSurname.Text);
@@ -135,13 +122,10 @@ namespace QuesitonsApp
             cmdUpdate.Parameters.AddWithValue("@a7", txtUserID.Text);
 
             cmdUpdate.ExecuteNonQuery();
-
-
             connection.Close();
             MessageBox.Show("Update Successful");
             btnRefresh.PerformClick();
         }
-
         private void btnUserDelete_Click(object sender, EventArgs e)
         {
             connection.Open();
@@ -152,7 +136,6 @@ namespace QuesitonsApp
             connection.Close();
             btnRefresh.PerformClick();
         }
-
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             DataTable tbl = new DataTable();

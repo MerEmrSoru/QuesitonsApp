@@ -26,9 +26,7 @@ namespace QuesitonsApp
         
         private void FormQuestion_Load(object sender, EventArgs e)
         {
-           
             
-          
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
 
@@ -44,18 +42,7 @@ namespace QuesitonsApp
             SqlCommand com=new SqlCommand("Select Count(*)From Tbl_Question",connection);
             lblRandQu.Text=com.ExecuteScalar().ToString();
             connection.Close();
-
-        }
-
-
-         
-
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
-
+        }       
         private void ButtonAfterQuest_Click(object sender, EventArgs e)
         {
             int RandQ;
@@ -88,9 +75,6 @@ namespace QuesitonsApp
             }
             connection.Close();
 
-
-
-            //Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
             LblQuestion.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[1].Value.ToString();
             lblSchoolObject.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[2].Value.ToString();
             lblUnitId.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[3].Value.ToString();
@@ -102,5 +86,7 @@ namespace QuesitonsApp
             RdbC.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[9].Value.ToString();
             RdbD.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[10].Value.ToString();
         }
+
+        
     }
 }

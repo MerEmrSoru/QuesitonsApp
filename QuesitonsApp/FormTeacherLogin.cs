@@ -23,7 +23,6 @@ namespace QuesitonsApp
             FormUserSelect f1=new FormUserSelect();
             f1.Show();
             this.Hide();
-
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -49,24 +48,23 @@ namespace QuesitonsApp
 
         private void LnkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormRegister f1=new FormRegister();
-            f1.Show();
+            FormRegister f2=new FormRegister();
+            f2.Show();
             this.Hide();
         }
 
         private void lnkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormSendPassword f2=new FormSendPassword();
-            f2.Show();
+            FormSendPassword f3=new FormSendPassword();
+            f3.Show();
             this.Hide();
         }
 
         private void BtnBack_Click_1(object sender, EventArgs e)
         {
-            FormUserSelect f3=new FormUserSelect();
-             f3.Show();
+            FormUserSelect f4=new FormUserSelect();
+             f4.Show();
             this.Hide();
-
         }
     }
 }

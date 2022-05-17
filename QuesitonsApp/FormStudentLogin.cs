@@ -27,11 +27,10 @@ namespace QuesitonsApp
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            FormUserSelect f1 = new FormUserSelect();
-            f1.Show();
+            FormUserSelect f2 = new FormUserSelect();
+            f2.Show();
             this.Hide();
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             connection.Open();
@@ -42,8 +41,8 @@ namespace QuesitonsApp
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                FormStudentPanel f1=new FormStudentPanel();
-                f1.Show();
+                FormStudentPanel f3=new FormStudentPanel();
+                f3.Show();
                 this.Hide();
             }
             else
@@ -55,8 +54,8 @@ namespace QuesitonsApp
 
         private void lnkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormSendPassword f1=new FormSendPassword();
-            f1.Show();
+            FormSendPassword f4=new FormSendPassword();
+            f4.Show();
             this.Hide();
         }
     }

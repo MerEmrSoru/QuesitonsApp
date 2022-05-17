@@ -27,16 +27,16 @@ namespace QuesitonsApp
 
         private void BtnUserProfile_Click(object sender, EventArgs e)
         {
-            FormUserList f1=new FormUserList();
-            f1.Show();
+            FormUserList f2=new FormUserList();
+            f2.Show();
             this.Hide();
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            FormAdminLogin f1=new FormAdminLogin();
-            f1.Show();
+            FormAdminLogin f3=new FormAdminLogin();
+            f3.Show();
             this.Hide();
-        }
+        }       
     }
 }

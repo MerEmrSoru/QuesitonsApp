@@ -120,6 +120,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(861, 684);
             this.panel2.TabIndex = 141;
+            
             // 
             // pctimage
             // 
@@ -293,7 +294,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(742, 87);
             this.dataGridView1.TabIndex = 138;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+           
             // 
             // questionIDDataGridViewTextBoxColumn
             // 

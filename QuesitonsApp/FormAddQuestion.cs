@@ -22,21 +22,11 @@ namespace QuesitonsApp
         SqlConnection connection = new SqlConnection("Data Source=MSI\\SQLEXPRESS;Initial Catalog=QuesitonApp;Integrated Security=True");
         string imagepath;
         public int lastQuestId;
-        private void dataQuest_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-    
-
 
         public void FormAddQuestion_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
-
-           
-
 
             timer1.Start();
             //BU KOD İLE OTOMATİK OLARAK FORM AÇILDIĞINDA BİR KERE LİSTELE BUTONUNA BASACAK VE LİSTE AÇIK SEKİLDE FORM GELECEK
@@ -54,33 +44,12 @@ namespace QuesitonsApp
           
         }
        
-        
-
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             // "Timer" için gerekli ayarlarmalar
 
             lblNewDate.Text = DateTime.Now.ToLongDateString();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
-            DataTable tbl = new DataTable();
-            connection.Open();
-            SqlDataAdapter adtr = new SqlDataAdapter("select *from tbl_Question", connection);
-            adtr.Fill(tbl);
-            dataGridView1.DataSource = tbl;
-            connection.Close();
-        }
-
-       
-
-      
-
-
         public void BtnQuestionList_Click(object sender, EventArgs e)
         {
             //VERİTABANINDAKİ SORU SAYISI CEKİLDİ(3 ADET SORU EKSİK GÖZÜKÜYOR SEBEBİ İSE 3 ADET DELETE İŞLEMİ OLDUĞU İÇİN QUESTION IMAGE LABELININ SAĞ TARAFINDA SORU SAYISINI VEREN LABEL KOYULDU)
@@ -96,16 +65,9 @@ namespace QuesitonsApp
             connection.Close();
               
         }
-      
-
-       
-
-       
 
         private void btnAddQuestion_Click(object sender, EventArgs e)
         {
-
-
 
             if (cmbSubjectID.SelectedItem == null || cmbObjects.SelectedItem == null || cmbRansw.SelectedItem == null)
             {
@@ -233,7 +195,6 @@ namespace QuesitonsApp
                     }
                 }
 
-
                 else if (cmbUnıtID.SelectedItem.ToString() == "5")
                 {
                     txtUnitName.Text = ("Basit Makineler");
@@ -301,17 +262,12 @@ namespace QuesitonsApp
             cmd.Parameters.AddWithValue("@p8", TxtOpt2.Text);
             cmd.Parameters.AddWithValue("@p9", TxtOpt3.Text);
             cmd.Parameters.AddWithValue("@p10", TxtOpt4.Text);
-
             cmd.ExecuteNonQuery();
-
             connection.Close();
-
             MessageBox.Show("REGISTRATION COMPLETED SUCCESSFULLY!!", "Register", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //BUTONA BASILDIĞINDA TABLOYU DOLDURUR.
             BtnQuestionList.PerformClick();
-
-        
-    }
+        }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
@@ -335,19 +291,16 @@ namespace QuesitonsApp
             connection.Close();
 
             int select = dataGridView1.SelectedCells[0].RowIndex;
-
             TxtQuesId.Text = dataGridView1.Rows[select].Cells[0].Value.ToString();
             txtQuestion.Text = dataGridView1.Rows[select].Cells[1].Value.ToString();
             txtSchoolObj.Text = dataGridView1.Rows[select].Cells[2].Value.ToString();
             cmbUnıtID.Text = dataGridView1.Rows[select].Cells[3].Value.ToString();
             cmbSubjectID.Text = dataGridView1.Rows[select].Cells[4].Value.ToString();
             cmbRansw.Text = dataGridView1.Rows[select].Cells[5].Value.ToString();
-
             TxtOpt1.Text = dataGridView1.Rows[select].Cells[7].Value.ToString();
             TxtOpt2.Text = dataGridView1.Rows[select].Cells[8].Value.ToString();
             TxtOpt3.Text = dataGridView1.Rows[select].Cells[9].Value.ToString();
             TxtOpt4.Text = dataGridView1.Rows[select].Cells[10].Value.ToString();
-
 
         }
 
@@ -396,7 +349,6 @@ namespace QuesitonsApp
             cmdUpdate.Parameters.AddWithValue("@a9", TxtOpt4.Text);
             cmdUpdate.Parameters.AddWithValue("@a10", TxtQuesId.Text);
             cmdUpdate.ExecuteNonQuery();
-
 
             connection.Close();
             MessageBox.Show("Update Successful");
