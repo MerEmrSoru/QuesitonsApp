@@ -16,7 +16,5 @@ namespace QuesitonsApp
             connection.Open();
             return connection;
         }
-
-
     }
 }

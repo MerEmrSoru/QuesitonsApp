@@ -8,9 +8,5 @@ namespace QuesitonsApp
 {
     public class SigmaSixAlgorithm
     {
-        static void main()
-        {
-
-        }
     }
 }
