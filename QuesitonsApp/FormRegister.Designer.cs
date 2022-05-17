@@ -392,9 +392,9 @@
             this.Controls.Add(this.btnRexit);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.lbltime);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormRegister";
             this.Text = "REGISTER";
-        
             this.ResumeLayout(false);
             this.PerformLayout();
 

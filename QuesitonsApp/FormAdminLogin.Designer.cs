@@ -199,9 +199,9 @@
             this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAdminLogin";
             this.Text = "ADMIN LOGIN";
-        
             this.ResumeLayout(false);
             this.PerformLayout();
 

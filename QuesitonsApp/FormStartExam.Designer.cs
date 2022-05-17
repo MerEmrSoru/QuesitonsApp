@@ -35,12 +35,15 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Headline R", 25.8F);
-            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
             this.button1.Location = new System.Drawing.Point(291, 249);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(578, 187);
@@ -79,8 +82,10 @@
             this.ClientSize = new System.Drawing.Size(1197, 742);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormStartExam";
             this.Text = "FormStartExam";
+          
             this.ResumeLayout(false);
 
         }

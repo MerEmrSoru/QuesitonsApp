@@ -171,6 +171,7 @@
             this.ClientSize = new System.Drawing.Size(1197, 742);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAdmin";
             this.Text = "Admin";
             this.panel1.ResumeLayout(false);

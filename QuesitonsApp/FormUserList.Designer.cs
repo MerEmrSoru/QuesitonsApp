@@ -630,6 +630,7 @@
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormUserList";
             this.Text = "FormUserList";
             this.Load += new System.EventHandler(this.FormUserList_Load);

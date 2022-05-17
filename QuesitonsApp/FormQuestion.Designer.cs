@@ -59,7 +59,7 @@
             this.option2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ButtonAfterQuest = new System.Windows.Forms.Button();
+            this.BtnNextQuest = new System.Windows.Forms.Button();
             this.RdbD = new System.Windows.Forms.RadioButton();
             this.RdbC = new System.Windows.Forms.RadioButton();
             this.RdbB = new System.Windows.Forms.RadioButton();
@@ -120,7 +120,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(861, 684);
             this.panel2.TabIndex = 141;
-            
             // 
             // pctimage
             // 
@@ -294,7 +293,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(742, 87);
             this.dataGridView1.TabIndex = 138;
-           
             // 
             // questionIDDataGridViewTextBoxColumn
             // 
@@ -375,27 +373,27 @@
             this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
             this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
             // 
-            // ButtonAfterQuest
+            // BtnNextQuest
             // 
-            this.ButtonAfterQuest.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonAfterQuest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonAfterQuest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAfterQuest.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.ButtonAfterQuest.FlatAppearance.BorderSize = 2;
-            this.ButtonAfterQuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.ButtonAfterQuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.ButtonAfterQuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAfterQuest.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonAfterQuest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ButtonAfterQuest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ButtonAfterQuest.Location = new System.Drawing.Point(1016, 640);
-            this.ButtonAfterQuest.Margin = new System.Windows.Forms.Padding(2);
-            this.ButtonAfterQuest.Name = "ButtonAfterQuest";
-            this.ButtonAfterQuest.Size = new System.Drawing.Size(210, 43);
-            this.ButtonAfterQuest.TabIndex = 137;
-            this.ButtonAfterQuest.Text = "Next Question";
-            this.ButtonAfterQuest.UseVisualStyleBackColor = false;
-            this.ButtonAfterQuest.Click += new System.EventHandler(this.ButtonAfterQuest_Click);
+            this.BtnNextQuest.BackColor = System.Drawing.Color.Transparent;
+            this.BtnNextQuest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnNextQuest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNextQuest.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnNextQuest.FlatAppearance.BorderSize = 2;
+            this.BtnNextQuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnNextQuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnNextQuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNextQuest.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNextQuest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnNextQuest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.BtnNextQuest.Location = new System.Drawing.Point(1016, 640);
+            this.BtnNextQuest.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnNextQuest.Name = "BtnNextQuest";
+            this.BtnNextQuest.Size = new System.Drawing.Size(210, 43);
+            this.BtnNextQuest.TabIndex = 137;
+            this.BtnNextQuest.Text = "Next Question";
+            this.BtnNextQuest.UseVisualStyleBackColor = false;
+            this.BtnNextQuest.Click += new System.EventHandler(this.ButtonAfterQuest_Click);
             // 
             // RdbD
             // 
@@ -482,12 +480,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblQuestion);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.ButtonAfterQuest);
+            this.Controls.Add(this.BtnNextQuest);
             this.Controls.Add(this.RdbD);
             this.Controls.Add(this.RdbC);
             this.Controls.Add(this.RdbB);
             this.Controls.Add(this.RdbA);
             this.Controls.Add(this.BtnBackPage);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormQuestion";
             this.Text = "FormQuestion";
             this.Load += new System.EventHandler(this.FormQuestion_Load);
@@ -522,7 +521,7 @@
         private System.Windows.Forms.Label lblCorrectAnswer;
         private System.Windows.Forms.Label LblQuestion;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button ButtonAfterQuest;
+        private System.Windows.Forms.Button BtnNextQuest;
         private System.Windows.Forms.RadioButton RdbD;
         private System.Windows.Forms.RadioButton RdbC;
         private System.Windows.Forms.RadioButton RdbB;

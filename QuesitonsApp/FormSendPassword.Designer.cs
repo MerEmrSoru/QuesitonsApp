@@ -180,6 +180,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.label4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSendPassword";
             this.Text = "SEND PASSWORD";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

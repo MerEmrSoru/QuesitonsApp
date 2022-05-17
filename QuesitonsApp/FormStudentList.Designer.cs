@@ -188,6 +188,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormStudentList";
             this.Text = "FormStudentList";
             this.Load += new System.EventHandler(this.FormStudentList_Load);

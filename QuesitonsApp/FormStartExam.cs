@@ -19,9 +19,22 @@ namespace QuesitonsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormQuestion f1=new FormQuestion();
-            f1.Show();
-            this.Hide();
+           DialogResult opt= MessageBox.Show("You are about to start the test.Your timer will start and you will be given your first page of questions when you confirm."," You are about to start the test", MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+            if (opt == DialogResult.OK)
+            {
+              FormQuestion f1=new FormQuestion();
+                f1.Show();
+                this.Hide();
+            }
+            else if (opt == DialogResult.Cancel)
+            {
+               FormStartExam frm = new FormStartExam();
+                frm.Show();
+                this.Hide();
+            }
+
         }
+
+      
     }
 }

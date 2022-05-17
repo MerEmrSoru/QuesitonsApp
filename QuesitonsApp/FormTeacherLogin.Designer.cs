@@ -213,6 +213,7 @@
             this.Controls.Add(this.TxtUsername);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTeacherLogin";
             this.Text = "TEACHER LOGIN";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

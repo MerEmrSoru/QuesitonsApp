@@ -213,6 +213,7 @@
             this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormStudentLogin";
             this.Text = "Student Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

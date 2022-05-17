@@ -26,7 +26,7 @@ namespace QuesitonsApp
         
         private void FormQuestion_Load(object sender, EventArgs e)
         {
-            
+         
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
 
@@ -42,6 +42,7 @@ namespace QuesitonsApp
             SqlCommand com=new SqlCommand("Select Count(*)From Tbl_Question",connection);
             lblRandQu.Text=com.ExecuteScalar().ToString();
             connection.Close();
+            BtnNextQuest.PerformClick();
         }       
         private void ButtonAfterQuest_Click(object sender, EventArgs e)
         {

@@ -129,7 +129,7 @@ namespace QuesitonsApp
         private void btnUserDelete_Click(object sender, EventArgs e)
         {
             connection.Open();
-            SqlCommand cmdDelete = new SqlCommand("Delete from Tbl_Question where QuestionId=@k1", connection);
+            SqlCommand cmdDelete = new SqlCommand("Delete from  Tbl_User where UserID=@k1", connection);
             cmdDelete.Parameters.AddWithValue("@k1", txtUserID.Text);
             cmdDelete.ExecuteNonQuery();
             MessageBox.Show("Deletion successful");

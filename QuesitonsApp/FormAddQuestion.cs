@@ -25,6 +25,7 @@ namespace QuesitonsApp
 
         public void FormAddQuestion_Load(object sender, EventArgs e)
         {
+ 
             // TODO: This line of code loads data into the 'quesitonAppDataSet3.Tbl_Question' table. You can move, or remove it, as needed.
             this.tbl_QuestionTableAdapter.Fill(this.quesitonAppDataSet3.Tbl_Question);
 
@@ -39,7 +40,7 @@ namespace QuesitonsApp
             connection.Close();
             BtnQuestionList.PerformClick();
 
-        lastQuestId = dataGridView1.RowCount ;
+        lastQuestId = dataGridView1.RowCount-1 ;
         lblQuestNumber.Text = lastQuestId.ToString();
           
         }
