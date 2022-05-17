@@ -51,7 +51,7 @@ namespace QuesitonsApp
             Random Random = new Random();
             //   for (int QuestionNumber = 1; QuestionNumber <= 10; QuestionNumber++) //10 soruluk bir sınav hazırlanacağı için fonksiyonu 10 kere çalıştıracak olan kod yazıldı 
             // {
-            int QuestionRandom = Random.Next(0, RandQ-4); //Rastgele sorular seçmek üzere "QuestionRandom" değişkeni oluşturuldu
+            int QuestionRandom = Random.Next(0, RandQ); //Rastgele sorular seçmek üzere "QuestionRandom" değişkeni oluşturuldu
 
 
             //  }
@@ -75,7 +75,7 @@ namespace QuesitonsApp
             }
             connection.Close();
 
-            LblQuestion.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[1].Value.ToString();
+            LblQuestion.Text = dataGridView1.Rows[QuestionRandom-2].Cells[1].Value.ToString();
             lblSchoolObject.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[2].Value.ToString();
             lblUnitId.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[3].Value.ToString();
             lblSubjecIId.Text = dataGridView1.Rows[QuestionRandom - 1].Cells[4].Value.ToString();

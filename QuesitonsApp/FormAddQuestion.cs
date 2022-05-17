@@ -39,7 +39,7 @@ namespace QuesitonsApp
             connection.Close();
             BtnQuestionList.PerformClick();
 
-        lastQuestId = dataGridView1.RowCount - 1;
+        lastQuestId = dataGridView1.RowCount ;
         lblQuestNumber.Text = lastQuestId.ToString();
           
         }
