@@ -39,6 +39,7 @@
             this.lblSubjecIId = new System.Windows.Forms.Label();
             this.lblSchoolObject = new System.Windows.Forms.Label();
             this.lblSec = new System.Windows.Forms.Label();
+            this.LblCorrect = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.lblSubjectID = new System.Windows.Forms.Label();
@@ -47,16 +48,6 @@
             this.lblCorrectAnswer = new System.Windows.Forms.Label();
             this.LblQuestion = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.LblCorrect = new System.Windows.Forms.Label();
-            this.BtnNextQuest = new System.Windows.Forms.Button();
-            this.RdbD = new System.Windows.Forms.RadioButton();
-            this.RdbC = new System.Windows.Forms.RadioButton();
-            this.RdbB = new System.Windows.Forms.RadioButton();
-            this.RdbA = new System.Windows.Forms.RadioButton();
-            this.BtnBackPage = new System.Windows.Forms.Button();
-            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
-            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
             this.questionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.schoolObjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,12 +59,32 @@
             this.option2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.option4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quesitonAppDataSet3 = new QuesitonsApp.QuesitonAppDataSet3();
+            this.BtnNextQuest = new System.Windows.Forms.Button();
+            this.RdbD = new System.Windows.Forms.RadioButton();
+            this.RdbC = new System.Windows.Forms.RadioButton();
+            this.RdbB = new System.Windows.Forms.RadioButton();
+            this.RdbA = new System.Windows.Forms.RadioButton();
+            this.BtnBackPage = new System.Windows.Forms.Button();
+            this.tbl_QuestionTableAdapter = new QuesitonsApp.QuesitonAppDataSet3TableAdapters.Tbl_QuestionTableAdapter();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lblRandNumb = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quesitonAppDataSet4 = new QuesitonsApp.QuesitonAppDataSet4();
+            this.tblExam1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_Exam1TableAdapter = new QuesitonsApp.QuesitonAppDataSet4TableAdapters.Tbl_Exam1TableAdapter();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctimage)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblExam1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblRandQu
@@ -92,6 +103,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.pctimage);
             this.panel2.Location = new System.Drawing.Point(22, 7);
             this.panel2.Name = "panel2";
@@ -205,6 +217,20 @@
             this.lblSec.Size = new System.Drawing.Size(60, 38);
             this.lblSec.TabIndex = 144;
             this.lblSec.Text = "Sec";
+            // 
+            // LblCorrect
+            // 
+            this.LblCorrect.AutoSize = true;
+            this.LblCorrect.BackColor = System.Drawing.Color.Transparent;
+            this.LblCorrect.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCorrect.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.LblCorrect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.LblCorrect.Location = new System.Drawing.Point(256, 8);
+            this.LblCorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCorrect.Name = "LblCorrect";
+            this.LblCorrect.Size = new System.Drawing.Size(0, 28);
+            this.LblCorrect.TabIndex = 144;
+            this.LblCorrect.Visible = false;
             // 
             // label1
             // 
@@ -325,19 +351,93 @@
             this.dataGridView1.TabIndex = 150;
             this.dataGridView1.Visible = false;
             // 
-            // LblCorrect
+            // questionIDDataGridViewTextBoxColumn
             // 
-            this.LblCorrect.AutoSize = true;
-            this.LblCorrect.BackColor = System.Drawing.Color.Transparent;
-            this.LblCorrect.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCorrect.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.LblCorrect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LblCorrect.Location = new System.Drawing.Point(256, 8);
-            this.LblCorrect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblCorrect.Name = "LblCorrect";
-            this.LblCorrect.Size = new System.Drawing.Size(0, 28);
-            this.LblCorrect.TabIndex = 144;
-            this.LblCorrect.Visible = false;
+            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
+            this.questionIDDataGridViewTextBoxColumn.HeaderText = "QuestionID";
+            this.questionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
+            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // questionDataGridViewTextBoxColumn
+            // 
+            this.questionDataGridViewTextBoxColumn.DataPropertyName = "Question";
+            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
+            this.questionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
+            // 
+            // schoolObjectDataGridViewTextBoxColumn
+            // 
+            this.schoolObjectDataGridViewTextBoxColumn.DataPropertyName = "SchoolObject";
+            this.schoolObjectDataGridViewTextBoxColumn.HeaderText = "SchoolObject";
+            this.schoolObjectDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.schoolObjectDataGridViewTextBoxColumn.Name = "schoolObjectDataGridViewTextBoxColumn";
+            // 
+            // unitIDDataGridViewTextBoxColumn
+            // 
+            this.unitIDDataGridViewTextBoxColumn.DataPropertyName = "UnitID";
+            this.unitIDDataGridViewTextBoxColumn.HeaderText = "UnitID";
+            this.unitIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitIDDataGridViewTextBoxColumn.Name = "unitIDDataGridViewTextBoxColumn";
+            // 
+            // subjectIDDataGridViewTextBoxColumn
+            // 
+            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "SubjectID";
+            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "SubjectID";
+            this.subjectIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
+            // 
+            // correctAnswerDataGridViewTextBoxColumn
+            // 
+            this.correctAnswerDataGridViewTextBoxColumn.DataPropertyName = "CorrectAnswer";
+            this.correctAnswerDataGridViewTextBoxColumn.HeaderText = "CorrectAnswer";
+            this.correctAnswerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.correctAnswerDataGridViewTextBoxColumn.Name = "correctAnswerDataGridViewTextBoxColumn";
+            // 
+            // ımageDataGridViewImageColumn
+            // 
+            this.ımageDataGridViewImageColumn.DataPropertyName = "Image";
+            this.ımageDataGridViewImageColumn.HeaderText = "Image";
+            this.ımageDataGridViewImageColumn.MinimumWidth = 6;
+            this.ımageDataGridViewImageColumn.Name = "ımageDataGridViewImageColumn";
+            // 
+            // option1DataGridViewTextBoxColumn
+            // 
+            this.option1DataGridViewTextBoxColumn.DataPropertyName = "Option1";
+            this.option1DataGridViewTextBoxColumn.HeaderText = "Option1";
+            this.option1DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option1DataGridViewTextBoxColumn.Name = "option1DataGridViewTextBoxColumn";
+            // 
+            // option2DataGridViewTextBoxColumn
+            // 
+            this.option2DataGridViewTextBoxColumn.DataPropertyName = "Option2";
+            this.option2DataGridViewTextBoxColumn.HeaderText = "Option2";
+            this.option2DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option2DataGridViewTextBoxColumn.Name = "option2DataGridViewTextBoxColumn";
+            // 
+            // option3DataGridViewTextBoxColumn
+            // 
+            this.option3DataGridViewTextBoxColumn.DataPropertyName = "Option3";
+            this.option3DataGridViewTextBoxColumn.HeaderText = "Option3";
+            this.option3DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option3DataGridViewTextBoxColumn.Name = "option3DataGridViewTextBoxColumn";
+            // 
+            // option4DataGridViewTextBoxColumn
+            // 
+            this.option4DataGridViewTextBoxColumn.DataPropertyName = "Option4";
+            this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
+            this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
+            // 
+            // tblQuestionBindingSource
+            // 
+            this.tblQuestionBindingSource.DataMember = "Tbl_Question";
+            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet3;
+            // 
+            // quesitonAppDataSet3
+            // 
+            this.quesitonAppDataSet3.DataSetName = "QuesitonAppDataSet3";
+            this.quesitonAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // BtnNextQuest
             // 
@@ -359,6 +459,7 @@
             this.BtnNextQuest.TabIndex = 149;
             this.BtnNextQuest.Text = "Next Question";
             this.BtnNextQuest.UseVisualStyleBackColor = false;
+            this.BtnNextQuest.Click += new System.EventHandler(this.BtnNextQuest_Click);
             // 
             // RdbD
             // 
@@ -439,103 +540,86 @@
             this.BtnBackPage.TabIndex = 143;
             this.BtnBackPage.UseVisualStyleBackColor = false;
             // 
-            // quesitonAppDataSet3
-            // 
-            this.quesitonAppDataSet3.DataSetName = "QuesitonAppDataSet3";
-            this.quesitonAppDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblQuestionBindingSource
-            // 
-            this.tblQuestionBindingSource.DataMember = "Tbl_Question";
-            this.tblQuestionBindingSource.DataSource = this.quesitonAppDataSet3;
-            // 
             // tbl_QuestionTableAdapter
             // 
             this.tbl_QuestionTableAdapter.ClearBeforeFill = true;
             // 
-            // questionIDDataGridViewTextBoxColumn
+            // listBox1
             // 
-            this.questionIDDataGridViewTextBoxColumn.DataPropertyName = "QuestionID";
-            this.questionIDDataGridViewTextBoxColumn.HeaderText = "QuestionID";
-            this.questionIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.questionIDDataGridViewTextBoxColumn.Name = "questionIDDataGridViewTextBoxColumn";
-            this.questionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(38, 34);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 84);
+            this.listBox1.TabIndex = 155;
+            this.listBox1.Visible = false;
             // 
-            // questionDataGridViewTextBoxColumn
+            // lblRandNumb
             // 
-            this.questionDataGridViewTextBoxColumn.DataPropertyName = "Question";
-            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
-            this.questionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
+            this.lblRandNumb.AutoSize = true;
+            this.lblRandNumb.BackColor = System.Drawing.Color.Transparent;
+            this.lblRandNumb.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRandNumb.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblRandNumb.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblRandNumb.Location = new System.Drawing.Point(1163, 768);
+            this.lblRandNumb.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRandNumb.Name = "lblRandNumb";
+            this.lblRandNumb.Size = new System.Drawing.Size(0, 28);
+            this.lblRandNumb.TabIndex = 155;
             // 
-            // schoolObjectDataGridViewTextBoxColumn
+            // dataGridView2
             // 
-            this.schoolObjectDataGridViewTextBoxColumn.DataPropertyName = "SchoolObject";
-            this.schoolObjectDataGridViewTextBoxColumn.HeaderText = "SchoolObject";
-            this.schoolObjectDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.schoolObjectDataGridViewTextBoxColumn.Name = "schoolObjectDataGridViewTextBoxColumn";
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.tblExam1BindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(895, 743);
+            this.dataGridView2.MultiSelect = false;
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(130, 53);
+            this.dataGridView2.TabIndex = 156;
+            this.dataGridView2.Visible = false;
             // 
-            // unitIDDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.unitIDDataGridViewTextBoxColumn.DataPropertyName = "UnitID";
-            this.unitIDDataGridViewTextBoxColumn.HeaderText = "UnitID";
-            this.unitIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.unitIDDataGridViewTextBoxColumn.Name = "unitIDDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "QuestionID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "QuestionID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // subjectIDDataGridViewTextBoxColumn
+            // quesitonAppDataSet4
             // 
-            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "SubjectID";
-            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "SubjectID";
-            this.subjectIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
+            this.quesitonAppDataSet4.DataSetName = "QuesitonAppDataSet4";
+            this.quesitonAppDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // correctAnswerDataGridViewTextBoxColumn
+            // tblExam1BindingSource
             // 
-            this.correctAnswerDataGridViewTextBoxColumn.DataPropertyName = "CorrectAnswer";
-            this.correctAnswerDataGridViewTextBoxColumn.HeaderText = "CorrectAnswer";
-            this.correctAnswerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.correctAnswerDataGridViewTextBoxColumn.Name = "correctAnswerDataGridViewTextBoxColumn";
+            this.tblExam1BindingSource.DataMember = "Tbl_Exam1";
+            this.tblExam1BindingSource.DataSource = this.quesitonAppDataSet4;
             // 
-            // ımageDataGridViewImageColumn
+            // tbl_Exam1TableAdapter
             // 
-            this.ımageDataGridViewImageColumn.DataPropertyName = "Image";
-            this.ımageDataGridViewImageColumn.HeaderText = "Image";
-            this.ımageDataGridViewImageColumn.MinimumWidth = 6;
-            this.ımageDataGridViewImageColumn.Name = "ımageDataGridViewImageColumn";
+            this.tbl_Exam1TableAdapter.ClearBeforeFill = true;
             // 
-            // option1DataGridViewTextBoxColumn
+            // timer1
             // 
-            this.option1DataGridViewTextBoxColumn.DataPropertyName = "Option1";
-            this.option1DataGridViewTextBoxColumn.HeaderText = "Option1";
-            this.option1DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option1DataGridViewTextBoxColumn.Name = "option1DataGridViewTextBoxColumn";
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // option2DataGridViewTextBoxColumn
-            // 
-            this.option2DataGridViewTextBoxColumn.DataPropertyName = "Option2";
-            this.option2DataGridViewTextBoxColumn.HeaderText = "Option2";
-            this.option2DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option2DataGridViewTextBoxColumn.Name = "option2DataGridViewTextBoxColumn";
-            // 
-            // option3DataGridViewTextBoxColumn
-            // 
-            this.option3DataGridViewTextBoxColumn.DataPropertyName = "Option3";
-            this.option3DataGridViewTextBoxColumn.HeaderText = "Option3";
-            this.option3DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option3DataGridViewTextBoxColumn.Name = "option3DataGridViewTextBoxColumn";
-            // 
-            // option4DataGridViewTextBoxColumn
-            // 
-            this.option4DataGridViewTextBoxColumn.DataPropertyName = "Option4";
-            this.option4DataGridViewTextBoxColumn.HeaderText = "Option4";
-            this.option4DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.option4DataGridViewTextBoxColumn.Name = "option4DataGridViewTextBoxColumn";
-            // 
-            // FormSigma6Exam
+            // FormSigmaSixExam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1237, 803);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.lblRandNumb);
             this.Controls.Add(this.lblRandQu);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -547,7 +631,7 @@
             this.Controls.Add(this.RdbB);
             this.Controls.Add(this.RdbA);
             this.Controls.Add(this.BtnBackPage);
-            this.Name = "FormSigma6Exam";
+            this.Name = "FormSigmaSixExam";
             this.Text = "FormSigma6Exam";
             this.Load += new System.EventHandler(this.FormSigma6Exam_Load);
             this.panel2.ResumeLayout(false);
@@ -555,8 +639,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblQuestionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quesitonAppDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblExam1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -602,5 +689,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn option2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option3DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn option4DataGridViewTextBoxColumn;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label lblRandNumb;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private QuesitonAppDataSet4 quesitonAppDataSet4;
+        private System.Windows.Forms.BindingSource tblExam1BindingSource;
+        private QuesitonAppDataSet4TableAdapters.Tbl_Exam1TableAdapter tbl_Exam1TableAdapter;
+        private System.Windows.Forms.Timer timer1;
     }
 }

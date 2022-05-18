@@ -34,15 +34,15 @@ namespace QuesitonsApp
 
         private void LnkRegister_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormRegister f1 = new FormRegister();
-            f1.Show();
+            FormRegister f3 = new FormRegister();
+            f3.Show();
             this.Hide();
         }
 
         private void lnkForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormSendPassword f1 = new FormSendPassword();
-            f1.Show();
+            FormSendPassword f4 = new FormSendPassword();
+            f4.Show();
             this.Hide();
         }
     }

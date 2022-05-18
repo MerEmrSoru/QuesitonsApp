@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddQuestion));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -184,7 +184,7 @@
             this.BtnQuestionList.Font = new System.Drawing.Font("Headline R", 10.2F);
             this.BtnQuestionList.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnQuestionList.Location = new System.Drawing.Point(529, 497);
-            this.BtnQuestionList.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnQuestionList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnQuestionList.Name = "BtnQuestionList";
             this.BtnQuestionList.Size = new System.Drawing.Size(266, 65);
             this.BtnQuestionList.TabIndex = 121;
@@ -196,14 +196,14 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeight = 40;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.questionIDDataGridViewTextBoxColumn,
@@ -218,14 +218,14 @@
             this.option3DataGridViewTextBoxColumn,
             this.option4DataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblQuestionBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PeachPuff;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PeachPuff;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Location = new System.Drawing.Point(263, 567);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -362,7 +362,7 @@
             this.BtnDelete.Font = new System.Drawing.Font("Headline R", 10.2F);
             this.BtnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnDelete.Location = new System.Drawing.Point(786, 497);
-            this.BtnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(272, 65);
             this.BtnDelete.TabIndex = 119;
@@ -422,7 +422,7 @@
             this.txtSchoolObj.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtSchoolObj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSchoolObj.Location = new System.Drawing.Point(15, 37);
-            this.txtSchoolObj.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSchoolObj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSchoolObj.MaxLength = 25;
             this.txtSchoolObj.Multiline = true;
             this.txtSchoolObj.Name = "txtSchoolObj";
@@ -435,10 +435,10 @@
             // 
             this.txtWans.BackColor = System.Drawing.Color.MistyRose;
             this.txtWans.Enabled = false;
-            this.txtWans.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.txtWans.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtWans.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtWans.Location = new System.Drawing.Point(816, 36);
-            this.txtWans.Margin = new System.Windows.Forms.Padding(2);
+            this.txtWans.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtWans.MaxLength = 25;
             this.txtWans.Multiline = true;
             this.txtWans.Name = "txtWans";
@@ -452,7 +452,7 @@
             this.txtUnitName.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtUnitName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtUnitName.Location = new System.Drawing.Point(223, 37);
-            this.txtUnitName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUnitName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUnitName.MaxLength = 25;
             this.txtUnitName.Multiline = true;
             this.txtUnitName.Name = "txtUnitName";
@@ -493,10 +493,10 @@
             // 
             this.txtWans2.BackColor = System.Drawing.Color.MistyRose;
             this.txtWans2.Enabled = false;
-            this.txtWans2.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.txtWans2.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtWans2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtWans2.Location = new System.Drawing.Point(856, 36);
-            this.txtWans2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtWans2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtWans2.MaxLength = 25;
             this.txtWans2.Multiline = true;
             this.txtWans2.Name = "txtWans2";
@@ -510,7 +510,7 @@
             this.txtSubjectName.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtSubjectName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSubjectName.Location = new System.Drawing.Point(440, 36);
-            this.txtSubjectName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSubjectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSubjectName.MaxLength = 25;
             this.txtSubjectName.Multiline = true;
             this.txtSubjectName.Name = "txtSubjectName";
@@ -523,10 +523,10 @@
             // 
             this.txtWans3.BackColor = System.Drawing.Color.MistyRose;
             this.txtWans3.Enabled = false;
-            this.txtWans3.Font = new System.Drawing.Font("Headline R", 14.1F);
+            this.txtWans3.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtWans3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtWans3.Location = new System.Drawing.Point(896, 36);
-            this.txtWans3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtWans3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtWans3.MaxLength = 25;
             this.txtWans3.Multiline = true;
             this.txtWans3.Name = "txtWans3";
@@ -563,19 +563,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(257, 807);
+            this.panel1.Size = new System.Drawing.Size(257, 805);
             this.panel1.TabIndex = 117;
             // 
             // TxtQuesId
             // 
             this.TxtQuesId.BackColor = System.Drawing.Color.MistyRose;
-            this.TxtQuesId.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtQuesId.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.TxtQuesId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtQuesId.Location = new System.Drawing.Point(169, 339);
-            this.TxtQuesId.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtQuesId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtQuesId.MaxLength = 25;
             this.TxtQuesId.Name = "TxtQuesId";
-            this.TxtQuesId.Size = new System.Drawing.Size(52, 23);
+            this.TxtQuesId.Size = new System.Drawing.Size(52, 30);
             this.TxtQuesId.TabIndex = 109;
             this.TxtQuesId.Text = " ";
             this.TxtQuesId.Visible = false;
@@ -608,13 +608,13 @@
             // TxtOpt4
             // 
             this.TxtOpt4.BackColor = System.Drawing.Color.MistyRose;
-            this.TxtOpt4.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtOpt4.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.TxtOpt4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtOpt4.Location = new System.Drawing.Point(93, 580);
-            this.TxtOpt4.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtOpt4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtOpt4.MaxLength = 25;
             this.TxtOpt4.Name = "TxtOpt4";
-            this.TxtOpt4.Size = new System.Drawing.Size(128, 23);
+            this.TxtOpt4.Size = new System.Drawing.Size(128, 30);
             this.TxtOpt4.TabIndex = 107;
             this.TxtOpt4.Text = " ";
             // 
@@ -646,7 +646,7 @@
             this.BtnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnUpdate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtnUpdate.Location = new System.Drawing.Point(10, 662);
-            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(230, 68);
             this.BtnUpdate.TabIndex = 99;
@@ -679,7 +679,7 @@
             this.btnBackk.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnBackk.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnBackk.Location = new System.Drawing.Point(10, 752);
-            this.btnBackk.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBackk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBackk.Name = "btnBackk";
             this.btnBackk.Size = new System.Drawing.Size(46, 43);
             this.btnBackk.TabIndex = 94;
@@ -689,26 +689,26 @@
             // TxtOpt3
             // 
             this.TxtOpt3.BackColor = System.Drawing.Color.MistyRose;
-            this.TxtOpt3.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtOpt3.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.TxtOpt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtOpt3.Location = new System.Drawing.Point(93, 553);
-            this.TxtOpt3.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtOpt3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtOpt3.MaxLength = 25;
             this.TxtOpt3.Name = "TxtOpt3";
-            this.TxtOpt3.Size = new System.Drawing.Size(128, 23);
+            this.TxtOpt3.Size = new System.Drawing.Size(128, 30);
             this.TxtOpt3.TabIndex = 105;
             this.TxtOpt3.Text = " ";
             // 
             // TxtOpt2
             // 
             this.TxtOpt2.BackColor = System.Drawing.Color.MistyRose;
-            this.TxtOpt2.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtOpt2.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.TxtOpt2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtOpt2.Location = new System.Drawing.Point(93, 526);
-            this.TxtOpt2.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtOpt2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtOpt2.MaxLength = 25;
             this.TxtOpt2.Name = "TxtOpt2";
-            this.TxtOpt2.Size = new System.Drawing.Size(128, 23);
+            this.TxtOpt2.Size = new System.Drawing.Size(128, 30);
             this.TxtOpt2.TabIndex = 103;
             this.TxtOpt2.Text = " ";
             // 
@@ -745,14 +745,14 @@
             this.cmbObjects.BackColor = System.Drawing.Color.MistyRose;
             this.cmbObjects.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbObjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbObjects.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbObjects.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cmbObjects.FormattingEnabled = true;
             this.cmbObjects.Items.AddRange(new object[] {
             "FEN BILIMLERI"});
             this.cmbObjects.Location = new System.Drawing.Point(10, 291);
-            this.cmbObjects.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbObjects.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbObjects.Name = "cmbObjects";
-            this.cmbObjects.Size = new System.Drawing.Size(207, 26);
+            this.cmbObjects.Size = new System.Drawing.Size(207, 31);
             this.cmbObjects.TabIndex = 86;
             this.cmbObjects.Text = "FEN BILIMLERI";
             // 
@@ -789,7 +789,7 @@
             this.cmbRansw.BackColor = System.Drawing.Color.MistyRose;
             this.cmbRansw.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbRansw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbRansw.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbRansw.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cmbRansw.FormattingEnabled = true;
             this.cmbRansw.Items.AddRange(new object[] {
             "A",
@@ -797,9 +797,9 @@
             "C",
             "D"});
             this.cmbRansw.Location = new System.Drawing.Point(169, 458);
-            this.cmbRansw.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbRansw.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbRansw.Name = "cmbRansw";
-            this.cmbRansw.Size = new System.Drawing.Size(52, 26);
+            this.cmbRansw.Size = new System.Drawing.Size(52, 31);
             this.cmbRansw.TabIndex = 67;
             // 
             // label1
@@ -819,13 +819,13 @@
             // TxtOpt1
             // 
             this.TxtOpt1.BackColor = System.Drawing.Color.MistyRose;
-            this.TxtOpt1.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TxtOpt1.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.TxtOpt1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtOpt1.Location = new System.Drawing.Point(93, 499);
-            this.TxtOpt1.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtOpt1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtOpt1.MaxLength = 25;
             this.TxtOpt1.Name = "TxtOpt1";
-            this.TxtOpt1.Size = new System.Drawing.Size(128, 23);
+            this.TxtOpt1.Size = new System.Drawing.Size(128, 30);
             this.TxtOpt1.TabIndex = 101;
             this.TxtOpt1.Text = " ";
             // 
@@ -834,7 +834,7 @@
             this.cmbUnıtID.BackColor = System.Drawing.Color.MistyRose;
             this.cmbUnıtID.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbUnıtID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbUnıtID.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbUnıtID.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cmbUnıtID.FormattingEnabled = true;
             this.cmbUnıtID.Items.AddRange(new object[] {
             "1",
@@ -845,9 +845,9 @@
             "6",
             "7"});
             this.cmbUnıtID.Location = new System.Drawing.Point(169, 377);
-            this.cmbUnıtID.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbUnıtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbUnıtID.Name = "cmbUnıtID";
-            this.cmbUnıtID.Size = new System.Drawing.Size(52, 26);
+            this.cmbUnıtID.Size = new System.Drawing.Size(52, 31);
             this.cmbUnıtID.TabIndex = 61;
             // 
             // label2
@@ -869,7 +869,7 @@
             this.cmbSubjectID.BackColor = System.Drawing.Color.MistyRose;
             this.cmbSubjectID.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbSubjectID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbSubjectID.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbSubjectID.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cmbSubjectID.FormattingEnabled = true;
             this.cmbSubjectID.Items.AddRange(new object[] {
             "1",
@@ -879,9 +879,9 @@
             "5",
             "6"});
             this.cmbSubjectID.Location = new System.Drawing.Point(171, 417);
-            this.cmbSubjectID.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSubjectID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbSubjectID.Name = "cmbSubjectID";
-            this.cmbSubjectID.Size = new System.Drawing.Size(50, 26);
+            this.cmbSubjectID.Size = new System.Drawing.Size(50, 31);
             this.cmbSubjectID.TabIndex = 63;
             // 
             // label8
@@ -913,7 +913,7 @@
             this.BtnBack.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnBack.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.BtnBack.Location = new System.Drawing.Point(-58, 663);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(46, 37);
             this.BtnBack.TabIndex = 116;
@@ -940,7 +940,7 @@
             this.pctImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pctImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pctImage.Location = new System.Drawing.Point(279, 167);
-            this.pctImage.Margin = new System.Windows.Forms.Padding(2);
+            this.pctImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pctImage.Name = "pctImage";
             this.pctImage.Size = new System.Drawing.Size(503, 324);
             this.pctImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -953,7 +953,7 @@
             this.txtQuestion.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtQuestion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtQuestion.Location = new System.Drawing.Point(800, 167);
-            this.txtQuestion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtQuestion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtQuestion.MaxLength = 1000;
             this.txtQuestion.Multiline = true;
             this.txtQuestion.Name = "txtQuestion";
@@ -977,7 +977,7 @@
             this.btnAddQuestion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAddQuestion.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnAddQuestion.Location = new System.Drawing.Point(1052, 497);
-            this.btnAddQuestion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddQuestion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddQuestion.Name = "btnAddQuestion";
             this.btnAddQuestion.Size = new System.Drawing.Size(273, 65);
             this.btnAddQuestion.TabIndex = 115;
@@ -1034,7 +1034,7 @@
             this.btnAddImage.Font = new System.Drawing.Font("Headline R", 10.2F);
             this.btnAddImage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAddImage.Location = new System.Drawing.Point(280, 497);
-            this.btnAddImage.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddImage.Name = "btnAddImage";
             this.btnAddImage.Size = new System.Drawing.Size(257, 65);
             this.btnAddImage.TabIndex = 112;
@@ -1095,7 +1095,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1358, 807);
+            this.ClientSize = new System.Drawing.Size(1358, 805);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.lblQuestNumber);
             this.Controls.Add(this.label14);

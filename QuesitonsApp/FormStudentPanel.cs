@@ -26,8 +26,16 @@ namespace QuesitonsApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormStartExam f1=new FormStartExam();
-            f1.Show();
+            FormStartExam fst=new FormStartExam();
+            fst.Show();
+            this.Hide();
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormSigmaSixExam fst=new FormSigmaSixExam();
+            fst.Show();
             this.Hide();
         }
     }

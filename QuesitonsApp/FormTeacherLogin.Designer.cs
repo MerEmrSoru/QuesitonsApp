@@ -131,13 +131,12 @@
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtPassword.Location = new System.Drawing.Point(563, 467);
+            this.TxtPassword.Location = new System.Drawing.Point(567, 481);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
-            this.TxtPassword.Multiline = true;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
-            this.TxtPassword.Size = new System.Drawing.Size(254, 39);
+            this.TxtPassword.Size = new System.Drawing.Size(254, 30);
             this.TxtPassword.TabIndex = 59;
             // 
             // TxtUsername
@@ -146,25 +145,24 @@
             this.TxtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.TxtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtUsername.Location = new System.Drawing.Point(563, 385);
+            this.TxtUsername.Location = new System.Drawing.Point(567, 399);
             this.TxtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUsername.MaxLength = 50;
-            this.TxtUsername.Multiline = true;
             this.TxtUsername.Name = "TxtUsername";
-            this.TxtUsername.Size = new System.Drawing.Size(254, 39);
+            this.TxtUsername.Size = new System.Drawing.Size(254, 30);
             this.TxtUsername.TabIndex = 57;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(369, 385);
+            this.label4.Location = new System.Drawing.Point(396, 388);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 45);
+            this.label4.Size = new System.Drawing.Size(168, 41);
             this.label4.TabIndex = 58;
             this.label4.Text = "Username:";
             // 
@@ -172,13 +170,13 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(369, 467);
+            this.label5.Location = new System.Drawing.Point(396, 470);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(185, 45);
+            this.label5.Size = new System.Drawing.Size(168, 41);
             this.label5.TabIndex = 60;
             this.label5.Text = "Password :";
             // 

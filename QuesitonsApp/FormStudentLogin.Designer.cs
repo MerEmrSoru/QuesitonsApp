@@ -48,13 +48,12 @@
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
             this.TxtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtPassword.Location = new System.Drawing.Point(554, 492);
+            this.TxtPassword.Location = new System.Drawing.Point(531, 501);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassword.MaxLength = 50;
-            this.TxtPassword.Multiline = true;
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '*';
-            this.TxtPassword.Size = new System.Drawing.Size(254, 39);
+            this.TxtPassword.Size = new System.Drawing.Size(254, 29);
             this.TxtPassword.TabIndex = 7;
             // 
             // TxtMail
@@ -63,12 +62,11 @@
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtMail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
             this.TxtMail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TxtMail.Location = new System.Drawing.Point(554, 410);
+            this.TxtMail.Location = new System.Drawing.Point(531, 419);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
-            this.TxtMail.Multiline = true;
             this.TxtMail.Name = "TxtMail";
-            this.TxtMail.Size = new System.Drawing.Size(254, 39);
+            this.TxtMail.Size = new System.Drawing.Size(254, 29);
             this.TxtMail.TabIndex = 5;
             // 
             // label4
@@ -78,7 +76,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(360, 410);
+            this.label4.Location = new System.Drawing.Point(369, 410);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 38);
@@ -92,7 +90,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(360, 492);
+            this.label5.Location = new System.Drawing.Point(369, 492);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 38);
@@ -106,7 +104,7 @@
             this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(11, 75);
+            this.label1.Location = new System.Drawing.Point(295, 71);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(612, 45);

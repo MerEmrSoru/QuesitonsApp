@@ -251,7 +251,7 @@
             this.cmbUserTypeId.BackColor = System.Drawing.Color.MistyRose;
             this.cmbUserTypeId.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbUserTypeId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbUserTypeId.Font = new System.Drawing.Font("Headline R", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cmbUserTypeId.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.cmbUserTypeId.FormattingEnabled = true;
             this.cmbUserTypeId.Items.AddRange(new object[] {
             "1",
@@ -260,7 +260,7 @@
             this.cmbUserTypeId.Location = new System.Drawing.Point(170, 522);
             this.cmbUserTypeId.Margin = new System.Windows.Forms.Padding(2);
             this.cmbUserTypeId.Name = "cmbUserTypeId";
-            this.cmbUserTypeId.Size = new System.Drawing.Size(52, 26);
+            this.cmbUserTypeId.Size = new System.Drawing.Size(52, 31);
             this.cmbUserTypeId.TabIndex = 120;
             // 
             // BtnAddUser
@@ -288,25 +288,25 @@
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.MistyRose;
-            this.txtPassword.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtPassword.Location = new System.Drawing.Point(112, 484);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.MaxLength = 25;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(110, 23);
+            this.txtPassword.Size = new System.Drawing.Size(110, 30);
             this.txtPassword.TabIndex = 117;
             // 
             // txtMail
             // 
             this.txtMail.BackColor = System.Drawing.Color.MistyRose;
-            this.txtMail.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtMail.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtMail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtMail.Location = new System.Drawing.Point(70, 442);
             this.txtMail.Margin = new System.Windows.Forms.Padding(2);
             this.txtMail.MaxLength = 25;
             this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(152, 23);
+            this.txtMail.Size = new System.Drawing.Size(152, 30);
             this.txtMail.TabIndex = 116;
             this.txtMail.Text = " ";
             // 
@@ -355,52 +355,52 @@
             // txtSurname
             // 
             this.txtSurname.BackColor = System.Drawing.Color.MistyRose;
-            this.txtSurname.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtSurname.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtSurname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSurname.Location = new System.Drawing.Point(105, 402);
             this.txtSurname.Margin = new System.Windows.Forms.Padding(2);
             this.txtSurname.MaxLength = 25;
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(117, 23);
+            this.txtSurname.Size = new System.Drawing.Size(117, 30);
             this.txtSurname.TabIndex = 112;
             this.txtSurname.Text = " ";
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.MistyRose;
-            this.txtName.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtName.Location = new System.Drawing.Point(83, 361);
             this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.MaxLength = 25;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(139, 23);
+            this.txtName.Size = new System.Drawing.Size(139, 30);
             this.txtName.TabIndex = 111;
             this.txtName.Text = " ";
             // 
             // txtUsername
             // 
             this.txtUsername.BackColor = System.Drawing.Color.MistyRose;
-            this.txtUsername.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtUsername.Location = new System.Drawing.Point(114, 324);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.MaxLength = 25;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(108, 23);
+            this.txtUsername.Size = new System.Drawing.Size(108, 30);
             this.txtUsername.TabIndex = 110;
             this.txtUsername.Text = " ";
             // 
             // txtUserID
             // 
             this.txtUserID.BackColor = System.Drawing.Color.MistyRose;
-            this.txtUserID.Font = new System.Drawing.Font("Headline R", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtUserID.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.txtUserID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtUserID.Location = new System.Drawing.Point(156, 283);
             this.txtUserID.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserID.MaxLength = 25;
             this.txtUserID.Name = "txtUserID";
-            this.txtUserID.Size = new System.Drawing.Size(66, 23);
+            this.txtUserID.Size = new System.Drawing.Size(66, 30);
             this.txtUserID.TabIndex = 109;
             this.txtUserID.Text = " ";
             // 
@@ -542,8 +542,8 @@
             this.fillAllUserToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillAllUserToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.fillAllUserToolStripButton.Name = "fillAllUserToolStripButton";
-            this.fillAllUserToolStripButton.Size = new System.Drawing.Size(95, 27);
-            this.fillAllUserToolStripButton.Text = "FillAllUser";
+            this.fillAllUserToolStripButton.Size = new System.Drawing.Size(81, 27);
+            this.fillAllUserToolStripButton.Text = "User List";
             this.fillAllUserToolStripButton.Click += new System.EventHandler(this.fillAllUserToolStripButton_Click);
             // 
             // fillStudentToolStrip
@@ -564,8 +564,8 @@
             this.fillStudentToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillStudentToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.fillStudentToolStripButton.Name = "fillStudentToolStripButton";
-            this.fillStudentToolStripButton.Size = new System.Drawing.Size(98, 27);
-            this.fillStudentToolStripButton.Text = "FillStudent";
+            this.fillStudentToolStripButton.Size = new System.Drawing.Size(106, 27);
+            this.fillStudentToolStripButton.Text = "Student List";
             this.fillStudentToolStripButton.Click += new System.EventHandler(this.fillStudentToolStripButton_Click);
             // 
             // fillTeacherToolStrip
@@ -586,8 +586,8 @@
             this.fillTeacherToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillTeacherToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.fillTeacherToolStripButton.Name = "fillTeacherToolStripButton";
-            this.fillTeacherToolStripButton.Size = new System.Drawing.Size(101, 27);
-            this.fillTeacherToolStripButton.Text = "FillTeacher";
+            this.fillTeacherToolStripButton.Size = new System.Drawing.Size(109, 27);
+            this.fillTeacherToolStripButton.Text = "Teacher List";
             this.fillTeacherToolStripButton.Click += new System.EventHandler(this.fillTeacherToolStripButton_Click);
             // 
             // fillAdminToolStrip
@@ -608,8 +608,8 @@
             this.fillAdminToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillAdminToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.fillAdminToolStripButton.Name = "fillAdminToolStripButton";
-            this.fillAdminToolStripButton.Size = new System.Drawing.Size(90, 27);
-            this.fillAdminToolStripButton.Text = "FillAdmin";
+            this.fillAdminToolStripButton.Size = new System.Drawing.Size(98, 27);
+            this.fillAdminToolStripButton.Text = "Admin List";
             this.fillAdminToolStripButton.Click += new System.EventHandler(this.fillAdminToolStripButton_Click);
             // 
             // tbl_UserTableAdapter

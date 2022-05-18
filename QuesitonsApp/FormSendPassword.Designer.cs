@@ -69,7 +69,7 @@
             this.label1.Font = new System.Drawing.Font("Headline R", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(4, 66);
+            this.label1.Location = new System.Drawing.Point(237, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(714, 45);
@@ -80,14 +80,13 @@
             // 
             this.TxtMail.BackColor = System.Drawing.Color.Linen;
             this.TxtMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtMail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.TxtMail.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TxtMail.Location = new System.Drawing.Point(535, 509);
             this.TxtMail.Margin = new System.Windows.Forms.Padding(2);
             this.TxtMail.MaxLength = 50;
-            this.TxtMail.Multiline = true;
             this.TxtMail.Name = "TxtMail";
-            this.TxtMail.Size = new System.Drawing.Size(254, 39);
+            this.TxtMail.Size = new System.Drawing.Size(254, 34);
             this.TxtMail.TabIndex = 47;
             // 
             // label4
@@ -141,14 +140,13 @@
             // 
             this.txtUsername.BackColor = System.Drawing.Color.Linen;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.8F);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtUsername.Location = new System.Drawing.Point(535, 448);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.MaxLength = 50;
-            this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(254, 39);
+            this.txtUsername.Size = new System.Drawing.Size(254, 34);
             this.txtUsername.TabIndex = 56;
             // 
             // label2

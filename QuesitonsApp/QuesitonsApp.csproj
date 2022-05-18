@@ -73,11 +73,11 @@
     <Compile Include="FormQuestion.Designer.cs">
       <DependentUpon>FormQuestion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormReportcs.cs">
+    <Compile Include="FormResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormReportcs.Designer.cs">
-      <DependentUpon>FormReportcs.cs</DependentUpon>
+    <Compile Include="FormResult.Designer.cs">
+      <DependentUpon>FormResult.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSigmaSixExam.cs">
       <SubType>Form</SubType>
@@ -147,11 +147,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuesitonAppDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuesitonAppDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="QuesitonAppDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,8 +162,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuesitonAppDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuesitonAppDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuesitonAppDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuesitonAppDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuesitonAppDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RandomQuestionAlgorithm.cs" />
-    <Compile Include="SigmaSixAlgorithm.cs" />
     <Compile Include="SqlConnection.cs" />
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
@@ -182,8 +186,8 @@
     <EmbeddedResource Include="FormQuestion.resx">
       <DependentUpon>FormQuestion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormReportcs.resx">
-      <DependentUpon>FormReportcs.cs</DependentUpon>
+    <EmbeddedResource Include="FormResult.resx">
+      <DependentUpon>FormResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSigmaSixExam.resx">
       <DependentUpon>FormSigmaSixExam.cs</DependentUpon>
@@ -237,17 +241,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QuesitonAppDataSet.xsc">
-      <DependentUpon>QuesitonAppDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QuesitonAppDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuesitonAppDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuesitonAppDataSet.xss">
-      <DependentUpon>QuesitonAppDataSet.xsd</DependentUpon>
-    </None>
     <None Include="QuesitonAppDataSet1.xsc">
       <DependentUpon>QuesitonAppDataSet1.xsd</DependentUpon>
     </None>
@@ -280,6 +273,28 @@
     </None>
     <None Include="QuesitonAppDataSet3.xss">
       <DependentUpon>QuesitonAppDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet41.xsc">
+      <DependentUpon>QuesitonAppDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuesitonAppDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuesitonAppDataSet41.xss">
+      <DependentUpon>QuesitonAppDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet5.xsc">
+      <DependentUpon>QuesitonAppDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QuesitonAppDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuesitonAppDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuesitonAppDataSet5.xss">
+      <DependentUpon>QuesitonAppDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

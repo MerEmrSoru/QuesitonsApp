@@ -138,7 +138,7 @@
             this.BtnAddQuestion.Name = "BtnAddQuestion";
             this.BtnAddQuestion.Size = new System.Drawing.Size(230, 68);
             this.BtnAddQuestion.TabIndex = 99;
-            this.BtnAddQuestion.Text = "ADD QUESTION";
+            this.BtnAddQuestion.Text = "QUESTION LIST";
             this.BtnAddQuestion.UseVisualStyleBackColor = false;
             this.BtnAddQuestion.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 

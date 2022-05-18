@@ -57,6 +57,9 @@ namespace QuesitonsApp
                     smtpserver.Send(mail);
                     DialogResult info = new DialogResult();
                     info = MessageBox.Show("Your password has been sent to your e-mail address.");
+                    
+                    FormUserSelect f1=new FormUserSelect();
+                    f1.Show();
                     this.Hide();
 
                 }
